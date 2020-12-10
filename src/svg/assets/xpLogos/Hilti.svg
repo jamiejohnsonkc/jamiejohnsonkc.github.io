@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 634.3 392" style="enable-background:new 0 0 634.3 392;" xml:space="preserve">
+<style type="text/css">
+	.xp26{fill-rule:evenodd;clip-rule:evenodd;fill:#CC2229;}
+	.xp27{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+
+<g id="Layer_2">
+	<g>
+		<path class="xp26" d="M33.1,137h570v117h-570V137z"/>
+		<g>
+			<path class="xp27" d="M544.1,154v80h40v-80H544.1z"/>
+			<polygon class="xp27" points="389.1,198 389.1,234 266.1,234 266.1,154 310.1,154 310.1,198 			"/>
+			<rect x="216.1" y="154" class="xp27" width="43" height="80"/>
+			<polygon class="xp27" points="537.1,154 537.1,190 468.1,190 468.1,234 428.1,234 428.1,190 358.1,190 358.1,154 			"/>
+			<polygon class="xp27" points="210.1,154 210.1,234 167.1,234 167.1,210 94.1,210 94.1,234 51.1,234 51.1,154 94.1,154 94.1,177
+				167.1,177 167.1,154 			"/>
+		</g>
+	</g>
+</g>
+</svg>

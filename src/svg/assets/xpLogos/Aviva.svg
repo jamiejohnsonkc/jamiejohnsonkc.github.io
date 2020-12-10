@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 634.3 392" style="enable-background:new 0 0 634.3 392;" xml:space="preserve">
+<style type="text/css">
+	.xp9{fill-rule:evenodd;clip-rule:evenodd;fill:#1E71B8;}
+	.xp10{fill-rule:evenodd;clip-rule:evenodd;fill:#F6D330;}
+	.xp11{fill-rule:evenodd;clip-rule:evenodd;fill:#82BA5D;}
+</style>
+
+<g id="Layer_2">
+	<g>
+		<path class="xp9" d="M371.1,148.2c1.8,0.3,8,2.3,8,6.9l0.4,73.1h21.6v-83h-30V148.2z M198.1,145.2v2c2.7,0.6,8.8,2.4,6.4,7.6
+			l-32.4,73.4h18l10-23h35l9,23h23l-32-83H198.1z M204.1,195.2l14.3-32.2l12.7,32.2H204.1z M534.1,145.2v2c2.7,0.6,8.4,2.4,6,7.6
+			l-33,73.4h17l12-23h35l9,23h23l-33-83H534.1z M540.1,195.2l15-31l12,31H540.1z M476.1,228.2l35-83h-17l-26,61l-24-61h-30v3
+			c3.6,0.7,7.2,2.3,9,6.9l29,73.1H476.1z M324.1,228.2l34-83h-16l-25.6,61.3l-24.4-61.3h-31v3c3.6,0.7,7.9,2.3,9.8,6.9l29.2,73.1
+			H324.1z"/>
+		<g>
+			<path class="xp10" d="M115.1,229.2l-9-84l-8,86C103.5,230.6,109.5,229.6,115.1,229.2z"/>
+			<path class="xp11" d="M134.1,229.3v-84h-28l9,84C121.6,228.8,127.8,229.3,134.1,229.3z"/>
+			<path class="xp9" d="M98.1,231.2l8-86h-73v101.6C50.3,239.3,72.8,234,98.1,231.2z"/>
+		</g>
+	</g>
+</g>
+</svg>

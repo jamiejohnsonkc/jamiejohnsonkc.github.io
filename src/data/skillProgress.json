@@ -1,0 +1,344 @@
+{
+	"content": [
+		{
+			"label": "Webdev1",
+			"done": "40"
+		},
+		{
+			"label": "Webdev2",
+			"done": "50"
+		},
+		{
+			"label": "Webdev3",
+			"done": "60"
+		},
+		{
+			"label": "Webdev4",
+			"done": "70"
+		}
+	],
+	"platforms": [
+		{
+			"label": "React",
+			"done": "70"
+		},
+		{
+			"label": "Gatsby",
+			"done": "80"
+		},
+		{
+			"label": "Storybook",
+			"done": "65"
+		},
+		{
+			"label": "Wordpress",
+			"done": "90"
+		}
+	],
+	"bestPractices": [
+		{
+			"label": "DRY code",
+			"done": "70"
+		},
+		{
+			"label": "Mobile-First",
+			"done": "99"
+		},
+		{
+			"label": "User-Focused",
+			"done": "80"
+		},
+		{
+			"label": "css-in-js",
+			"done": "65"
+		},
+		{
+			"label": "reusable",
+			"done": "65"
+		}
+	],
+	"languages": [
+		{
+			"label": "Javascript",
+			"done": "70"
+		},
+		{
+			"label": "JSX",
+			"done": "85"
+		},
+		{
+			"label": "JSON",
+			"done": "90"
+		},
+		{
+			"label": "Css/Sass",
+			"done": "95"
+		},
+		{
+			"label": "XML/Svg",
+			"done": "95"
+		},
+		{
+			"label": "Markdown",
+			"done": "80"
+		},
+		{
+			"label": "Html5",
+			"done": "95"
+		},
+		{
+			"label": "GraphQl",
+			"done": "65"
+		},
+		{
+			"label": "Php",
+			"done": "40"
+		},
+		{
+			"label": "Typescript",
+			"done": "15"
+		}
+	],
+	"frameworks": [
+		{
+			"label": "Theme-ui",
+			"done": "85"
+		},
+		{
+			"label": "Bootstrap",
+			"done": "85"
+		},
+		{
+			"label": "Understrap",
+			"done": "85"
+		},
+		{
+			"label": "React Spring",
+			"done": "65"
+		}
+	],
+	"design": [
+		{
+			"label": "Svg Graphics",
+			"done": "85"
+		},
+		{
+			"label": "Art Production",
+			"done": "85"
+		},
+		{
+			"label": "Typography",
+			"done": "85"
+		},
+		{
+			"label": "Layout",
+			"done": "65"
+		}
+	],
+	"workFlow": [
+		{
+			"label": "Github",
+			"done": "75"
+		},
+		{
+			"label": "Npm",
+			"done": "85"
+		},
+		{
+			"label": "Yarn",
+			"done": "85"
+		},
+		{
+			"label": "Grunt",
+			"done": "85"
+		},
+		{
+			"label": "Gulp",
+			"done": "85"
+		},
+		{
+			"label": "Less",
+			"done": "85"
+		},
+		{
+			"label": "Lint/Eslint",
+			"done": "85"
+		}
+	],
+	"backend": [
+		{
+			"label": "ServerPress",
+			"done": "80"
+		},
+		{
+			"label": "FlyWheel",
+			"done": "90"
+		},
+		{
+			"label": "Node",
+			"done": "35"
+		},
+		{
+			"label": "Apache",
+			"done": "25"
+		},
+		{
+			"label": "Nginx",
+			"done": "15"
+		},
+		{
+			"label": "MySql",
+			"done": "15"
+		}
+	],
+	"applications": [
+		{
+			"label": "VSCode",
+			"done": "90"
+		},
+		{
+			"label": "Sublime Text",
+			"done": "85"
+		},
+		{
+			"label": "Adobe Xd",
+			"done": "80"
+		},
+		{
+			"label": "Adobe Illustrator",
+			"done": "90"
+		},
+		{
+			"label": "Adobe Lightroom",
+			"done": "90"
+		},
+		{
+			"label": "Adobe Photoshop",
+			"done": "90"
+		},
+		{
+			"label": "Adobe InDesign",
+			"done": "65"
+		},
+		{
+			"label": "Gimp",
+			"done": "75"
+		},
+		{
+			"label": "Figma",
+			"done": "50"
+		},
+		{
+			"label": "Microsoft Office",
+			"done": "99"
+		},
+		{
+			"label": "Microsoft Access",
+			"done": "75"
+		},
+		{
+			"label": "Hubspot",
+			"done": "25"
+		},
+		{
+			"label": "Marketo",
+			"done": "30"
+		},
+		{
+			"label": "Salesforce",
+			"done": "50"
+		}
+	],
+	"marketing": [
+		{
+			"label": "Planning",
+			"done": "90"
+		},
+		{
+			"label": "Program Mgmt",
+			"done": "95"
+		},
+		{
+			"label": "Marketing Ops",
+			"done": "95"
+		},
+		{
+			"label": "Funnel Mgmt",
+			"done": "95"
+		},
+		{
+			"label": "Engagement",
+			"done": "95"
+		},
+		{
+			"label": "Event Mgmt",
+			"done": "95"
+		}
+	],
+	"marcom": [
+		{
+			"label": "Campaign Dev",
+			"done": "100"
+		},
+		{
+			"label": "Creative Dev",
+			"done": "99"
+		},
+		{
+			"label": "Message/Brand",
+			"done": "95"
+		},
+		{
+			"done": "95"
+		},
+		{
+			"label": "Mktg Research",
+			"done": "95"
+		},
+		{
+			"label": "Content Mktg",
+			"done": "85"
+		}
+	],
+	"execution": [
+		{
+			"label": "Campaign Mgmt",
+			"done": "99"
+		},
+		{
+			"done": "95"
+		},
+		{
+			"label": "Print",
+			"done": "95"
+		},
+		{
+			"label": "Direct",
+			"done": "75"
+		},
+		{
+			"label": "Graphic Design",
+			"done": "65"
+		},
+		{
+			"label": "Art Direction",
+			"done": "85"
+		},
+		{
+			"label": "Copywriting",
+			"done": "85"
+		},
+		{
+			"label": "Email",
+			"done": "45"
+		},
+		{
+			"label": "SMM",
+			"done": "35"
+		},
+		{
+			"label": "SEO",
+			"done": "35"
+		}
+	]
+}
