@@ -77,7 +77,7 @@ const EndorsementCard = ({
                     minHeight: ['320px', '640px', '512px', null, null, null],
 
                     alignItems: 'center',
-                    backgroundColor: 'w01',
+                    backgroundColor: 'wo1',
                     borderRadius: 6,
                     boxShadow: 'subtleFirmLR',
                     gridTemplateColumns: [
@@ -133,7 +133,8 @@ const EndorsementCard = ({
                             'center',
                         ],
                         fontFamily: 'heading',
-                        fontSize: [2, 3, 2, 2, 3, 3],
+                        fontSize: [2, 3, 2, 2, 3, '20.454878px'],
+                        px: [null, null, null, null, null, 2],
                         fontWeight: [500, 500, 600, 600, 600],
                         lineHeight: [1.4, 1.6, 1.6, 1.6, 1.6, 1.6],
                         color: 'revText',
@@ -216,6 +217,7 @@ const EndorsementCard = ({
                             lineHeight: '1.6',
                             color: 'revText',
                             fontSize: ['9px', 2, 1, 1, 1, 1],
+                            px: [null, null, null, null, null, '32px'],
                             mb: [0, 0, 0, 0, 0, 4],
                         }}
                     >

@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Box, Grid, jsx } from 'theme-ui'
+import { Box, Grid, jsx, Text } from 'theme-ui'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
-import Display from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
+
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
@@ -50,6 +50,7 @@ const BadgeHead = ({ text, ...props }) => (
             ],
             display: 'inline-grid',
             color: 'revText',
+            // fontWeight: 'regular',
         }}
     >
         {text}
@@ -70,18 +71,20 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
 )
 
 const DisplayText = (props) => (
-    <Display
+    <Text
         {...props}
         // as='h3'
         sx={{
-            variant: [
-                'text.d4',
-                'text.d2',
-                'text.d4',
-                'text.d3',
-                'text.d3',
-                null,
-            ],
+            // variant: [
+            //     'text.d4',
+            //     'text.d2',
+            //     'text.d4',
+            //     'text.d3',
+            //     'text.d3',
+            //     null,
+            // ],
+            fontWeight: [null, null, 'light', 'light', 'light', 'light'],
+            fontFamily: 'heading',
             maxWidth: [null, null, null, null, null, '22em'],
             color: 'revText',
             pl: [3, 4, 0, 3, 0, 3],
@@ -96,7 +99,6 @@ const ParentBox = (props) => (
         {...props}
         sx={{
             position: 'relative',
-
             px: [0, 2, 0, 0, 4, 4],
 
             '&.parentBox1': {

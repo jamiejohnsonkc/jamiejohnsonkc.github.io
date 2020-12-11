@@ -54,14 +54,14 @@ const ServiceCard = ({
                         blockWidth="100%"
                         compImage={compImage}
                         visualHeight="2.25em"
-                        visualMb={4}
+                        visualMb={5}
                         visualWidth={visualWidth}
                         headingText={headingText}
-                        headingVariant="styles.h3"
+                        headingVariant="styles.h4"
                         headingSpacing="tight"
                         headingWeight="heavy"
                         headingMb={3}
-                        textMb={4}
+                        textMb={0}
                         textText={textText}
                         textVariant="text.text_lg"
                         {...props}
@@ -70,7 +70,7 @@ const ServiceCard = ({
                         }}
                     />
 
-                    {linkText && (
+                    {/* {linkText && (
                         <CtaLinkInt
                             linkText={linkText}
                             linkVisual={linkVisual}
@@ -114,7 +114,7 @@ const ServiceCard = ({
                                 },
                             }}
                         />
-                    )}
+                    )} */}
                 </Box>
             </Card>
         </Box>

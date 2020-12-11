@@ -3,22 +3,15 @@ import { jsx, Text } from 'theme-ui'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// import styled from "@emotion/styled"
-// import Section from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Section'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
-// import Pill from '../../../../../../../gatsby-theme-jim-components/src/components/product/designElements/buttons/Pill/Pill'
-// import Subhead from '../../../../../../../gatsby-theme-jim-components/src/components/system/atoms/Text/Subhead'
+
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
 import CtaLinkExt from '../../../../../../../gatsby-theme-jim-components/src/components/ui/CtaLinkExt'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
-// import SplitTextLine from '../../../../../../../gatsby-theme-jim-components/src/components/contentBlocks/SplitTextLine'
-// import styled from '@emotion/styled'
-// import HoverTextFill from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverTextFill'
-// import HoverHglUdrln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverHglUdrln'
 
-// const StyledSpan = styled.span``
+//TODO refactor split lines
 
 const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
     <>
@@ -48,6 +41,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     {...props}
                     sx={{
                         maxWidth: [null, null, null, null, null, null],
+                        mb: 4,
                     }}
                     {...animation.slideUp1}
                 >
@@ -62,6 +56,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                         mb: '0px',
                         color: 'primary',
                         maxWidth: [null, null, null, '42em', '42em', '22em'],
+                        fontWeight: 'regular',
                     }}
                     {...animation.slideUp2}
                 >
@@ -72,9 +67,10 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     as="h2"
                     sx={{
                         variant: 'styles.h4',
-                        mb: 2,
+                        mb: 4,
                         color: 'primary',
                         maxWidth: [null, null, null, '42em', '42em', '22em'],
+                        fontWeight: 'regular',
                     }}
                     {...animation.slideUp2}
                 >

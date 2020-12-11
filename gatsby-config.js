@@ -55,8 +55,8 @@ module.exports = {
     },
     `gatsby-plugin-typescript`,
     `gatsby-theme-nav-fulloverlay`,
-    `gatsby-plugin-theme-ui`,
     `gatsby-theme-jim-components`,
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-theme-jim-theme-ui`,
     {

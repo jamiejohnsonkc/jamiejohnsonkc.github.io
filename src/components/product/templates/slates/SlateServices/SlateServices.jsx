@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Box, jsx, Link } from 'theme-ui'
+import { Link } from 'gatsby'
+import { Box, jsx } from 'theme-ui'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import ServicesSlider from '../../elements/ServicesSlider/ServicesSlider'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
 
 const SlateServices = ({
     sectionBg,
@@ -32,7 +34,7 @@ const SlateServices = ({
                 sx={{
                     variant: 'styles.h1',
                     px: [2, null, null, null, null],
-                    // mb: 4,
+                    mb: 4,
                 }}
             >
                 Ways I can help you
@@ -58,24 +60,40 @@ const SlateServices = ({
             </Box>
 
             <Box
-                {...animation.slideUp5}
+                // {...animation.slideUp5}
                 {...props}
                 sx={{
                     mt: [0, 3, 0, 0, 0],
                     ml: [0, 2, 0, 0, 0],
+                    variant: 'text.text_lg',
+                    fontSize: [2, 3, 2, null, null, null],
+                    display: 'block',
+                    fontFamily: 'heading',
+                    fontWeight: 'heavy',
+                    color: 'primary',
                 }}
             >
-                Interested?
+                {' '}
+                Want the nerdy stuff? See my
                 <Link
-                    href="mailto:jamiejohnsonkc@gmail.com"
+                    to="/skills"
                     {...props}
                     sx={{
                         fontWeight: 'bold',
                         fontFamily: 'heading',
-                        ml: 1,
+                        textDecoration: 'none',
+                        ml: '1px',
                     }}
                 >
-                    jamiejohnsonkc@gmail.com
+                    <HoverBgHiUndln
+                        differenceColor="rgb(252,86,11)"
+                        outlineColor="primary"
+                        textColor="text"
+                        underlineColor="text"
+                        underlineHeight="2px"
+                    >
+                        Skills & Capabilities
+                    </HoverBgHiUndln>
                 </Link>
             </Box>
         </SectionGrid>

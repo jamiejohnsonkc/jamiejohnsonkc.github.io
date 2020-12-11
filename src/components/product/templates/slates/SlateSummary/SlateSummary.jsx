@@ -8,7 +8,7 @@ import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
-import HoverHglUdrln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverHglUdrln'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
 import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ExtLink'
 
 // import AniLink from 'gatsby-plugin-transition-link/AniLink'
@@ -20,8 +20,8 @@ const IntroParagraph = (props) => (
         variant="text.text_md"
         {...props}
         sx={{
-            maxWidth: '32em',
-            mb: 4,
+            maxWidth: '33em',
+            mb: 3,
         }}
     >
         {props.children}
@@ -53,6 +53,10 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     as="h1"
                     variant="styles.hxxl"
                     {...animation.slideUp1}
+                    {...props}
+                    sx={{
+                        mb: 5,
+                    }}
                 >
                     Hiyas.
                 </Headline>
@@ -95,15 +99,21 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 <IntroParagraph {...animation.slideUp3}>
                     A while back I took time to be a{' '}
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
-                    feedings and changes I began tinkering with Wordpress. Now I
-                    design & build high-performance sites with leading-edge
-                    platforms like{' '}
+                    feedings and changes I began tinkering with{' '}
+                    <IntroEmph>Wordpress</IntroEmph>. Now I design & build
+                    high-performance sites with leading-edge platforms like{' '}
                     <IntroEmph>React, Gatsby and Storybook</IntroEmph>. And I
                     can back it up with senior-level marketing chops.
                 </IntroParagraph>
-                <IntroParagraph {...animation.slideUp4}>
-                    Today my little ones ain't so little anymore and I'm ready
-                    to get back to work.
+                <IntroParagraph
+                    {...animation.slideUp4}
+                    {...props}
+                    sx={{
+                        mb: 5,
+                    }}
+                >
+                    My little ones ain't so little anymore. So it's high time I
+                    get back to work.
                 </IntroParagraph>
 
                 {/* <Text
@@ -159,7 +169,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                             mb: [2, 2, 0, 2, 0, 0],
                         }}
                     >
-                        <HoverHglUdrln
+                        <HoverBgHiUndln
                             differenceColor="rgb(252,86,11)"
                             children="Let's go"
                             outlineColor="primary"

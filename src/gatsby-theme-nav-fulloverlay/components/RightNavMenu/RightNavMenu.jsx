@@ -10,18 +10,28 @@ import NavLi from '../../../../../gatsby-theme-nav-fulloverlay/src/components/Na
 import HoverTextFill from '../../../../../gatsby-theme-jim-components/src/components/fx/HoverTextFill'
 
 const RightNavMenu = ({
-    navMenuItemHover,
+    // navMenuItemHover,
     linkTo,
-    hoverTransition,
+    // hoverTransition,
     navOpen,
     setNavOpen,
     ...props
 }) => {
+    const closeMenu = (e) => {
+        setNavOpen(false)
+    }
+
     return (
-        <>
+        <div
+            className="rightNavMenuContainer"
+            navOpen={navOpen}
+            setNavOpen={setNavOpen}
+        >
             <NavUl
                 {...props}
                 className="rightNavMenu"
+                navOpen={navOpen}
+                setNavOpen={setNavOpen}
                 sx={{
                     minHeight: ['16em', '16em', '30em', '30em', '30em'],
                     flex: [
@@ -42,12 +52,11 @@ const RightNavMenu = ({
                     pl: [3, 3, 0, 0, 0],
                 }}
             >
-                {Data.navLinks.map((link, id) => (
-                    <NavLi key={link.id}>
+                {Data.navLinks.map((link) => (
+                    <NavLi key={link.id} navOpen={navOpen} onClick={closeMenu}>
                         <Link
                             to={link.to}
                             className="activeClassName"
-                            navOpen={navOpen}
 
                             // onClick={() => setNavOpen(!navOpen)}
                         >
@@ -75,7 +84,7 @@ const RightNavMenu = ({
                     </NavLi>
                 ))}
             </NavUl>
-        </>
+        </div>
     )
 }
 
