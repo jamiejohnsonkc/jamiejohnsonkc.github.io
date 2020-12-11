@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `jamiejohnsonkc`,
+    title: `jamiejohnsonkc2021`,
     description: `portfolio page`,
     author: `@jamiejohnsonkc`,
   },
@@ -53,11 +53,11 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-typescript`,
+    `gatsby-theme-nav-fulloverlay`,
     `gatsby-plugin-theme-ui`,
     `gatsby-theme-jim-components`,
-    `gatsby-plugin-typescript`,
     `gatsby-plugin-preload-fonts`,
-    `gatsby-theme-nav-fulloverlay`,
     `gatsby-theme-jim-theme-ui`,
     {
       resolve: `gatsby-plugin-page-creator`,

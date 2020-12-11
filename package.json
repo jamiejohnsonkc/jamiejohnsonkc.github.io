@@ -1,5 +1,5 @@
 {
-    "name": "jamiejohnsonkc",
+    "name": "jamiejohnsonkc2021",
     "private": false,
     "version": "1.0.0",
     "main": "index.js",
@@ -25,7 +25,7 @@
         "gatsby-plugin-transition-link": "^1.20.2",
         "gatsby-plugin-web-font-loader": "^1.0.4",
         "gatsby-theme-jim-components": "*",
-        "gatsby-theme-jim-theme-ui": "*",
+        "gatsby-theme-jim-theme-ui": "1.0.0",
         "gatsby-theme-nav-fulloverlay": "1.0.0",
         "gatsby-theme-scroll-reveal": "1.0.0",
         "gatsby-transformer-sharp": "^2.5.15",

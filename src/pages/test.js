@@ -4,7 +4,8 @@ import React, { useState, useRef } from 'react'
 // import { MdSentimentSatisfied } from 'react-icons/md'
 import NavOverlay from '../../../gatsby-theme-nav-fulloverlay/src/NavOverlay'
 import NavToggle from '../../../gatsby-theme-nav-fulloverlay/src/components/NavToggle'
-import useOutsideClick from '../../../gatsby-theme-nav-fulloverlay/src/hooks/useOutsideClick'
+import useOutsideClick from '../../../gatsby-theme-nav-fulloverlay/src/components/useOutsideClick'
+
 // import SandwhichRotate from '../gatsby-theme-nav-fulloverlay/components/SandwhichRotate'
 
 // const ToggleContent = ({ toggle, content }) => {
