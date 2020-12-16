@@ -13,7 +13,7 @@ import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation
 import CtaLinkExt from '../../../../../../../gatsby-theme-jim-components/src/components/ui/CtaLinkExt'
 // import { alpha } from '@theme-ui/color'
 
-//TODO refactor
+// TODO refactor
 
 // const StyledSpan = styled.span``
 
@@ -63,7 +63,7 @@ const EndorsementCard = ({
         >
             <Card
                 className="endorsementCard"
-                {...animation.slideUp4NoTrans}
+                // {...animation.slideUp4NoTrans}
                 {...props}
                 sx={{
                     // px: [0, 4, 4, 0, 0, 2],
@@ -72,7 +72,7 @@ const EndorsementCard = ({
                     // display: ['grid', null, null, null, null, null],
                     display: 'grid',
                     height: ['100%', null, null, '512px', '640px', '680px'],
-                    px: [4, 5, 4, 5, 5, 5],
+                    px: [4, 5, 5, 5, 5, 5],
                     py: [4, 5, 5, null, 5, 5],
                     minHeight: ['320px', '640px', '512px', null, null, null],
 
@@ -115,7 +115,7 @@ const EndorsementCard = ({
                         position: 'relative',
                         order: 1,
                         gridColumnStart: ['1', '1', '1', '1', '1', '1'],
-                        gridColumnEnd: ['2', '2', '5', '5', '5', '5'],
+                        gridColumnEnd: ['2', '2', '2', '5', '5', '5'],
                     }}
                 >
                     <Box>{profilePic}</Box>
@@ -128,18 +128,19 @@ const EndorsementCard = ({
                         textAlign: [
                             'left',
                             'left',
+                            'left',
                             'center',
                             'center',
                             'center',
                         ],
                         fontFamily: 'heading',
-                        fontSize: [2, 3, 2, 2, 3, '20.454878px'],
+                        fontSize: [1, 3, 3, 2, 3, '20.454878px'],
                         px: [null, null, null, null, null, 2],
-                        fontWeight: [500, 500, 600, 600, 600],
-                        lineHeight: [1.4, 1.6, 1.6, 1.6, 1.6, 1.6],
+                        fontWeight: [400, 500, 500, 600, 600, 600],
+                        lineHeight: [1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
                         color: 'revText',
                         marginBottom: [4, 4, 4, 0, 0, 0],
-                        order: [3, 3, 2, 2, 2, 2],
+                        order: [3, 3, 3, 2, 2, 2],
                         gridColumnStart: '1',
                         gridColumnEnd: '5',
                     }}
@@ -192,7 +193,7 @@ const EndorsementCard = ({
                         pr: [0, 3, 3, 0, 0, 0],
                         // pb: [0, 4, 4, 0, 0, 0],
                         // mt: [0, -4, 0, 0, 0],
-                        fontSize: [2, 3, 1, 1, 2, 2],
+                        fontSize: [2, 3, 3, 1, 2, 2],
                         lineHeight: [1.4, 1.6, 1.6, 1.6, 1.6, 1.6],
                         // letterSpacing: 'snug',
                         fontFamily: 'heading',
@@ -216,7 +217,7 @@ const EndorsementCard = ({
                             letterSpacing: 'loose',
                             lineHeight: '1.6',
                             color: 'revText',
-                            fontSize: ['9px', 2, 1, 1, 1, 1],
+                            fontSize: ['9px', 2, 3, 1, 1, 1],
                             px: [null, null, null, null, null, '32px'],
                             mb: [0, 0, 0, 0, 0, 4],
                         }}

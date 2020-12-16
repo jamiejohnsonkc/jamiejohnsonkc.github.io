@@ -151,7 +151,7 @@ export default merge(typography, {
         d4: {
             lineHeight: 1.4,
             fontWeight: 'normal',
-            fontSize: 4,
+            fontSize: 1,
             maxWidth: '41em',
         },
         p_lg: {
@@ -244,16 +244,16 @@ export default merge(typography, {
             fontSize: [7, 9, null, null, 7, null],
         },
         h2: {
-            fontSize: [6, 7, null, null, null, null],
+            fontSize: [6, 8, null, null, null, null],
         },
         h3: {
-            fontSize: [5, 6, null, null, null, null],
+            fontSize: [5, 7, 7, null, null, null],
         },
         h4: {
-            fontSize: [4, 5, 6, null, null, null],
+            fontSize: [4, 6, 6, null, null, null],
         },
         h5: {
-            fontSize: 3,
+            fontSize: [3, 5, 5, null, null, null],
         },
         h6: {
             fontSize: 2,

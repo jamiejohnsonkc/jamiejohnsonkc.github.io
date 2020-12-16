@@ -113,29 +113,36 @@ import React, { useState, useRef } from 'react'
 
 import useWindowSize from '../../../gatsby-theme-jim-components/src/hooks/useWindowSize'
 import FluidNetlifyPage from '../hooks/imageHooks/FluidNetlifyPage';
+import Layout from '../components/product/templates/layouts/Layout';
+import SlateValue from '../components/product/templates/slates/SlateValue';
 
 const Test = (props) => {
     const size = useWindowSize();
     const divSize = `calc(${size.width}px - 64px)`
 
     return (
-      <div>{size.width}
-      <Box {...props} sx={{
-      height: '50px',
-      bg: 'blue',
-      width: `${size.width}px`,
-      }}>Sized Div</Box>
 
-      <Box {...props} sx={{
-        height: '50px',
-        bg: 'blue',
-        width: `${divSize}`,
-        }}>Sized Div</Box>
+      <Layout>
+        <SlateValue id="value" sectionBg="darkBackground" />
+      </Layout>
+      // <div>{size.width}
+      // <Box {...props} sx={{
+      // height: '50px',
+      // bg: 'blue',
+      // width: `${size.width}px`,
+      // }}>Sized Div</Box>
+
+      // <Box {...props} sx={{
+      //   height: '50px',
+      //   bg: 'blue',
+      //   width: `${divSize}`,
+      //   }}>Sized Div</Box>
 
 
-      <FluidNetlifyPage/>
-      </div>
-    )
+      // <FluidNetlifyPage/>
+      // </div>
+
+      )
 }
 
 export default Test

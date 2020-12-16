@@ -23,12 +23,12 @@ const NumberBadge = ({ number, ...props }) => (
             color: 'revText',
             display: 'inline-flex',
             fontFamily: 'heading',
-            fontSize: [2, 4, 3, 2, 3, 3],
-            height: '40px',
+            fontSize: [1, 5, 5, 2, 3, 3],
+            height: ['30px', '50px', '60px', null, null, null],
+            width: ['30px', '50px', '60px', null, null, null],
             justifyContent: 'center',
             mr: [2, 3, 3, 3, 3, 3],
             position: 'relative',
-            width: '40px',
         }}
     >
         {number}
@@ -41,16 +41,18 @@ const BadgeHead = ({ text, ...props }) => (
         as="h3"
         sx={{
             variant: [
+                'styles.h6',
+                'styles.h5',
                 'styles.h4',
-                'styles.h2',
-                'text.d3',
                 'text.d2',
                 'text.d2',
                 null,
             ],
             display: 'inline-grid',
             color: 'revText',
-            // fontWeight: 'regular',
+            mb: '0px',
+            fontWeight: 'regular',
+            letterSpacing: 'loose',
         }}
     >
         {text}
@@ -62,7 +64,7 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
         {...props}
         sx={{
             display: 'inline-block',
-            mb: [3, 4, 2, 2, 4, 3],
+            mb: [2, 4, 4, 2, 4, 3],
         }}
     >
         <NumberBadge number={number} />
@@ -83,11 +85,13 @@ const DisplayText = (props) => (
             //     'text.d3',
             //     null,
             // ],
-            fontWeight: [null, null, 'light', 'light', 'light', 'light'],
+            fontSize: [1, 4, 5, 3, 3, 3],
+            // fontWeight: [null, null, null, 'light', 'light', 'light'],
+            fontWeight: 'light',
             fontFamily: 'heading',
-            maxWidth: [null, null, null, null, null, '22em'],
+            maxWidth: ['21em', null, null, null, null, '22em'],
             color: 'revText',
-            pl: [3, 4, 0, 3, 0, 3],
+            pl: ['38px', 4, 4, 3, 0, 3],
             pr: [null, null, 2, null, null, null],
             mb: [1, 4, null, null, null, null],
         }}
@@ -155,12 +159,12 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         <Headline
                             {...props}
                             as="h4"
-                            {...animation.slideUp2}
+                            // {...animation.slideUp2}
                             sx={{
                                 variant: [
+                                    'styles.h3',
                                     'styles.h2',
                                     'styles.h1',
-                                    null,
                                     null,
                                     null,
                                     null,
@@ -169,8 +173,8 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                 maxWidth: [
                                     null,
                                     null,
-                                    null,
                                     '83%',
+                                    null,
                                     '64%',
                                     null,
                                 ],
@@ -193,17 +197,17 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                     >
                         <ParentBox
                             className="parentBox1"
-                            {...animation.slideUp3NoTrans}
+                            // {...animation.slideUp3NoTrans}
                         >
                             <Box
                                 className="vertDivider"
-                                {...animation.fadeSlow}
+                                // {...animation.fadeSlow}
                                 {...props}
                                 sx={{
                                     display: [
                                         'none',
                                         'none',
-                                        'block',
+                                        'none',
                                         'block',
                                         'block',
                                         'block',
@@ -230,8 +234,8 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                 transform: [
                                     null,
                                     null,
-                                    'translateY(64px)',
                                     null,
+                                    'translateY(64px)',
                                     null,
                                     null,
                                 ],
@@ -240,10 +244,12 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             <NumberBadgeHead
                                 number="2"
                                 text="Great Service"
-                                {...animation.slideUp3NoTrans}
+                                // {...animation.slideUp3NoTrans}
                             />
 
-                            <DisplayText {...animation.slideUp4NoTrans}>
+                            <DisplayText
+                            // {...animation.slideUp4NoTrans}
+                            >
                                 Accessible and accountable expertise committed
                                 to superior service.
                             </DisplayText>
@@ -251,7 +257,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
 
                         <EndorsementCard
                             {...props}
-                            {...animation.slideUp3NoTrans}
+                            // {...animation.slideUp3NoTrans}
                             linkTo="https://www.linkedin.com/in/jamiejohnsonkc/#ember595"
                             className="card1"
                             profilePic={<FluidStrunk />}
@@ -261,7 +267,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         />
                         <EndorsementCard
                             {...props}
-                            {...animation.slideUp4NoTrans}
+                            // {...animation.slideUp4NoTrans}
                             linkTo="https://www.linkedin.com/in/jamiejohnsonkc/#ember595"
                             className="card2"
                             profilePic={<FluidPeizer />}
@@ -269,7 +275,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             endorserName="Dan Peizer"
                             endorserTitle="VP Global Marketing & Strategy, Catalent Pharma Solutions"
                             sx={{
-                                mt: [null, null, null, 6, null, null, null],
+                                mt: [null, null, null, null, 6, null, null],
                             }}
                         />
                     </Grid>
