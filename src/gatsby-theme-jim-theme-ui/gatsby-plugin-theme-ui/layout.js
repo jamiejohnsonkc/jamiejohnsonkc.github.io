@@ -1,6 +1,6 @@
 //* shared properties/values
 const serviceSliderCard = {
-    height: ['475px', '800px', '1000px', '500px', '540px', '540px'],
+    height: ['475px', '800px', '1000px', '500px', '540px', '500px'],
 }
 
 export default {
@@ -55,13 +55,26 @@ workSampleFlexContainer: {
         'container.4',
         'container.4',
         null,
-        'container.3',
+        'container.4',
     ],
     height: '100%',
     position: 'relative',
     flexDirection: ['column', 'column', 'row', 'row', 'row', 'row'],
     // bg: ['blue', 'green', 'yellow', 'red', 'orange', 'purple' ],
 },
+// summaryContainer: {
+//     maxWidth: [
+//         'container.5',
+//         null,
+//         'container.4',
+//         'container.4',
+//         'container.3',
+//         'container.3',
+
+//     ],
+//     height: '100%',
+//     position: 'relative',
+// },
 
 
 

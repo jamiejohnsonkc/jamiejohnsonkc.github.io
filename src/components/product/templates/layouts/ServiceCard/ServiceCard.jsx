@@ -58,13 +58,13 @@ const ServiceCard = ({
                         visualMb={5}
                         visualWidth={visualWidth}
                         headingText={headingText}
-                        headingVariant="styles.h4"
+                        headingVariant="styles.h6"
                         headingSpacing="tight"
                         headingWeight="heavy"
                         headingMb={3}
                         textMb={0}
                         textText={textText}
-                        textVariant="text.text_lg"
+                        textVariant="styles.p1"
                     />
 
                     {/* {linkText && (

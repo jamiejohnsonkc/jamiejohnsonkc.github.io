@@ -6,6 +6,7 @@ import Article from '../../../../../../../gatsby-theme-jim-components/src/compon
 import SectionFlex from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionFlex'
 import Pill from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/buttons/Pill'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Body from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Body'
 import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ExtLink'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import FluidNetlifyPage from '../../../../../hooks/imageHooks/FluidNetlifyPage'
@@ -75,7 +76,7 @@ const WorkSample = ({
                             'absolute',
                             'absolute',
                         ],
-                        top: [null, null, null, '-1em', '-21em', '-21em'],
+                        top: [null, null, null, '-1em', '-21em', '-10em'],
                         left: [null, null, null, '2em', null, '-5em'],
                         flex: 'none',
                         display: 'block',
@@ -96,8 +97,8 @@ const WorkSample = ({
                                 '6em',
                                 '8em',
                                 '20em',
-                                '24em',
-                                null,
+                                '20em',
+                                '20em',
                             ],
                             fontFamily: 'heading',
                             fontWeight: 'heavy',
@@ -124,25 +125,24 @@ const WorkSample = ({
                         className="projectHeading"
                         sx={{
                             variant: [
-                                'styles.h2',
-                                'styles.h1',
-                                'styles.h1',
-                                'styles.h2',
-                                'styles.h2',
-                                'styles.h1',
-                                null,
+                                'styles.h5',
+                                'styles.h5',
+                                'styles.h5',
+                                'styles.h4',
+                                'styles.h4',
+                                'styles.h4',
                             ],
                             mb: 2,
                             letterSpacing: 'tight',
                             color: `${textColor}`,
                         }}
-                        {...animation.slideUp2}
+                        // {...animation.slideUp2}
                     >
                         {projectHeadline}
                     </Headline>
                     <Divider
                         {...props}
-                        {...animation.slideUp2}
+                        // {...animation.slideUp2}
                         sx={{
                             width: '1.618em',
                             mb: 2,
@@ -153,12 +153,12 @@ const WorkSample = ({
                         className="projectSubhead"
                         {...props}
                         sx={{
-                            variant: 'styles.d2',
+                            variant: 'styles.d5',
                             color: `${textColor}`,
-                            mb: [0, 5, 4, 4, 4, null],
+                            mb: [0, 5, 4, 4, 2, null],
                             pr: [0, 0, 0, 1, 0, null],
                         }}
-                        {...animation.slideUp3}
+                        // {...animation.slideUp3}
                     >
                         {projectSubhead}
                     </Text>
@@ -173,20 +173,19 @@ const WorkSample = ({
                         projectIcon2={projectIcon2}
                         projectIcon3={projectIcon3}
                     />
-                    <Text
+                    <Body
                         {...props}
                         className="projectText"
+                        variant="styles.p2"
                         sx={{
-                            variant: 'text_lg',
                             mb: 5,
                             color: `${textColor}`,
-                            pr: ['unset', 'unset', 'unset', 'unset', 4, 4, 4],
-                            maxWidth: '34em',
+                            maxWidth: '22em',
                         }}
-                        {...animation.slideUp4}
+                        // {...animation.slideUp4}
                     >
                         {projectText}
-                    </Text>
+                    </Body>
                     {/* //TODO refactor out button button */}
                     <Box
                         {...props}
@@ -251,7 +250,7 @@ const WorkSample = ({
                                     mr: 0,
                                 },
                             }}
-                            {...animation.slideUp6}
+                            // {...animation.slideUp6}
                         >
                             <ExtLink
                                 linkTo={repoLinkTo}

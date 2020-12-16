@@ -25,7 +25,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
             <Article className="ctaArticle">
                 <Headline
                     as="h1"
-                    variant="styles.hxxl"
+                    variant="styles.h3"
                     {...props}
                     sx={{
                         maxWidth: [null, null, null, null, null, null],
@@ -37,7 +37,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                 </Headline>
                 <Headline
                     as="h1"
-                    variant="styles.hxxl"
+                    variant="styles.h3"
                     {...props}
                     sx={{
                         maxWidth: [null, null, null, null, null, null],
@@ -52,7 +52,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     {...props}
                     as="h2"
                     sx={{
-                        variant: 'styles.h4',
+                        variant: 'styles.h5',
                         mb: '0px',
                         color: 'primary',
                         maxWidth: [null, null, null, '42em', '42em', '22em'],
@@ -66,7 +66,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     {...props}
                     as="h2"
                     sx={{
-                        variant: 'styles.h4',
+                        variant: 'styles.h5',
                         mb: 4,
                         color: 'primary',
                         maxWidth: [null, null, null, '42em', '42em', '22em'],
@@ -77,9 +77,9 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     contract & extended engagements
                 </Subline>
                 <Text
+                    variant="text.p1"
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
                         maxWidth: [null, null, null, '42em', '36em', '28em'],
                         mb: 5,
                     }}

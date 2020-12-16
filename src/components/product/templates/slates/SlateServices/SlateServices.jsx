@@ -28,7 +28,7 @@ const SlateServices = ({
             containerVariant="layout.containerSlider"
             sx={{
                 '& .container': {
-                    gridTemplateRows: '41% 25% 50%',
+                    gridTemplateRows: '40% 25% 30%',
                 },
             }}
         >
@@ -37,7 +37,7 @@ const SlateServices = ({
                 {...props}
                 as="h3"
                 sx={{
-                    variant: 'styles.h1',
+                    variant: 'styles.h3',
                     px: [2, null, 4, null, null, null],
                     mb: 4,
                 }}
@@ -73,7 +73,7 @@ const SlateServices = ({
                     mt: [0, 3, 0, 0, 0, 0],
                     lineHeight: 2,
                     fontSize: [2, 5, 4, null, 2, null],
-                    ml: [0, 2, 0, 0, 0, 0],
+                    ml: [0, 2, 0, 0, 0, 4],
                     px: [0, 0, 4, 0, 0, 0],
                     // fontSize: [2, 3, 2, null, null, null],
                     display: 'block',
@@ -92,7 +92,7 @@ const SlateServices = ({
                         fontWeight: 'bold',
                         fontFamily: 'heading',
                         textDecoration: 'none',
-                        ml: [1, 3, 1, 1, 1, 1],
+                        ml: '2px',
                     }}
                 >
                     <HoverBgHiUndln

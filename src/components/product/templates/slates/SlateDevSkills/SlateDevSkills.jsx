@@ -71,7 +71,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                         }}
                         {...animation.slideUp1}
                     >
-                        <Headline {...props} as="h1" variant="styles.hxxl">
+                        <Headline {...props} as="h1" variant="styles.h3">
                             My Skills & Capabilities
                         </Headline>
 
@@ -89,7 +89,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                         <Text
                             {...props}
                             sx={{
-                                variant: 'text.text_lg',
+                                variant: 'text.p1',
                             }}
                             // {...animation.slideUp3}
                         >

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import ScrollDownLineAnimated from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ScrollDownLineAnimated'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Busker from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Busker'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 
 // const StyledHeadline = ({ as, ...props }) => (
@@ -12,7 +13,7 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 // 		{...props}
 // 		as={as}
 // 		sx={{
-// 			variant: ['styles.hxxl', null, null, 'styles.hxxxl', null, null],
+// 			variant: ['styles.h3', null, null, 'styles.hxxxl', null, null],
 // 			mb: '0px',
 // 		}}
 // 	/>
@@ -36,17 +37,17 @@ const SlateIntro = ({ sectionBg, ...props }) => (
                 className="introArticle"
                 variant="layout.articleCenterCenter"
             >
-                <Headline
-                    variant="styles.hxxxl"
+                <Busker
+                    variant="styles.bu3"
                     {...props}
                     sx={{
                         mb: 0,
                     }}
                 >
                     I'm Jamie Johnson,
-                </Headline>
-                <Headline
-                    variant="styles.hxxxl"
+                </Busker>
+                <Busker
+                    variant="styles.bu3"
                     as="h1"
                     {...props}
                     sx={{
@@ -54,9 +55,9 @@ const SlateIntro = ({ sectionBg, ...props }) => (
                     }}
                 >
                     frontend web developer.
-                </Headline>
+                </Busker>
                 <Headline
-                    variant="styles.h2"
+                    variant="styles.h3"
                     {...props}
                     sx={{
                         color: 'primary',

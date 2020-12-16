@@ -74,49 +74,65 @@ export default merge(typography, {
         fontWeight: 'bold',
     },
 
-    busker: {
+    // busker: {
+    //     fontFamily: 'heading',
+    //     fontWeight: 'heavy',
+    //     color: 'pink',
+    // },
+
+
+    subline: {
         fontFamily: 'heading',
-        fontWeight: 'heavy',
-        color: 'pink',
-    },
-    headline: {
-        fontFamily: 'heading',
-        fontWeight: 'heavy',
-        letterSpacing: 'tight',
-        mb: 4,
-        lineHeight: [1.2, null, null, 1.2, 1.2, 1.2],
+        fontWeight: 'regular',
+        letterSpacing: 'loose',
+        textTransform: 'uppercase',
+        lineHeight: 1.4,
     },
     subhead: {
         fontFamily: 'heading',
-        fontWeight: 'bold',
+        fontWeight: 'semibold',
+        letterSpacing: 'snug',
         mb: 4,
         color: 'text',
-    },
-    subline: {
-        fontFamily: 'heading',
-        fontWeight: 'light',
-        letterSpacing: 'loose',
-        textTransform: 'uppercase',
-        lineHeight: [1.2, null, null, 1.6, 1.4, 1.4],
+        lineHeight: 1.2,
     },
 
     display: {
-        fontFamily: 'heading',
+        // fontFamily: 'heading',
         fontWeight: 'normal',
+        lineHeight: 1.4,
+        letterSpacing: 'normal',
+    },
+    busker:{
+        // fontFamily: 'heading',
+        fontWeight: 'heavy',
+        lineHeight: 1.2,
+        mb: 2,
+        letterSpacing: 'tight',
+        // fontSize: 11,
+        color: 'blue',
     },
 
-    bodyCopy: {
-        fontFamily: 'body',
-        color: 'text',
+    paragraph: {
+        // fontFamily: 'body',
+        lineHeight: 2,
+        mb: 4,
+
     },
+
+    body: {
+        // fontFamily: 'body',
+        lineHeight: 1.8,
+    },
+
     legal: {
-        fontFamily: 'body',
+        // fontFamily: 'body',
         fontWeight: 'normal',
         fontSize: '10px',
         lineHeight: 1.2,
     },
     caption: {
-        fontFamily: 'heading',
+        // fontFamily: 'heading',
         mt: 2,
         mb: 4,
         fontWeight: 'normal',
@@ -133,70 +149,59 @@ export default merge(typography, {
             color: 'text',
             fontSize: 4,
         },
-        d1: {
-            lineHeight: 1.6,
-            fontSize: 7,
-            maxWidth: '41em',
+        heading: {
+            letterSpacing: 'tight',
+            mb: 4,
+            lineHeight: 1.2,
         },
-        d2: {
-            fontSize: 6,
-            lineHeight: 1.6,
-            maxWidth: '41em',
-        },
-        d3: {
-            lineHeight: 1.4,
-            fontSize: [2, 5, null, null, null, null],
-            maxWidth: '40em',
-        },
-        d4: {
-            lineHeight: 1.4,
-            fontWeight: 'normal',
-            fontSize: 1,
-            maxWidth: '41em',
-        },
-        p_lg: {
-            color: 'text',
-            fontFamily: 'body',
-            lineHeight: 1.8,
-            fontSize: 3,
-            marginBottom: 4,
+
+
+
+
+
+        p1: {
+            // color: 'text',
+            // fontFamily: 'body',
+            // lineHeight: 2,
+            // fontSize: 3,
+            // marginBottom: 4,
             maxWidth: '42em',
         },
-        p_md: {
-            color: 'text',
-            fontFamily: 'body',
-            lineHeight: 2,
-            fontSize: 2,
-            marginBottom: 2,
+        p2: {
+            // color: 'text',
+            // fontFamily: 'body',
+            // lineHeight: 2,
+            // fontSize: 2,
+            // marginBottom: 4,
             maxWidth: '41em',
         },
-        p_sm: {
-            color: 'text',
-            fontFamily: 'body',
-            lineHeight: 2,
-            marginBottom: 2,
-            fontSize: 1,
+        p3: {
+            // color: 'text',
+//             fontFamily: 'body',
+            // lineHeight: 2,
+            // marginBottom: 4,
+            // fontSize: 1,
             maxWidth: '41em',
         },
-        text_lg: {
-            variant: 'text.copy',
-            lineHeight: 2,
-            fontSize: [2, 5, 6, null, 2, null],
-            maxWidth: '41em',
-            mb: 4,
-        },
-        text_md: {
-            variant: 'text.copy',
-            lineHeight: 2,
-            fontSize: [1, 4, 5, null, 2, null],
-            maxWidth: '41em',
-        },
-        text_sm: {
-            variant: 'text.copy',
-            lineHeight: 2,
-            fontSize: 0,
-            maxWidth: '41em',
-        },
+        // b1: {
+        //     variant: 'text.copy',
+        //     lineHeight: 2,
+        //     fontSize: [2, 5, 6, null, 2, null],
+        //     maxWidth: '41em',
+        //     mb: 4,
+        // },
+        // b2: {
+        //     variant: 'text.copy',
+        //     lineHeight: 2,
+        //     fontSize: [1, 4, 5, null, 2, null],
+        //     maxWidth: '41em',
+        // },
+        // b3: {
+        //     variant: 'text.copy',
+        //     lineHeight: 2,
+        //     fontSize: 0,
+        //     maxWidth: '41em',
+        // },
         utility_lg: {
             lineHeight: 2,
             fontSize: 2,
@@ -218,65 +223,98 @@ export default merge(typography, {
             fontWeight: 'regular',
         },
 
-        hxxxl: {
-            lineHeight: [1.2, null, null, null, 1, null],
-            mb: 4,
-            letterSpacing: 'tight',
-            fontSize: [7, 10, 12, 6, 8, null],
-        },
-        hxxl: {
-            fontFamily: 'heading',
-            fontWeight: 'heavy',
-            lineHeight: 1.2,
-            mb: 2,
-            letterSpacing: 'tight',
-            fontSize: [5, 9, 10, null, 6, null],
-        },
-        hxl: {
-            fontFamily: 'heading',
-            fontWeight: 'heavy',
-            lineHeight: 1.2,
-            letterSpacing: 'tight',
-            fontSize: [4, 8, 9, null, 6, null],
-        },
+        // hxxxl: {
+        //     lineHeight: 1.2,
+        //     mb: 4,
+        //     letterSpacing: 'tight',
+        //     fontSize: 12,
+        // },
+        // hxxl: {
+        //     fontFamily: 'heading',
+        //     fontWeight: 'heavy',
+        //     lineHeight: 1.2,
+        //     mb: 2,
+        //     letterSpacing: 'tight',
+        //     fontSize: 11,
+        // },
+        // hxl: {
+        //     fontFamily: 'heading',
+        //     fontWeight: 'heavy',
+        //     lineHeight: 1.2,
+        //     letterSpacing: 'tight',
+        //     fontSize: 10,
+        // },
 
-        h1: {
-            fontSize: [7, 9, null, null, 7, null],
-        },
-        h2: {
-            fontSize: [6, 8, null, null, null, null],
-        },
-        h3: {
-            fontSize: [5, 7, 7, null, null, null],
-        },
-        h4: {
-            fontSize: [4, 6, 6, null, null, null],
-        },
-        h5: {
-            fontSize: [3, 5, 5, null, null, null],
-        },
-        h6: {
-            fontSize: 2,
-        },
+        // bu1: {
+        // fontSize: 2,
+        // },
+        // h1: {
+        //     fontSize: 9,
+        // },
+        // h2: {
+        //     fontSize: 8,
+        // },
+        // h3: {
+        //     fontSize: 7,
+        // },
+        // h4: {
+        //     fontSize: 6,
+        // },
+        // h5: {
+        //     fontSize: 5,
+        // },
+        // h6: {
+        //     fontSize: 4,
+        // },
+        // d1: {
+        //     fontSize: 7,
+        // },
+        // d2: {
+        //     fontSize: 6,
+        // },
+        // d3: {
+        //     fontSize: 5,
+        // },
+        // d4: {
+        //     fontSize: 4,
+        // },
+        // b1: {
+        //     fontsize: 5,
+        // },
+        // b2: {
+        //     fontsize: 4,
+        // },
+        // b3: {
+        //     fontsize: 3,
+        // },
+        // p1: {
+        //     fontsize: 3,
+        // },
+        // p2: {
+        //     fontsize: 2,
+        // },
+        // p3: {
+        //     fontsize: 1,
+        // },
 
-        sl1: {
-            fontSize: 6,
-        },
-        sl2: {
-            fontSize: 5,
-        },
-        sl3: {
-            fontSize: 4,
-        },
-        sl4: {
-            fontSize: 3,
-        },
-        sl5: {
-            fontSize: 2,
-        },
-        sl6: {
-            fontSize: 1,
-        },
+        // sl1: {
+        //     fontSize: 6,
+        // },
+        // sl2: {
+        //     fontSize: 5,
+        // },
+        // sl3: {
+        //     fontSize: 4,
+        // },
+        // sl4: {
+        //     fontSize: 3,
+        // },
+        // sl5: {
+        //     fontSize: 2,
+        // },
+        // sl6: {
+        //     fontSize: 1,
+        // },
 
         a: {
             color: 'primary',

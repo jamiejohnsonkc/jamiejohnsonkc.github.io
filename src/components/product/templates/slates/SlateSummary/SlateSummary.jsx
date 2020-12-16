@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import ContactIconsBar from '../../elements/ContactIconsBar'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
@@ -15,17 +16,17 @@ import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/compon
 
 const IntroParagraph = (props) => (
     // <Box as="p">
-    <Text
-        as="p"
-        variant="text_lg"
+    <Paragraph
+        variant="styles.p2"
         {...props}
         sx={{
-            maxWidth: ['33em', null, null, null, '39em', '33em'],
-            mb: [4, 4, 4, null, null, null],
+            maxWidth: ['33em', null, null, null, '39em', '40em'],
+            mb: [3, 2, 2, null, null, 4],
+            // lineHeight: 2,
         }}
     >
         {props.children}
-    </Text>
+    </Paragraph>
     // </Box>
 )
 
@@ -65,21 +66,20 @@ const SlateSummary = ({ sectionBg, ...props }) => (
         >
             <Article className="introArticle">
                 <Headline
-                    {...props}
                     as="h1"
-                    variant="styles.hxxl"
-                    {...animation.slideUp1}
+                    variant="styles.h3"
                     {...props}
                     sx={{
-                        mb: 5,
+                        mb: 4,
                     }}
+                    // {...animation.slideUp1}
                 >
                     Hiyas.
                 </Headline>
                 {/* <Text
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
+                        variant: 'text.p1',
                         maxWidth: '34em',
                     }}
                     {...animation.slideUp2}
@@ -101,7 +101,9 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         perspective at posts with a few global corporations.
                     </Box>
                 </Text> */}
-                <IntroParagraph {...animation.slideUp2}>
+                <IntroParagraph
+                // {...animation.slideUp2}
+                >
                     I've spent the better part of my career at agencies leading
                     development of{' '}
                     <IntroEmph>
@@ -112,7 +114,9 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     <IntroEmph>real-world perspective </IntroEmph> at posts with
                     a few global corporations.
                 </IntroParagraph>
-                <IntroParagraph {...animation.slideUp3}>
+                <IntroParagraph
+                // {...animation.slideUp3}
+                >
                     A while back I took time to be a{' '}
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
                     feedings and changes I began tinkering with{' '}
@@ -122,7 +126,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     can back it up with senior-level marketing chops.
                 </IntroParagraph>
                 <IntroParagraph
-                    {...animation.slideUp4}
+                    // {...animation.slideUp4}
                     {...props}
                     sx={{
                         mb: 5,
@@ -135,7 +139,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 {/* <Text
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
+                        variant: 'text.p1',
 
                         // mb: 4,
                         maxWidth: '34em',
@@ -151,7 +155,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 {/* <Text
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
+                        variant: 'text.p1',
 
                         // mb: 4,
                         maxWidth: '34em',
@@ -171,13 +175,13 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         fontWeight: 'heavy',
                         color: 'primary',
                     }}
-                    {...animation.slideUp5}
+                    // {...animation.slideUp5}
                 >
                     Need a coder? A website? More?
                     <Link
                         href="mailto:jamiejohnsonkc@gmail.com"
                         {...props}
-                        {...animation.slideUp6}
+                        // {...animation.slideUp6}
                         sx={{
                             textDecoration: 'none',
                             ml: [1, 3, 1, 1, 1, 1],
