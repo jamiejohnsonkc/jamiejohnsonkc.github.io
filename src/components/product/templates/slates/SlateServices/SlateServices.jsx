@@ -26,6 +26,11 @@ const SlateServices = ({
             alignItems="center"
             className="services__section"
             containerVariant="layout.containerSlider"
+            sx={{
+                '& .container': {
+                    gridTemplateRows: '41% 25% 50%',
+                },
+            }}
         >
             <Headline
                 {...animation.slideUp1}
@@ -33,7 +38,7 @@ const SlateServices = ({
                 as="h3"
                 sx={{
                     variant: 'styles.h1',
-                    px: [2, null, null, null, null],
+                    px: [2, null, 4, null, null, null],
                     mb: 4,
                 }}
             >
@@ -44,10 +49,11 @@ const SlateServices = ({
                 {...animation.slideUp2}
                 {...props}
                 sx={{
-                    mb: [3, 0, 0, 0, 4],
+                    mb: [3, 0, 0, 0, 4, 4],
                     variant: 'layout.servicesSlider',
 
                     overflow: [
+                        'hidden',
                         'hidden',
                         'hidden',
                         'visible',
@@ -62,12 +68,16 @@ const SlateServices = ({
             <Box
                 // {...animation.slideUp5}
                 {...props}
+                className="servicesCta"
                 sx={{
-                    mt: [0, 3, 0, 0, 0],
-                    ml: [0, 2, 0, 0, 0],
-                    variant: 'text.text_lg',
-                    fontSize: [2, 3, 2, null, null, null],
+                    mt: [0, 3, 0, 0, 0, 0],
+                    lineHeight: 2,
+                    fontSize: [2, 5, 4, null, 2, null],
+                    ml: [0, 2, 0, 0, 0, 0],
+                    px: [0, 0, 4, 0, 0, 0],
+                    // fontSize: [2, 3, 2, null, null, null],
                     display: 'block',
+                    position: 'relative',
                     fontFamily: 'heading',
                     fontWeight: 'heavy',
                     color: 'primary',
@@ -82,7 +92,7 @@ const SlateServices = ({
                         fontWeight: 'bold',
                         fontFamily: 'heading',
                         textDecoration: 'none',
-                        ml: '1px',
+                        ml: [1, 3, 1, 1, 1, 1],
                     }}
                 >
                     <HoverBgHiUndln

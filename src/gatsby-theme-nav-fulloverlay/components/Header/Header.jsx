@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Flex } from 'theme-ui'
+import { jsx, Flex, Box, Grid } from 'theme-ui'
 import React from 'react'
 
 import PropTypes from 'prop-types'
@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import Brand from '../../../../../gatsby-theme-nav-fulloverlay/src/components/Brand'
 import NavToggle from '../../../../../gatsby-theme-nav-fulloverlay/src/components/NavToggle'
 import Logo from '../../../components/product/bits/Logo'
+import useWindowSize from '../../../../../gatsby-theme-jim-components/src/hooks/useWindowSize'
 
 const Header = ({
     navOpen,
@@ -19,41 +20,91 @@ const Header = ({
         setNavOpen(!navOpen)
     }
 
+    const size = useWindowSize()
+    const smallDivSize = `calc(${size.width}px - 24px)`
+    const divSize = `calc(${size.width}px - 64px)`
+
     return (
         <>
-            <Flex
+            <Grid
                 className="header"
                 {...props}
                 sx={{
-                    py: [0, 3, 3, 3, 3],
-                    px: [3, 4, 3, 3, 3],
-                    margin: '0',
+                    // py: [0, 3, 3, 3, 3, 3],
+                    // px: [2, 4, 3, 3, 3, 3],
+                    // margin: '0',
+                    // minWidth: '0',
+                    // zIndex: '100',
+                    // top: '16px',
+                    // display: 'flex',
+                    // alignItems: 'center',
+                    // justifyContent: 'space-between',
+                    // right: [null, null, '32px', '32px', '32px'],
+                    // left: [null, null, '32px', '32px', '32px'],
+                    // width: ['100vw', null, '90vw'],
+                    // position: 'fixed',
+                    // py: [0, 3, 3, 3, 3, 3],
+                    // px: [2, 4, 3, 3, 3, 3],
+                    // margin: '0',
                     minWidth: '0',
-                    display: 'flex',
+                    zIndex: '100',
+                    display: 'grid',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    zIndex: '100',
-                    top: '16px',
-                    right: ['0', '0', '32px', '32px', '32px'],
-                    left: ['0', '0', '32px', '32px', '32px'],
+                    width: [
+                        `${smallDivSize}`,
+                        `${divSize}`,
+                        null,
+                        null,
+                        null,
+                        null,
+                    ],
                     position: 'fixed',
+                    left: '50%',
+                    transform: 'translate(-50%, 0)',
+                    gridTemplateColumns: [
+                        '3em 1fr 2em',
+                        null,
+                        '3em 1fr 3em',
+                        '3em 1fr 2em',
+                        '3em 1fr 3em',
+                        null,
+                    ],
+                    top: ['16px', null, '32px', null, null, null],
+                    columnGap: '0',
+                    // right: [null, null, '32px', '32px', '32px'],
+                    // left: [null, null, '32px', '32px', '32px'],
                 }}
             >
-                <Brand
-                    largeScreenBrand={<Logo />}
-                    smallScreenBrand={<Logo />}
-                    display="inline-flex"
-                />
-
-                <NavToggle
+                <Box
                     {...props}
-                    className="navToggle"
-                    type="button"
-                    onClick={handleMenuToggle}
-                    navOpen={navOpen}
-                    display="inline-flex"
-                />
-            </Flex>
+                    sx={{
+                        justifySelf: 'start',
+                        display: 'grid',
+                    }}
+                >
+                    <Brand
+                        largeScreenBrand={<Logo />}
+                        smallScreenBrand={<Logo />}
+                    />
+                </Box>
+                <Box />
+                <Box
+                    {...props}
+                    sx={{
+                        justifySelf: 'start',
+                        display: 'grid',
+                    }}
+                >
+                    <NavToggle
+                        {...props}
+                        className="navToggle"
+                        type="button"
+                        onClick={handleMenuToggle}
+                        navOpen={navOpen}
+                    />
+                </Box>
+            </Grid>
 
             {/* <RightNav navOpen={navOpen} /> */}
         </>

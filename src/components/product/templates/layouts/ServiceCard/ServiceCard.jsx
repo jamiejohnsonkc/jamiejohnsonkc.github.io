@@ -51,7 +51,8 @@ const ServiceCard = ({
                     }}
                 >
                     <VisHdngText
-                        blockWidth="100%"
+                        // blockWidth="100%"
+
                         compImage={compImage}
                         visualHeight="2.25em"
                         visualMb={5}
@@ -64,10 +65,6 @@ const ServiceCard = ({
                         textMb={0}
                         textText={textText}
                         textVariant="text.text_lg"
-                        {...props}
-                        sx={{
-                            lineHeight: 1.25,
-                        }}
                     />
 
                     {/* {linkText && (

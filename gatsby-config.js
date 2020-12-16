@@ -53,18 +53,18 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-typescript`,
     `gatsby-theme-nav-fulloverlay`,
-    `gatsby-theme-jim-components`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-preload-fonts`,
     `gatsby-theme-jim-theme-ui`,
+    `gatsby-theme-jim-components`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages`,
       },
     },
-    // `gatsby-plugin-transition-link`,
   ],
 }

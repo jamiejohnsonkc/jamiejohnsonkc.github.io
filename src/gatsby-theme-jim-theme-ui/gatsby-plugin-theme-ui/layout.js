@@ -1,45 +1,73 @@
 //* shared properties/values
 const serviceSliderCard = {
-    height: ['475px', '800px', '440px', '500px', '540px', '540px'],
+    height: ['475px', '800px', '1000px', '500px', '540px', '540px'],
 }
 
 export default {
     //* Global
-    main: {
-        height: ['100%', '100%', '100%', '100%', '100%', '100%'],
-        zIndex: 1,
-    },
+    // main: {
+    //     height: ['100%', '100%', '100%', '100%', '100%', '100%'],
+    //     zIndex: 1,
+
+    // },
 
     section: {
-        minHeight: ['454px', null, '700px', null, null, null],
+        minHeight: ['454px', null, '100vh', null, null, null],
         zIndex: 1,
         py: 6,
 
         '@media(min-height:639px)': {
             minHeight: '100vh',
+            scrollSnapType: 'y mandatory',
+            scrollSnapAlign: 'start',
         },
     },
     article: {
         // flex: '0 0 auto',
         // minWidth: '0',
         // px: [0, 2, 0, 4, 5, 7],
-        px: [0, 2, 0, 4, 7, 7],
+        px: [2, 4, 0, 'none', 'none', 'none' ],
         flex: '0 0 auto',
     },
+
+articleCenterCenter:{
+
+},
+
     container: {
         maxWidth: [
             'container.5',
             null,
-            null,
             'container.4',
-            null,
-            'container.3',
+            'container.4',
+            'container.4',
+            'container.4',
+
         ],
         height: '100%',
         position: 'relative',
     },
+
+workSampleFlexContainer: {
+    maxWidth: [
+        'container.5',
+        null,
+        'container.4',
+        'container.4',
+        null,
+        'container.3',
+    ],
+    height: '100%',
+    position: 'relative',
+    flexDirection: ['column', 'column', 'row', 'row', 'row', 'row'],
+    // bg: ['blue', 'green', 'yellow', 'red', 'orange', 'purple' ],
+},
+
+
+
+
     containerFlexDirectionColRow: {
-        flexDirection: ['column', 'column', 'row', 'row', 'row', 'row'],
+        flexDirection: ['column', 'column', 'column', 'column', 'row', 'row'],
     },
 
     //* ValueSection Styles
@@ -49,14 +77,14 @@ export default {
         px: [2, 4, 1, 4, null, null],
         py: [6, 7, 6, 6, 7, 4],
         scrollSnapType: 'y mandatory',
-        //! scrollSnapAlign: [null, 'start', 'start', 'start', 'start','start'],
+        scrollSnapAlign: [null, 'start', null, null, null,null],
         zIndex: 1,
     },
     containerValue: {
         maxWidth: [
             'container.5',
             null,
-            null,
+            'container.4',
             'container.5',
             'container.4',
             null,
@@ -73,7 +101,7 @@ export default {
         py: 2,
         width: '100%',
         display: 'block',
-        scrollSnapAlign: [null, 'start', 'start', 'start', 'center'],
+        scrollSnapAlign: [null, 'start', 'start', 'start', 'center','center'],
         zIndex: 1,
     },
 
@@ -82,27 +110,26 @@ export default {
         alignItems: 'normal',
         alignSelf: 'center',
         display: 'flex',
-        flex: [1, 1, '1 1 0%', '1 1 0%', '1 1 0%'],
+        flex: [1, 1, 1, '1 1 0%', '1 1 0%','1 1 0%'],
         flexWrap: 'wrap',
         pb: [0, 0, 0, 0, 0, 0],
-        pl: [0, 4, 0, 0, 0, 0],
+        pl: [2, 4, 0, 0, 0, 0],
         position: 'relative',
-        pr: [0, 4, 0, 0, 0, 0],
+        pr: [2, 4, 0, 0, 0, 0],
         pt: [0, 0, 0, 0, 0, 0],
     },
 
     //* Services Styles
     sectionSlider: {
-        alignItems: [null, null, 'center', null, null, null],
+        alignItems: [null, null, null, 'center',  null, null],
         display: 'block',
-        minHeight: [null, '1000px', null, null, null, null],
+        minHeight: [null, '1000px', '1000px', null, null, null],
         position: 'relative',
         px: [2, null, null, null, null, null],
         scrollSnapType: 'y mandatory',
         zIndex: 3,
         py: 6,
-
-        //! scrollSnapAlign: [null, 'start', 'start', 'start', 'start','start'],
+    scrollSnapAlign: [null, 'start', 'start', 'start', 'start','start'],
     },
     serviceSliderArticle: {
         pl: [0, 2, 0, 5, 5, 5],
@@ -131,9 +158,9 @@ export default {
         ...serviceSliderCard,
         height: serviceSliderCard.height,
         bg: 'surface',
-        px: [4, 5, 5, 5, 5, 5],
+        px: [4, 5, 6, 5, 5, 5],
         // py: [4, 6, 5, 5, 5, 5],
-        width: ['90vw', '544px', '392px', '392px', '392px', '392px'],
+        width: ['90vw', '544px', '88vw', '392px', '392px', '392px'],
         borderRadius: 6,
         cursor: 'grab',
     },

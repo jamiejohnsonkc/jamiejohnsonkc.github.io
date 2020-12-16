@@ -26,13 +26,13 @@ function NextArrow(props) {
                 display: 'block',
                 position: 'absolute',
                 zIndex: '5',
-                top: ['unset', 'unset', '45%', '45%', '45%'],
-                bottom: ['5%', '5%', 'unset', 'unset', 'unset'],
-                right: ['8px', '36px', '-48px', '-48px', '-48px'],
+                top: ['unset', 'unset', 'unset', '45%', '45%', '45%'],
+                bottom: ['5%', '5%', '5%', 'unset', 'unset', 'unset'],
+                right: ['8px', '36px', '-14px', '-48px', '-48px', '-48px'],
                 '& > svg': {
                     fill: 'primary',
-                    height: ['2em', '2em', '2em', '2em', '2em'],
-                    width: ['2em', '2em', '2em', '2em', '2em'],
+                    height: ['2em', '2em', '4em', '2em', '2em', '2em'],
+                    width: ['2em', '2em', '4em', '2em', '2em', '2em'],
                 },
             }}
             onClick={onClick}
@@ -54,12 +54,12 @@ function PrevArrow(props) {
                 display: 'block',
                 position: 'absolute',
                 zIndex: '5',
-                top: ['5%', '5%', '45%', '45%', '45%'],
-                left: ['8px', '8px', '-48px', '-48px', '-48px'],
+                top: ['5%', '5%', '5%', '45%', '45%', '45%'],
+                left: ['8px', '8px', '0px', '-48px', '-48px', '-48px'],
                 '& > svg': {
                     fill: 'primary',
-                    height: ['2em', '2em', '2em', '2em', '2em'],
-                    width: ['2em', '2em', '2em', '2em', '2em'],
+                    height: ['2em', '2em', '4em', '2em', '2em', '2em'],
+                    width: ['2em', '2em', '4em', '2em', '2em', '2em'],
                 },
             }}
             onClick={onClick}
@@ -93,7 +93,7 @@ const ServicesSlider = (props) => {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 830,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

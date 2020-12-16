@@ -20,11 +20,12 @@ const ReactIndexPage = (props) => {
                 <SlateProjects
                     id="projects"
                     project1Bg="transparent"
-                    project1NumberColor="revOverlay95"
+                    project1NumberColor="overlay4"
                     project2Bg="blackSurface"
                     project2TextColor="revText"
                     project2NumberColor="revOverlay2"
                     project3Bg="transparent"
+                    project3NumberColor="overlay4"
                 />
                 <SlateServices id="services" sectionBg="overlay3" />
                 <SlateValue id="value" sectionBg="darkBackground" />

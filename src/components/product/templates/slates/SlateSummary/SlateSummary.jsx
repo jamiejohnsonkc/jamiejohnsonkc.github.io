@@ -17,11 +17,11 @@ const IntroParagraph = (props) => (
     // <Box as="p">
     <Text
         as="p"
-        variant="text.text_md"
+        variant="text_lg"
         {...props}
         sx={{
-            maxWidth: '33em',
-            mb: 3,
+            maxWidth: ['33em', null, null, null, '39em', '33em'],
+            mb: [4, 4, 4, null, null, null],
         }}
     >
         {props.children}
@@ -46,6 +46,22 @@ const SlateSummary = ({ sectionBg, ...props }) => (
             alignItems="center"
             className="introSummary"
             sectionVariant="layout.section"
+            {...props}
+            sx={{
+                minHeight: [null, null, '2200px', '100vh', '100vh', '100vh'],
+            }}
+            // sx={{
+            //     '& > .container': {
+            //         minHeight: [null, null, '1000px', 'unset', null, null],
+            //     },
+            // }}
+
+            // {...props}
+            // sx={{
+            //     '@media(min-height:700px and max-height:2000px)': {
+            //         minHeight: '1000px',
+            //     },
+            // }}
         >
             <Article className="introArticle">
                 <Headline
@@ -147,10 +163,9 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 </Text> */}
                 <Text
                     {...props}
+                    variant="d3"
                     sx={{
-                        variant: 'text.text_lg',
-                        fontSize: [2, 3, 2, null, null, null],
-                        mb: [2, 3, 1, 4, 4, 5],
+                        mb: [2, 3, 6, 4, 4, 5],
                         display: 'block',
                         fontFamily: 'heading',
                         fontWeight: 'heavy',
@@ -165,8 +180,9 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         {...animation.slideUp6}
                         sx={{
                             textDecoration: 'none',
-                            ml: [0, 0, 1, 1, 1, 1],
-                            mb: [2, 2, 0, 2, 0, 0],
+                            ml: [1, 3, 1, 1, 1, 1],
+                            mb: [2, 2, 3, 2, 0, 0],
+                            fontSize: 'inherit',
                         }}
                     >
                         <HoverBgHiUndln
@@ -190,7 +206,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     // justifyContent: 'center',
                     alignItems="center"
                     flex="1 0 auto"
-                    width={['12em', '22em', '18em', '18em', '18em']}
+                    width={['100%', '100%', '100%', '18em', '18em']}
                     minHeight="4em"
                     //width: ,
                     // motion1='...animation.slideUp1'

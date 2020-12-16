@@ -144,11 +144,11 @@ SlateProjects.propTypes = {
 }
 
 SlateProjects.defaultProps = {
-    project1NumberColor: 'revOverlay5',
+    project1NumberColor: 'overlay4',
     project1TextColor: 'text',
     project2NumberColor: 'overlay2',
     project2TextColor: 'text',
-    project3NumberColor: 'overlay2',
+    project3NumberColor: 'overlay4',
     project3TextColor: 'text',
     iconFill: 'muted',
     // project1Bg: 'transparent',

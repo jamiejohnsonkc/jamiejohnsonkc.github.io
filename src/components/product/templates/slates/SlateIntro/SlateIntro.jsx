@@ -19,46 +19,55 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 // )
 
 const SlateIntro = ({ sectionBg, ...props }) => (
-	<>
-		<SectionGrid
-			sectionBg={sectionBg}
-			justifyContent='start'
-			alignItems='center'
-			className='intro__section'
-		>
-			<Article className='intro__article'>
-				<Headline
-					variant='styles.hxxxl'
-					{...props}
-					sx={{
-						mb: 0,
-					}}
-				>
-					I'm Jamie Johnson,
-				</Headline>
-				<Headline
-					variant='styles.hxxxl'
-					as='h1'
-					{...props}
-					sx={{
-						mb: 4,
-					}}
-				>
-					frontend web developer.
-				</Headline>
-				<Headline
-					variant='styles.h2'
-					{...props}
-					sx={{
-						color: 'primary',
-					}}
-				>
-					(and more)
-				</Headline>
-			</Article>
-			<ScrollDownLineAnimated mt={[5, null, null, null, '0px', '0px']} />
-		</SectionGrid>
-	</>
+    <>
+        <SectionGrid
+            sectionBg={sectionBg}
+            justifyContent="start"
+            alignItems="center"
+            className="introSection"
+            {...props}
+            sx={{
+                '& .container': {
+                    gridTemplateRows: '90% 10%',
+                },
+            }}
+        >
+            <Article
+                className="introArticle"
+                variant="layout.articleCenterCenter"
+            >
+                <Headline
+                    variant="styles.hxxxl"
+                    {...props}
+                    sx={{
+                        mb: 0,
+                    }}
+                >
+                    I'm Jamie Johnson,
+                </Headline>
+                <Headline
+                    variant="styles.hxxxl"
+                    as="h1"
+                    {...props}
+                    sx={{
+                        mb: 4,
+                    }}
+                >
+                    frontend web developer.
+                </Headline>
+                <Headline
+                    variant="styles.h2"
+                    {...props}
+                    sx={{
+                        color: 'primary',
+                    }}
+                >
+                    (and more)
+                </Headline>
+            </Article>
+            <ScrollDownLineAnimated mt={[5, null, null, null, '0px', '0px']} />
+        </SectionGrid>
+    </>
 )
 SlateIntro.propTypes = {}
 

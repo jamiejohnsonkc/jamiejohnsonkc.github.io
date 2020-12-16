@@ -96,28 +96,6 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             Consectetur sit irure mollit dolore Lorem aliqua
                             proident. Est fugiat aute anim exercitation.
                         </Text>
-                        {/* <Text
-							{...props}
-							sx={{
-								mb: [4, 4, 4, 4, 4],
-								fontSize: [2, 3, 2, 2, 2],
-								fontFamily: 'body',
-								lineHeight: 2,
-							}}
-						>
-							Here's what I bring to the table
-						</Text> */}
-                        {/* <Styled.h3
-							{...props}
-							sx={{
-								// textTransform: 'uppercase',
-								color: 'muted',
-								// fontWeight: 'semibold',
-								mb: 4,
-							}}
-						>
-							Here's what I bring to the table
-						</Styled.h3> */}
 
                         <ProgBarGrpAccdn />
 

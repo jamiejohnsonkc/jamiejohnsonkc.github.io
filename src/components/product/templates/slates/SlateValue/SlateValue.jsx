@@ -121,7 +121,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
             justifyContent="center"
             alignItems="center"
             className="value__section"
-            containerVariant="layout.containerValue"
+            containerVariant="containerValue"
         >
             <Article>
                 <Grid

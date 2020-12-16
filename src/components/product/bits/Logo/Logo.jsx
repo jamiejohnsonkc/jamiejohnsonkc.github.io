@@ -10,8 +10,8 @@ const Logo = (props) => (
         className="headerBrand"
         {...props}
         sx={{
-            width: ['2em', '3em', '3em', '3em', '3em'],
-            height: ['2em', '3em', '3em', '3em', '3em'],
+            width: ['2em', '3em', '3em', '3em', '3em', '3em'],
+            height: ['2em', '3em', '3em', '3em', '3em', '3em'],
             display: 'inline-flex',
             cursor: 'pointer',
             // display: 'flex',

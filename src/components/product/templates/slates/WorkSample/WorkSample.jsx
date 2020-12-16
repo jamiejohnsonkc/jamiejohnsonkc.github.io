@@ -13,13 +13,12 @@ import ReactGlyph from '../../../../../svg/assets/serviceGlyphs/reactGlyph.svg'
 import ProjectVisualLarge from '../../elements/ProjectVisualLarge'
 import ProjectVisualSmall from '../../elements/ProjectVisualSmall/ProjectVisualSmall'
 
-//TODO refactor, add tooltip, dry up pills, move to appropriate dir
-//TODO add context hook to alter project number animation on mobile
+// TODO refactor, add tooltip, dry up pills, move to appropriate dir
+// TODO add context hook to alter project number animation on mobile
 
 const WorkSample = ({
     // sectionBg,
-    containerFlexDirection,
-
+    containerVariant,
     iconFill,
     iconHeight,
     smallIconFill,
@@ -42,13 +41,22 @@ const WorkSample = ({
 }) => (
     <>
         <SectionFlex
-            containerFlexDirection={(theme) =>
-                `${theme.layout.containerFlexDirectionColRow}`
-            }
+            // containerFlexDirection={(theme) =>
+            //     `${theme.layout.containerFlexDirectionColRow}`
+            // }
+
             sectionBg={sectionBg}
+            className="workSampleSection"
+            {...props}
+            sx={{
+                '.container': {
+                    variant: 'layout.workSampleFlexContainer',
+                },
+            }}
         >
             <Article
                 {...props}
+                className="workSampleArticle"
                 sx={{
                     variant: 'layout.workSampleArticle',
                 }}
@@ -61,17 +69,19 @@ const WorkSample = ({
                         // display: 'flex',
                         position: [
                             'relative',
-                            'absolute',
+                            'relative',
+                            'relative',
                             'absolute',
                             'absolute',
                             'absolute',
                         ],
-                        top: [null, '-5em', '-8em', '-1em', '-21em'],
-                        left: [null, null, '12em', '2em', null, '-5em'],
+                        top: [null, null, null, '-1em', '-21em', '-21em'],
+                        left: [null, null, null, '2em', null, '-5em'],
                         flex: 'none',
                         display: 'block',
                         minHeight: '4em',
-                        height: ['5.5em', '5.5em', '6em', '6em', '6em'],
+                        height: [null, null, null, null, '6em', '6em'],
+                        lineHeight: 1,
                         minWidth: '100%',
                         zIndex: '2',
                     }}
@@ -81,7 +91,14 @@ const WorkSample = ({
                         {...props}
                         sx={{
                             color: `${projectNumberColor}`,
-                            fontSize: ['4em', '4em', '28em', '20em', '24em'],
+                            fontSize: [
+                                '4em',
+                                '6em',
+                                '8em',
+                                '20em',
+                                '24em',
+                                null,
+                            ],
                             fontFamily: 'heading',
                             fontWeight: 'heavy',
                             letterSpacing: 'tight',
@@ -96,7 +113,7 @@ const WorkSample = ({
                     className="projectIntro"
                     {...props}
                     sx={{
-                        px: [0, 0, 4, 2, 2],
+                        px: [0, 0, 0, 2, 2, 2],
                         position: 'relative',
                         zIndex: 2,
                     }}
@@ -109,7 +126,7 @@ const WorkSample = ({
                             variant: [
                                 'styles.h2',
                                 'styles.h1',
-                                'styles.h2',
+                                'styles.h1',
                                 'styles.h2',
                                 'styles.h2',
                                 'styles.h1',
@@ -160,10 +177,10 @@ const WorkSample = ({
                         {...props}
                         className="projectText"
                         sx={{
-                            variant: 'text.text_lg',
+                            variant: 'text_lg',
                             mb: 5,
                             color: `${textColor}`,
-                            pr: ['unset', 'unset', 'unset', 'unset', 4, 4],
+                            pr: ['unset', 'unset', 'unset', 'unset', 4, 4, 4],
                             maxWidth: '34em',
                         }}
                         {...animation.slideUp4}
@@ -180,8 +197,16 @@ const WorkSample = ({
                                 'block',
                                 'block',
                                 'block',
+                                'block',
                             ],
-                            flexWrap: ['wrap', 'wrap', 'none', 'none', 'none'],
+                            flexWrap: [
+                                'wrap',
+                                'wrap',
+                                'none',
+                                'none',
+                                'none',
+                                'none',
+                            ],
                         }}
                     >
                         {/* <Pill
@@ -208,13 +233,20 @@ const WorkSample = ({
 								>
 									Site
 								</ExtLink>
-								</Pill>*/}
+								</Pill> */}
                         <Pill
                             {...props}
                             className="repoLinkButton"
                             sx={{
                                 bg: 'primary',
-                                flex: ['1 0 100%', '1 0 100%', '0', '0', '0'],
+                                flex: [
+                                    '1 0 100%',
+                                    '1 0 100%',
+                                    '0',
+                                    '0',
+                                    '0',
+                                    '0',
+                                ],
                                 '& > a': {
                                     mr: 0,
                                 },

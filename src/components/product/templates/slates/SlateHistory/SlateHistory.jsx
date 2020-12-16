@@ -102,7 +102,7 @@ const SlateHistory = ({ sectionBg, ...props }) => (
                             fontSize: [1, 3, 3, 3, 2],
                             maxWidth: [null, null, null, '15em', '15em'],
                             fontFamily: 'heading',
-                            // scrollSnapAlign: [null, null, 'start', 'start', 'start'],
+                            scrollSnapAlign: [null, null, 'start', null, null],
                         }}
                     >
                         Here's some of the brands I've helped grow
