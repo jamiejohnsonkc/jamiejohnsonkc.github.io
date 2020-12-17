@@ -8,7 +8,7 @@ const Main = (props) => {
         <Box
             {...props}
             sx={{
-                height: '100%',
+                // height: '100%',
                 zIndex: 1,
                 // padding: [null, null, 3, 3, 3, 3],
             }}

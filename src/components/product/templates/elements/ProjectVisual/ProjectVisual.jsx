@@ -32,7 +32,7 @@ const ProjectVisual = ({
         }}
     >
         <Box
-            {...animation.slideUp2}
+            // {...animation.slideUp2}
             {...props}
             sx={{
                 pointerEvents: 'none',

@@ -48,9 +48,9 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             '100%',
                             '100%',
                             '86em',
-                            'container.5',
-                            'container.5',
-                            'container.5',
+                            'container.6',
+                            'container.6',
+                            'container.6',
                         ],
                         height: [
                             null,

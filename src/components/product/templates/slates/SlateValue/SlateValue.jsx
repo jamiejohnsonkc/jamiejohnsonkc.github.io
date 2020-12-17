@@ -7,6 +7,7 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
+import Subhead from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import FluidPeizer from '../../../../../hooks/imageHooks/FluidPeizer'
 import FluidStrunk from '../../../../../hooks/imageHooks/FluidStrunk'
@@ -23,11 +24,11 @@ const NumberBadge = ({ number, ...props }) => (
             color: 'revText',
             display: 'inline-flex',
             fontFamily: 'heading',
-            fontSize: [1, 5, 5, 2, 3, 3],
-            height: ['30px', '50px', '60px', null, null, null],
-            width: ['30px', '50px', '60px', null, null, null],
+            fontSize: [1, 5, 5, 2, 3, 3, 3, 3],
+            height: ['30px', '50px', '60px', null, null, null, null, null],
+            width: ['30px', '50px', '60px', null, null, null, null, null],
             justifyContent: 'center',
-            mr: [2, 3, 3, 3, 3, 3],
+            mr: [2, 3, 3, 3, 3, 3, 3, 3],
             position: 'relative',
         }}
     >
@@ -36,27 +37,29 @@ const NumberBadge = ({ number, ...props }) => (
 )
 
 const BadgeHead = ({ text, ...props }) => (
-    <Subline
+    <Subhead
         {...props}
         as="h3"
         sx={{
             variant: [
-                'styles.h6',
-                'styles.h5',
+                'styles.d5',
+                'styles.d5',
                 'styles.h4',
                 'styles.d2',
                 'styles.d4',
+                null,
+                null,
                 null,
             ],
             display: 'inline-grid',
             color: 'revText',
             mb: '0px',
             fontWeight: 'regular',
-            letterSpacing: 'loose',
+            letterSpacing: 'lazy',
         }}
     >
         {text}
-    </Subline>
+    </Subhead>
 )
 
 const NumberBadgeHead = ({ number, text, ...props }) => (
@@ -64,7 +67,7 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
         {...props}
         sx={{
             display: 'inline-block',
-            mb: [2, 4, 4, 2, 4, 3],
+            mb: [2, 4, 4, 2, 4, 3, 3, 3],
         }}
     >
         <NumberBadge number={number} />
@@ -85,15 +88,15 @@ const DisplayText = (props) => (
             //     'text.d3',
             //     null,
             // ],
-            fontSize: [1, 4, 5, 3, 3, 3],
+            fontSize: [2, 4, 5, 3, 3, 3, 3, 3],
             // fontWeight: [null, null, null, 'light', 'light', 'light'],
             fontWeight: 'light',
             fontFamily: 'heading',
-            maxWidth: ['21em', null, null, null, null, '22em'],
+            maxWidth: ['21em', null, null, null, null, '22em', '22em', '22em'],
             color: 'revText',
-            pl: ['38px', 4, 4, 3, 0, 3],
-            pr: [null, null, 2, null, null, null],
-            mb: [1, 4, null, null, null, null],
+            pl: ['38px', 4, 4, 3, 0, 3, 3, 3],
+            pr: [null, null, 2, null, null, null, null, null],
+            mb: [1, 4, null, null, null, null, null, null],
         }}
     />
 )
@@ -106,12 +109,30 @@ const ParentBox = (props) => (
             px: [0, 2, 0, 0, 4, 4],
 
             '&.parentBox1': {
-                gridColumn: ['1/3', '1/3', '1/3', '1/2', '1/2', '1/2'],
+                gridColumn: [
+                    '1/3',
+                    '1/3',
+                    '1/3',
+                    '1/2',
+                    '1/2',
+                    '1/2',
+                    '1/2',
+                    '1/2',
+                ],
                 order: 1,
             },
             '&.parentBox2': {
-                gridColumn: ['1/3', '1/3', '1/3', '2/3', '2/3', '2/3'],
-                order: [3, 3, 3, 2, 2, 2],
+                gridColumn: [
+                    '1/3',
+                    '1/3',
+                    '1/3',
+                    '2/3',
+                    '2/3',
+                    '2/3',
+                    '2/3',
+                    '2/3',
+                ],
+                order: [3, 3, 3, 2, 2, 2, 2, 2],
             },
         }}
     />
@@ -124,7 +145,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
             sectionBg={sectionBg}
             justifyContent="center"
             alignItems="center"
-            className="value__section"
+            className="valueSection"
             containerVariant="containerValue"
         >
             <Article>
@@ -141,7 +162,10 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             '868px',
                             '1024px',
                             '1200px',
+                            '1200px',
+                            '1200px',
                         ],
+
                         margin: '0 auto',
                         gridTemplateColumns: '1fr 1fr',
                         gridTemplateRows: 'auto',
@@ -153,7 +177,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         {...props}
                         sx={{
                             gridColumn: '1 / 4',
-                            mb: [4, 5, null, 4, 4, 4],
+                            mb: [4, 5, null, 4, 4, 5, 5, 5],
                         }}
                     >
                         <Headline
@@ -162,20 +186,44 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             // {...animation.slideUp2}
                             sx={{
                                 variant: [
+                                    'styles.h4',
                                     'styles.h3',
                                     'styles.h2',
-                                    'styles.h2',
                                     null,
                                     null,
+                                    null,
+                                    'styles.bu3',
                                     null,
                                 ],
-                                color: 'revText',
                                 maxWidth: [
                                     null,
-                                    null,
+                                    '100%',
                                     '83%',
                                     null,
-                                    '64%',
+                                    '83%',
+                                    '61%',
+                                    '83%',
+                                    null,
+                                ],
+                                // color: 'revText',
+                                color: [
+                                    'red',
+                                    'green',
+                                    'blue',
+                                    'cyan',
+                                    'magenta',
+                                    'yellow',
+                                    'black',
+                                    'purple',
+                                ],
+                                letterSpacing: [
+                                    null,
+                                    '-0.06em',
+                                    'unset',
+                                    null,
+                                    null,
+                                    null,
+                                    null,
                                     null,
                                 ],
                             }}
@@ -191,8 +239,26 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         sx={{
                             gridColumn: '1/4',
                             gridRow: '2/3',
-                            rowGap: ['32px', '48px', '0px', null, null, null],
-                            columnGap: ['0', '16px', '32px', null, null, null],
+                            rowGap: [
+                                '32px',
+                                '48px',
+                                '0px',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                            ],
+                            columnGap: [
+                                '0',
+                                '16px',
+                                '32px',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                            ],
                         }}
                     >
                         <ParentBox
@@ -211,7 +277,10 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                         'block',
                                         'block',
                                         'block',
+                                        'block',
+                                        'block',
                                     ],
+
                                     position: 'absolute',
                                     borderRight: (t) =>
                                         `1px solid ${t.colors.line}`,
@@ -236,6 +305,8 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                     null,
                                     null,
                                     'translateY(64px)',
+                                    null,
+                                    null,
                                     null,
                                     null,
                                 ],
@@ -275,7 +346,17 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             endorserName="Dan Peizer"
                             endorserTitle="VP Global Marketing & Strategy, Catalent Pharma Solutions"
                             sx={{
-                                mt: [null, null, null, null, 6, null, null],
+                                mt: [
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    6,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                ],
                             }}
                         />
                     </Grid>

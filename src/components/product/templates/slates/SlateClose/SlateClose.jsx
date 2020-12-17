@@ -28,10 +28,29 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     variant="styles.h3"
                     {...props}
                     sx={{
-                        maxWidth: [null, null, null, null, null, null],
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                        ],
+                        color: [
+                            'red',
+                            'green',
+                            'blue',
+                            'cyan',
+                            'magenta',
+                            'yellow',
+                            'black',
+                            'purple',
+                        ],
                         mb: '0px',
                     }}
-                    {...animation.slideUp1}
+                    // {...animation.slideUp1}
                 >
                     How can I help you
                 </Headline>
@@ -40,10 +59,19 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     variant="styles.h3"
                     {...props}
                     sx={{
-                        maxWidth: [null, null, null, null, null, null],
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                        ],
                         mb: 4,
                     }}
-                    {...animation.slideUp1}
+                    // {...animation.slideUp1}
                 >
                     grow your business?
                 </Headline>
@@ -55,10 +83,19 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                         variant: 'styles.h5',
                         mb: '0px',
                         color: 'primary',
-                        maxWidth: [null, null, null, '42em', '42em', '22em'],
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            '42em',
+                            '42em',
+                            '22em',
+                            '22em',
+                            '22em',
+                        ],
                         fontWeight: 'regular',
                     }}
-                    {...animation.slideUp2}
+                    // {...animation.slideUp2}
                 >
                     Available for freelance,
                 </Subline>
@@ -69,10 +106,19 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                         variant: 'styles.h5',
                         mb: 4,
                         color: 'primary',
-                        maxWidth: [null, null, null, '42em', '42em', '22em'],
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            '42em',
+                            '42em',
+                            '22em',
+                            '22em',
+                            '22em',
+                        ],
                         fontWeight: 'regular',
                     }}
-                    {...animation.slideUp2}
+                    // {...animation.slideUp2}
                 >
                     contract & extended engagements
                 </Subline>
@@ -80,20 +126,29 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     variant="text.p1"
                     {...props}
                     sx={{
-                        maxWidth: [null, null, null, '42em', '36em', '28em'],
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            '42em',
+                            '36em',
+                            '28em',
+                            '28em',
+                            '28em',
+                        ],
                         mb: 5,
                     }}
-                    {...animation.slideUp2}
+                    // {...animation.slideUp2}
                 >
                     <p>
-                        Throughout my career I've led multi-functional teams
-                        with six-figure budgets. I've also been the team with
-                        next-to-no resources. And I enjoyed it all.
+                        Throughout my career I&apos;ve led multi-functional
+                        teams with six-figure budgets. I&apos;ve also been the
+                        team with next-to-no resources. And I enjoyed it all.
                     </p>
                     <p>
                         I can help you decide what to do, how to do it, help you
-                        get it done, or all of the above. I'd be ecstatic to
-                        help.
+                        get it done, or all of the above. I&apos;d be ecstatic
+                        to help.
                     </p>
                 </Text>
                 <CtaLinkExt
@@ -101,7 +156,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                     sx={{
                         variant: 'links.ctaLink',
                     }}
-                    {...animation.slideUp3}
+                    // {...animation.slideUp3}
                     linkTo="mailto:jamiejohnsonkc@gmail.com"
                     linkText="Let's Get Started"
                 />

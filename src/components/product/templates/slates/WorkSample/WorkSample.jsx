@@ -6,6 +6,7 @@ import Article from '../../../../../../../gatsby-theme-jim-components/src/compon
 import SectionFlex from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionFlex'
 import Pill from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/buttons/Pill'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Display from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
 import Body from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Body'
 import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ExtLink'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
@@ -64,7 +65,7 @@ const WorkSample = ({
             >
                 <Box
                     className="projectNumberContainer"
-                    {...animation.fadeSlow}
+                    // {...animation.fadeSlow}
                     {...props}
                     sx={{
                         // display: 'flex',
@@ -72,12 +73,12 @@ const WorkSample = ({
                             'relative',
                             'relative',
                             'relative',
-                            'absolute',
+                            'relative',
                             'absolute',
                             'absolute',
                         ],
-                        top: [null, null, null, '-1em', '-21em', '-10em'],
-                        left: [null, null, null, '2em', null, '-5em'],
+                        top: [null, null, null, null, '-6em', '-10em'],
+                        left: [null, null, null, null, '-2.5em', '-5em'],
                         flex: 'none',
                         display: 'block',
                         minHeight: '4em',
@@ -91,15 +92,28 @@ const WorkSample = ({
                         className="projectNumber"
                         {...props}
                         sx={{
-                            color: `${projectNumberColor}`,
+                            // color: `${projectNumberColor}`,
+                            color: [
+                                'red',
+                                'green',
+                                'blue',
+                                'cyan',
+                                'magenta',
+                                'yellow',
+                                'black',
+                                'purple',
+                            ],
                             fontSize: [
                                 '4em',
                                 '6em',
                                 '8em',
+                                '10em',
+                                '14em',
                                 '20em',
                                 '20em',
                                 '20em',
                             ],
+
                             fontFamily: 'heading',
                             fontWeight: 'heavy',
                             letterSpacing: 'tight',
@@ -114,9 +128,10 @@ const WorkSample = ({
                     className="projectIntro"
                     {...props}
                     sx={{
-                        px: [0, 0, 0, 2, 2, 2],
+                        px: [0, 0, 0, 2, 2, 2, 2, 2],
                         position: 'relative',
                         zIndex: 2,
+                        width: '100%',
                     }}
                 >
                     <Headline
@@ -128,6 +143,8 @@ const WorkSample = ({
                                 'styles.h5',
                                 'styles.h5',
                                 'styles.h5',
+                                'styles.h4',
+                                'styles.h4',
                                 'styles.h4',
                                 'styles.h4',
                                 'styles.h4',
@@ -149,19 +166,19 @@ const WorkSample = ({
                             backgroundColor: 'revText',
                         }}
                     />
-                    <Text
+                    <Display
                         className="projectSubhead"
                         {...props}
                         sx={{
                             variant: 'styles.d5',
                             color: `${textColor}`,
-                            mb: [0, 5, 4, 4, 2, null],
-                            pr: [0, 0, 0, 1, 0, null],
+                            mb: [0, 4, 4, 4, 2, null, null, null],
+                            pr: [0, 0, 0, 1, 0, null, null, null],
                         }}
                         // {...animation.slideUp3}
                     >
                         {projectSubhead}
-                    </Text>
+                    </Display>
                     <ProjectVisualSmall
                         {...props}
                         className="projectVisualSmall"
@@ -180,7 +197,16 @@ const WorkSample = ({
                         sx={{
                             mb: 5,
                             color: `${textColor}`,
-                            maxWidth: '22em',
+                            maxWidth: [
+                                '22em',
+                                null,
+                                '100%',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                            ],
                         }}
                         // {...animation.slideUp4}
                     >
@@ -197,10 +223,14 @@ const WorkSample = ({
                                 'block',
                                 'block',
                                 'block',
+                                'block',
+                                'block',
                             ],
                             flexWrap: [
                                 'wrap',
                                 'wrap',
+                                'none',
+                                'none',
                                 'none',
                                 'none',
                                 'none',
@@ -241,6 +271,8 @@ const WorkSample = ({
                                 flex: [
                                     '1 0 100%',
                                     '1 0 100%',
+                                    '0',
+                                    '0',
                                     '0',
                                     '0',
                                     '0',

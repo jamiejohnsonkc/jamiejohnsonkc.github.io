@@ -24,7 +24,7 @@ const ProjectIconsBar = ({
 }) => (
     <Grid
         {...props}
-        {...animation.slideLeftProjectIcon1}
+        // {...animation.slideLeftProjectIcon1}
         className="projectIconsBarContainer"
         columns="1fr 1.5fr"
         gap="8px"
@@ -54,7 +54,7 @@ const ProjectIconsBar = ({
         >
             <Text
                 {...props}
-                {...animation.slideLeftProjectIcon2}
+                // {...animation.slideLeftProjectIcon2}
                 className="projectIconLabel"
                 sx={{
                     fontFamily: 'heading',
@@ -104,7 +104,7 @@ const ProjectIconsBar = ({
                     iconHeight={iconHeight}
                     iconWidth={iconWidth}
                     className="projectIconWrapper"
-                    {...animation.slideLeftProjectIcon3}
+                    // {...animation.slideLeftProjectIcon3}
                 >
                     {projectIcon1}
                 </IconWrapper>
@@ -114,7 +114,7 @@ const ProjectIconsBar = ({
                     iconHeight={iconHeight}
                     iconWidth={iconWidth}
                     className="projectIconWrapper"
-                    {...animation.slideLeftProjectIcon4}
+                    // {...animation.slideLeftProjectIcon4}
                 >
                     {projectIcon2}
                 </IconWrapper>
@@ -124,7 +124,7 @@ const ProjectIconsBar = ({
                     iconHeight={iconHeight}
                     iconWidth={iconWidth}
                     className="projectIconWrapper"
-                    {...animation.slideLeftProjectIcon5}
+                    // {...animation.slideLeftProjectIcon5}
                 >
                     {projectIcon3}
                 </IconWrapper>

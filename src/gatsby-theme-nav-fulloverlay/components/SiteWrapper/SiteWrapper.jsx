@@ -20,12 +20,14 @@ const SiteWrapper = ({ siteWrapperBgColor, siteWrapperFlexDir, ...props }) => {
                     null,
                     null,
                     null,
+                    null,
+                    null,
                 ],
                 flexDirection: `${siteWrapperFlexDir}`,
                 position: 'relative',
                 zIndex: '1',
-                height: '100%',
-                p: [null, null, 3, 3, 3, 3],
+                // height: '100%',
+                p: [null, null, 3, 3, 3, 3, 3, 3],
                 // width: '100vw',
             }}
         />

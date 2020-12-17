@@ -22,10 +22,28 @@ const ProjectVisualLarge = ({
         sx={{
             mt: 3,
             mb: 5,
-            display: ['none', 'none', 'none', 'block', 'block', 'block'],
+            display: [
+                'none',
+                'none',
+                'none',
+                'none',
+                'block',
+                'block',
+                'block',
+                'block',
+            ],
             flex: '1.3 0 auto',
             '& .projectVisualLarge': {
-                display: ['none', 'none', 'none', 'block', 'block', 'block'],
+                display: [
+                    'none',
+                    'none',
+                    'none',
+                    'none',
+                    'block',
+                    'block',
+                    'block',
+                    'block',
+                ],
             },
         }}
     >

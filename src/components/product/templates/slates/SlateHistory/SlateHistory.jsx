@@ -105,7 +105,7 @@ const SlateHistory = ({ sectionBg, ...props }) => (
                             scrollSnapAlign: [null, null, 'start', null, null],
                         }}
                     >
-                        Here's some of the brands I've helped grow
+                        Here's some of the brands I&apos;ve helped grow
                     </Text>
                 </Grid>
                 {/* <Box

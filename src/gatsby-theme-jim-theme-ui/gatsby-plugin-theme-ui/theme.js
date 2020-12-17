@@ -31,9 +31,11 @@ export default merge(typography, {
     forms,
     gradients,
     // breakpoints: ['40em', '51em', '58em', '80em', '100em'], // px-  0, 640, 816, 928, 1280, 1600
-    breakpoints: ['640px', '816px', '850px', '1000px', '1280px', '1600px'],
+    // breakpoints: ['400px', '816px', '850px', '1024px', '1280px', '1600px'],
+    breakpoints: ['400px', '640px', '800px', '928px', '1280px', '1600px', '2500px'],
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512, 640, 768],
 
+    //TODO change "container' to 'widths'
     sizes: {
         container: {
             0: '23.6%',
@@ -41,7 +43,8 @@ export default merge(typography, {
             2: '50%',
             3: '61.8%',
             4: '83.82%',
-            5: '100%',
+            5: '96.18%',
+            6: '100%',
         },
     },
 
@@ -79,7 +82,10 @@ export default merge(typography, {
     //     fontWeight: 'heavy',
     //     color: 'pink',
     // },
-
+headline: {
+    // mb: 2,
+    fontWeight: 'heavy',
+},
 
     subline: {
         fontFamily: 'heading',
@@ -98,25 +104,22 @@ export default merge(typography, {
     },
 
     display: {
-        // fontFamily: 'heading',
+        fontFamily: 'heading',
         fontWeight: 'normal',
         lineHeight: 1.4,
         letterSpacing: 'normal',
     },
     busker:{
         // fontFamily: 'heading',
-        fontWeight: 'heavy',
         lineHeight: 1.2,
-        mb: 2,
         letterSpacing: 'tight',
         // fontSize: 11,
-        color: 'blue',
     },
 
     paragraph: {
         // fontFamily: 'body',
         lineHeight: 2,
-        mb: 4,
+        mb: [4,4,null, null, null,null,null,null],
 
     },
 
@@ -151,7 +154,6 @@ export default merge(typography, {
         },
         heading: {
             letterSpacing: 'tight',
-            mb: 4,
             lineHeight: 1.2,
         },
 

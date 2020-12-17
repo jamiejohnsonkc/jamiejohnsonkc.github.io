@@ -45,9 +45,9 @@ const DevCrd = (props) => (
             visualWidth="9.25em"
             headingText="High-Performance web pages & apps"
             textText="Comprehensive front-end web development services to design, build and deploy digital properties focused on your business's performance."
-            linkText="WebDev skills & frameworks"
-            iconName="SolidNorthEastArrow"
-            linkTo="/skills/"
+            // linkText="WebDev skills & frameworks"
+            // iconName="SolidNorthEastArrow"
+            // linkTo="/skills/"
         />
     </>
 )

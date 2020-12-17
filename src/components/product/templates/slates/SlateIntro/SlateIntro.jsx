@@ -19,6 +19,38 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 // 	/>
 // )
 
+const SplitHead = ({ children, mb, ...props }) => (
+    <Busker
+        as="h1"
+        {...props}
+        sx={{
+            variant: [
+                'styles.h3',
+                'styles.h3',
+                'styles.bu3',
+                'styles.bu3',
+                'styles.h1',
+                'styles.bu3',
+                'styles.bu3',
+                'styles.bu3',
+            ],
+            color: [
+                'red',
+                'green',
+                'blue',
+                'cyan',
+                'magenta',
+                'yellow',
+                'black',
+                'purple',
+            ],
+            mb,
+        }}
+    >
+        {children}
+    </Busker>
+)
+
 const SlateIntro = ({ sectionBg, ...props }) => (
     <>
         <SectionGrid
@@ -28,45 +60,33 @@ const SlateIntro = ({ sectionBg, ...props }) => (
             className="introSection"
             {...props}
             sx={{
+                py: [0, 0, 0, 6, 0, 0, 0, 0],
                 '& .container': {
                     gridTemplateRows: '90% 10%',
+                    minHeight: '100%',
                 },
             }}
         >
             <Article
                 className="introArticle"
-                variant="layout.articleCenterCenter"
+                // variant="layout.articleCenterCenter"
             >
-                <Busker
-                    variant="styles.bu3"
-                    {...props}
-                    sx={{
-                        mb: 0,
-                    }}
-                >
-                    I'm Jamie Johnson,
-                </Busker>
-                <Busker
-                    variant="styles.bu3"
-                    as="h1"
-                    {...props}
-                    sx={{
-                        mb: 4,
-                    }}
-                >
-                    frontend web developer.
-                </Busker>
+                <SplitHead>I&apos;m Jamie Johnson,</SplitHead>
+                <SplitHead mb={4}>frontend web developer.</SplitHead>
                 <Headline
-                    variant="styles.h3"
+                    // variant="styles.h1"
                     {...props}
                     sx={{
+                        variant: 'styles.h4',
                         color: 'primary',
                     }}
                 >
                     (and more)
                 </Headline>
             </Article>
-            <ScrollDownLineAnimated mt={[5, null, null, null, '0px', '0px']} />
+            <ScrollDownLineAnimated
+                mt={[null, null, null, '0px', '0px', '0px', '0px', '0px']}
+            />
         </SectionGrid>
     </>
 )
