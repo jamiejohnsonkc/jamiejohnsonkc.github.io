@@ -6,6 +6,8 @@ import Article from '../../../../../../../gatsby-theme-jim-components/src/compon
 import SectionFlex from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionFlex'
 import Pill from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/buttons/Pill'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Display from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
+import Body from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Body'
 import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ExtLink'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import FluidNetlifyPage from '../../../../../hooks/imageHooks/FluidNetlifyPage'
@@ -71,16 +73,45 @@ const WorkSample = ({
                             'relative',
                             'relative',
                             'relative',
+                            'relative',
+                            'absolute',
                             'absolute',
                             'absolute',
                             'absolute',
                         ],
-                        top: [null, null, null, '-1em', '-21em', '-21em'],
-                        left: [null, null, null, '2em', null, '-5em'],
+                        top: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            '-6em',
+                            '-6em',
+                            '-11em',
+                            '-11em',
+                        ],
+                        left: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            '-2.5em',
+                            '-5em',
+                            null,
+                            null,
+                        ],
                         flex: 'none',
                         display: 'block',
                         minHeight: '4em',
-                        height: [null, null, null, null, '6em', '6em'],
+                        height: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            '6em',
+                            '6em',
+                            '6em',
+                            '6em',
+                        ],
                         lineHeight: 1,
                         minWidth: '100%',
                         zIndex: '2',
@@ -91,14 +122,27 @@ const WorkSample = ({
                         {...props}
                         sx={{
                             color: `${projectNumberColor}`,
+                            // color: [
+                            //     'red',
+                            //     'green',
+                            //     'blue',
+                            //     'cyan',
+                            //     'magenta',
+                            //     'yellow',
+                            //     'black',
+                            //     'purple',
+                            // ],
                             fontSize: [
                                 '4em',
                                 '6em',
                                 '8em',
+                                '10em',
+                                '14em',
                                 '20em',
-                                '24em',
-                                null,
+                                '20em',
+                                '20em',
                             ],
+
                             fontFamily: 'heading',
                             fontWeight: 'heavy',
                             letterSpacing: 'tight',
@@ -113,9 +157,10 @@ const WorkSample = ({
                     className="projectIntro"
                     {...props}
                     sx={{
-                        px: [0, 0, 0, 2, 2, 2],
+                        px: [0, 0, 0, 2, 2, 2, 2, 2],
                         position: 'relative',
                         zIndex: 2,
+                        width: '100%',
                     }}
                 >
                     <Headline
@@ -124,13 +169,14 @@ const WorkSample = ({
                         className="projectHeading"
                         sx={{
                             variant: [
-                                'styles.h2',
-                                'styles.h1',
-                                'styles.h1',
-                                'styles.h2',
-                                'styles.h2',
-                                'styles.h1',
-                                null,
+                                'styles.h5',
+                                'styles.h5',
+                                'styles.h5',
+                                'styles.h4',
+                                'styles.h4',
+                                'styles.h4',
+                                'styles.h3',
+                                'styles.h4',
                             ],
                             mb: 2,
                             letterSpacing: 'tight',
@@ -144,24 +190,42 @@ const WorkSample = ({
                         {...props}
                         {...animation.slideUp2}
                         sx={{
-                            width: '1.618em',
+                            width: [
+                                '1.618em',
+                                null,
+                                null,
+                                null,
+                                '3.236em',
+                                null,
+                                null,
+                                null,
+                            ],
                             mb: 2,
                             backgroundColor: 'revText',
                         }}
                     />
-                    <Text
+                    <Display
                         className="projectSubhead"
                         {...props}
                         sx={{
-                            variant: 'styles.d2',
+                            variant: [
+                                'styles.d5',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                                'styles.d4',
+                                null,
+                            ],
                             color: `${textColor}`,
-                            mb: [0, 5, 4, 4, 4, null],
-                            pr: [0, 0, 0, 1, 0, null],
+                            mb: [0, 4, 4, 4, 2, null, 4, null],
+                            pr: [0, 0, 0, 1, 0, null, null, null],
                         }}
                         {...animation.slideUp3}
                     >
                         {projectSubhead}
-                    </Text>
+                    </Display>
                     <ProjectVisualSmall
                         {...props}
                         className="projectVisualSmall"
@@ -173,20 +237,38 @@ const WorkSample = ({
                         projectIcon2={projectIcon2}
                         projectIcon3={projectIcon3}
                     />
-                    <Text
+                    <Body
                         {...props}
                         className="projectText"
+                        // variant="styles.p2"
                         sx={{
-                            variant: 'text_lg',
-                            mb: 5,
+                            mb: [5, null, null, null, null, null, null, null],
                             color: `${textColor}`,
-                            pr: ['unset', 'unset', 'unset', 'unset', 4, 4, 4],
-                            maxWidth: '34em',
+                            maxWidth: [
+                                '22em',
+                                null,
+                                '100%',
+                                null,
+                                null,
+                                null,
+                                '22em',
+                                null,
+                            ],
+                            variant: [
+                                'styles.p2',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                                'styles.p2',
+                                null,
+                            ],
                         }}
                         {...animation.slideUp4}
                     >
                         {projectText}
-                    </Text>
+                    </Body>
                     {/* //TODO refactor out button button */}
                     <Box
                         {...props}
@@ -198,10 +280,14 @@ const WorkSample = ({
                                 'block',
                                 'block',
                                 'block',
+                                'block',
+                                'block',
                             ],
                             flexWrap: [
                                 'wrap',
                                 'wrap',
+                                'none',
+                                'none',
                                 'none',
                                 'none',
                                 'none',
@@ -242,6 +328,8 @@ const WorkSample = ({
                                 flex: [
                                     '1 0 100%',
                                     '1 0 100%',
+                                    '0',
+                                    '0',
                                     '0',
                                     '0',
                                     '0',

@@ -4,6 +4,7 @@ module.exports = {
     description: `portfolio page`,
     author: `@jamiejohnsonkc`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: `gatsby-plugin-scroll-reveal`,

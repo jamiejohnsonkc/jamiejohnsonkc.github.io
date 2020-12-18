@@ -94,7 +94,7 @@ const SlateProjects = ({
             textColor={project3TextColor}
             projectHeadline="Storybook"
             projectSubhead="Component "
-            projectText="Component library, development tool and design system built with Storybook and Theme-Ui. It's an ever-evolving project with constant updates and expansions with each new project I develop."
+            projectText="Component library, development tool and design system built with Storybook and Theme-Ui. it's an ever-evolving project with constant updates and expansions with each new project I develop."
             siteLinkTo="/repo"
             repoLinkTo="/link"
             projectImage={<FluidStorybook />}
@@ -144,11 +144,11 @@ SlateProjects.propTypes = {
 }
 
 SlateProjects.defaultProps = {
-    project1NumberColor: 'overlay4',
+    project1NumberColor: 'overlay5',
     project1TextColor: 'text',
     project2NumberColor: 'overlay2',
     project2TextColor: 'text',
-    project3NumberColor: 'overlay4',
+    project3NumberColor: 'overlay5',
     project3TextColor: 'text',
     iconFill: 'muted',
     // project1Bg: 'transparent',

@@ -48,9 +48,9 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             '100%',
                             '100%',
                             '86em',
-                            'container.5',
-                            'container.5',
-                            'container.5',
+                            'container.6',
+                            'container.6',
+                            'container.6',
                         ],
                         height: [
                             null,
@@ -71,7 +71,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                         }}
                         {...animation.slideUp1}
                     >
-                        <Headline {...props} as="h1" variant="styles.hxxl">
+                        <Headline {...props} as="h1" variant="styles.h3">
                             My Skills & Capabilities
                         </Headline>
 
@@ -82,16 +82,16 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                                 mb: 2,
                                 color: 'primary',
                             }}
-                            // {...animation.slideUp2}
+                            {...animation.slideUp2}
                         >
                             I'm fluent in code, design and strategy
                         </Subline>
                         <Text
                             {...props}
                             sx={{
-                                variant: 'text.text_lg',
+                                variant: 'text.p1',
                             }}
-                            // {...animation.slideUp3}
+                            {...animation.slideUp3}
                         >
                             Consectetur sit irure mollit dolore Lorem aliqua
                             proident. Est fugiat aute anim exercitation.

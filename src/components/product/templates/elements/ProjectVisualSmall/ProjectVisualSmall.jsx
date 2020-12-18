@@ -22,9 +22,27 @@ const ProjectVisualSmall = ({
         sx={{
             mt: 3,
             mb: 5,
-            display: ['block', 'block', 'block', 'none', 'none', 'none'],
+            display: [
+                'block',
+                'block',
+                'block',
+                'block',
+                'none',
+                'none',
+                'none',
+                'none',
+            ],
             '& .projectVisualSmall': {
-                display: ['block', 'block', 'block', 'none', 'none', 'none'],
+                display: [
+                    'block',
+                    'block',
+                    'block',
+                    'block',
+                    'none',
+                    'none',
+                    'none',
+                    'none',
+                ],
             },
         }}
     >

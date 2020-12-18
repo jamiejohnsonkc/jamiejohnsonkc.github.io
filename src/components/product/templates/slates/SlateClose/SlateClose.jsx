@@ -8,10 +8,11 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
+import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import CtaLinkExt from '../../../../../../../gatsby-theme-jim-components/src/components/ui/CtaLinkExt'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 
-//TODO refactor split lines
+// TODO refactor split lines
 
 const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
     <>
@@ -25,77 +26,133 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
             <Article className="ctaArticle">
                 <Headline
                     as="h1"
-                    variant="styles.hxxl"
+                    variant="styles.h3"
                     {...props}
                     sx={{
-                        maxWidth: [null, null, null, null, null, null],
-                        mb: '0px',
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                        ],
+                        // color: [
+                        //     'red',
+                        //     'green',
+                        //     'blue',
+                        //     'cyan',
+                        //     'magenta',
+                        //     'yellow',
+                        //     'black',
+                        //     'purple',
+                        // ],
+                        mb: 4,
+                        letterSpacing: '-.06em',
                     }}
                     {...animation.slideUp1}
                 >
-                    How can I help you
+                    Ready to grow?
                 </Headline>
-                <Headline
+                {/* <Headline
                     as="h1"
-                    variant="styles.hxxl"
+                    variant="styles.h3"
                     {...props}
                     sx={{
-                        maxWidth: [null, null, null, null, null, null],
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                        ],
                         mb: 4,
                     }}
-                    {...animation.slideUp1}
+                     {...animation.slideUp1}
                 >
                     grow your business?
-                </Headline>
+                </Headline> */}
 
                 <Subline
                     {...props}
                     as="h2"
                     sx={{
-                        variant: 'styles.h4',
-                        mb: '0px',
+                        variant: 'styles.d5',
+                        mb: 4,
                         color: 'primary',
-                        maxWidth: [null, null, null, '42em', '42em', '22em'],
-                        fontWeight: 'regular',
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            '20em',
+                            '20em',
+                            '20em',
+                            '20em',
+                            '20em',
+                        ],
+                        fontWeight: 'normal',
                     }}
                     {...animation.slideUp2}
                 >
-                    Available for freelance,
+                    Available for freelance &amp; extended engagements
                 </Subline>
-                <Subline
+                {/* <Subline
                     {...props}
                     as="h2"
                     sx={{
-                        variant: 'styles.h4',
+                        variant: 'styles.h5',
                         mb: 4,
                         color: 'primary',
-                        maxWidth: [null, null, null, '42em', '42em', '22em'],
-                        fontWeight: 'regular',
+                        maxWidth: [
+                            null,
+                            null,
+                            null,
+                            '42em',
+                            '42em',
+                            '22em',
+                            '22em',
+                            '22em',
+                        ],
+                         fontWeight: 'normal',
                     }}
-                    {...animation.slideUp2}
+                     {...animation.slideUp2}
                 >
                     contract & extended engagements
-                </Subline>
-                <Text
+                </Subline> */}
+                <Paragraph
+                    variant="styles.p2"
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
-                        maxWidth: [null, null, null, '42em', '36em', '28em'],
-                        mb: 5,
+                        maxWidth: [
+                            '33em',
+                            null,
+                            null,
+                            '25em',
+                            '25em',
+                            '25em',
+                            null,
+                            null,
+                        ],
+                        // mb: [3, 2, 2, null, null, 4],
+                        // lineHeight: 2,
                     }}
-                    {...animation.slideUp2}
                 >
                     <p>
-                        Throughout my career I've led multi-functional teams
-                        with six-figure budgets. I've also been the team with
-                        next-to-no resources. And I enjoyed it all.
+                        Throughout my career I&apos;ve led multi-functional
+                        teams with six-figure budgets. I&apos;ve also been the
+                        team with next-to-no resources. And I enjoyed it all.
                     </p>
                     <p>
                         I can help you decide what to do, how to do it, help you
-                        get it done, or all of the above. I'd be ecstatic to
-                        help.
+                        get it done, or all of the above. I&apos;d be ecstatic
+                        to help.
                     </p>
-                </Text>
+                </Paragraph>
                 <CtaLinkExt
                     {...props}
                     sx={{

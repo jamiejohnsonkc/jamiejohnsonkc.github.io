@@ -42,13 +42,31 @@ const EndorsementCard = ({
                 // width: `${props.cardWidth}`,
                 display: 'grid',
 
-                mb: [4, 4, null, null, null, null],
+                mb: [4, 4, null, null, null, null, null, null],
                 '&.card1': {
-                    gridColumn: ['1/3', '1/3', '1/3', '1/2', '1/2', '1/2'],
-                    order: [2, 2, 2, 3, 3, 3],
+                    gridColumn: [
+                        '1/3',
+                        '1/3',
+                        '1/3',
+                        '1/2',
+                        '1/2',
+                        '1/2',
+                        '1/2',
+                        '1/2',
+                    ],
+                    order: [2, 2, 2, 3, 3, 3, 3, 3],
                 },
                 '&.card2': {
-                    gridColumn: ['1/3', '1/3', '1/3', '2/3', '2/3', '2/3'],
+                    gridColumn: [
+                        '1/3',
+                        '1/3',
+                        '1/3',
+                        '2/3',
+                        '2/3',
+                        '2/3',
+                        '2/3',
+                        '2/3',
+                    ],
                     order: 4,
                 },
                 //
@@ -63,7 +81,7 @@ const EndorsementCard = ({
         >
             <Card
                 className="endorsementCard"
-                // {...animation.slideUp4NoTrans}
+                {...animation.slideUp4NoTrans}
                 {...props}
                 sx={{
                     // px: [0, 4, 4, 0, 0, 2],
@@ -71,10 +89,19 @@ const EndorsementCard = ({
                     // flexDirection: ['row', null, null, null, null, null],
                     // display: ['grid', null, null, null, null, null],
                     display: 'grid',
-                    height: ['100%', null, null, '512px', '640px', '680px'],
-                    px: [4, 5, 5, 5, 5, 5],
-                    py: [4, 5, 5, null, 5, 5],
-                    minHeight: ['320px', '640px', '512px', null, null, null],
+
+                    px: [4, 4, 4, 4, 4, 4, 4, 4],
+                    py: [4, 4, 4, null, 5, 5, 5, 5],
+                    height: [
+                        '320px',
+                        '368px',
+                        '388px',
+                        '400px',
+                        '440px',
+                        '680px',
+                        '680px',
+                        '680px',
+                    ],
 
                     alignItems: 'center',
                     backgroundColor: 'wo1',
@@ -87,6 +114,8 @@ const EndorsementCard = ({
                         '1fr',
                         '1fr',
                         '1fr',
+                        '1fr',
+                        '1fr',
                     ],
                     gridTemplateRows: [
                         '1fr 1fr .25fr',
@@ -95,9 +124,30 @@ const EndorsementCard = ({
                         'auto',
                         'auto',
                         'auto',
+                        'auto',
+                        'auto',
                     ],
-                    maxWidth: [null, null, null, null, '83%', '83%'],
-                    margin: [null, null, null, null, '0 auto', '0 auto'],
+                    maxWidth: [
+                        '278px',
+                        '304px',
+                        '452px',
+                        '300px',
+                        '320px',
+                        '83%',
+                        '83%',
+                        '83%',
+                    ],
+                    margin: [
+                        '0 auto',
+                        null,
+                        //    `16px auto 24px auto`,
+                        '16px auto 32px auto',
+                        '0 auto',
+                        '0 auto',
+                        '0 auto',
+                        '0 auto',
+                        '0 auto',
+                    ],
                 }}
             >
                 <Box
@@ -105,24 +155,51 @@ const EndorsementCard = ({
                     {...props}
                     sx={{
                         height: 'auto',
-                        width: ['4em', '8em', '8em', '50%', '50%', '33%'],
+                        width: [
+                            '4em',
+                            '4em',
+                            '6em',
+                            '38%',
+                            '38%',
+                            '33%',
+                            '33%',
+                            '33%',
+                        ],
                         // width: ['4em', '8em', '8em', '6em', '50%', '50%'],
-                        marginBottom: [null, `${props.profileMb}`],
+                        marginBottom: [
+                            null,
+                            `${props.profileMb}`,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                        ],
                         overflow: 'hidden',
                         mx: 'auto',
                         borderRadius: '50%',
                         boxShadow: 'depth',
                         position: 'relative',
                         order: 1,
-                        gridColumnStart: ['1', '1', '1', '1', '1', '1'],
-                        gridColumnEnd: ['2', '2', '2', '5', '5', '5'],
+                        gridColumnStart: [
+                            '1',
+                            '1',
+                            '1',
+                            '1',
+                            '1',
+                            '1',
+                            '1',
+                            '1',
+                        ],
+                        gridColumnEnd: ['2', '2', '2', '5', '5', '5', '5', '5'],
                     }}
                 >
                     <Box>{profilePic}</Box>
                 </Box>
 
                 <Text
-                    className="quote"
+                    className="endorsement"
                     {...props}
                     sx={{
                         textAlign: [
@@ -132,15 +209,17 @@ const EndorsementCard = ({
                             'center',
                             'center',
                             'center',
+                            'center',
+                            'center',
                         ],
                         fontFamily: 'heading',
-                        fontSize: [1, 3, 3, 2, 3, '20.454878px'],
-                        px: [null, null, null, null, null, 2],
-                        fontWeight: [400, 500, 500, 600, 600, 600],
-                        lineHeight: [1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
+                        fontSize: [1, 2, 3, 1, 1, '20.454878px', 3, 3],
+                        px: [null, null, null, null, null, 2, 2, 2],
+                        fontWeight: [400, 500, 500, 600, 600, 600, 600, 600],
+                        lineHeight: [1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
                         color: 'revText',
-                        marginBottom: [4, 4, 4, 0, 0, 0],
-                        order: [3, 3, 3, 2, 2, 2],
+                        marginBottom: [4, 4, 4, 0, 4, 0, 0, 0],
+                        order: [3, 3, 3, 2, 2, 2, 2, 2],
                         gridColumnStart: '1',
                         gridColumnEnd: '5',
                     }}
@@ -161,11 +240,23 @@ const EndorsementCard = ({
                     {...props}
                     className="endorser"
                     sx={{
-                        gridColumnStart: ['2', '2', '2', '2', '2', '2', '2'],
-                        gridColumnEnd: ['5', '5', '5', '5', '5', '5'],
+                        gridColumnStart: [
+                            '2',
+                            '2',
+                            '2',
+                            '2',
+                            '2',
+                            '2',
+                            '2',
+                            '2',
+                            '2',
+                        ],
+                        gridColumnEnd: ['5', '5', '5', '5', '5', '5', '5', '5'],
                         alignSelf: [
                             'unset',
                             'center',
+                            'unset',
+                            'unset',
                             'unset',
                             'unset',
                             'unset',
@@ -179,6 +270,8 @@ const EndorsementCard = ({
                             'center',
                             'center',
                             'center',
+                            'center',
+                            'center',
                         ],
                         justifyContent: [
                             'unset',
@@ -187,14 +280,16 @@ const EndorsementCard = ({
                             'center',
                             'center',
                             'center',
+                            'center',
+                            'center',
                         ],
-                        py: [0, 0, 0, 0, 0, 0],
-                        pl: [2, 4, 4, 0, 0, 0],
-                        pr: [0, 3, 3, 0, 0, 0],
+                        py: [0, 0, 0, 0, 0, 0, 0, 0],
+                        pl: [2, 3, 4, 0, 0, 0, 0, 0],
+                        pr: [0, 1, 1, 0, 0, 0, 0, 0],
                         // pb: [0, 4, 4, 0, 0, 0],
                         // mt: [0, -4, 0, 0, 0],
-                        fontSize: [2, 3, 3, 1, 2, 2],
-                        lineHeight: [1.4, 1.6, 1.6, 1.6, 1.6, 1.6],
+                        fontSize: [2, 2, 3, '12px', 1, 2, 2, 2],
+                        lineHeight: [1.4, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
                         // letterSpacing: 'snug',
                         fontFamily: 'heading',
                     }}
@@ -217,9 +312,18 @@ const EndorsementCard = ({
                             letterSpacing: 'loose',
                             lineHeight: '1.6',
                             color: 'revText',
-                            fontSize: ['9px', 2, 3, 1, 1, 1],
-                            px: [null, null, null, null, null, '32px'],
-                            mb: [0, 0, 0, 0, 0, 4],
+                            fontSize: ['9px', '10px', 2, '10px', 1, 1, 2, 2],
+                            px: [
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                                '32px',
+                                null,
+                                null,
+                            ],
+                            mb: [0, 0, 0, 0, 4, 4, 4, 4],
                         }}
                     >
                         {endorserTitle}

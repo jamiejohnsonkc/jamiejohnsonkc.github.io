@@ -6,57 +6,71 @@ import Article from '../../../../../../../gatsby-theme-jim-components/src/compon
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Display from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
+import Subhead from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import FluidPeizer from '../../../../../hooks/imageHooks/FluidPeizer'
 import FluidStrunk from '../../../../../hooks/imageHooks/FluidStrunk'
 import EndorsementCard from '../../layouts/EndorsementCard/EndorsementCard'
 
 const NumberBadge = ({ number, ...props }) => (
-    <Box
+    <Display
         {...props}
         sx={{
+            variant: [
+                'styles.d5',
+                'styles.d5',
+                'styles.h5',
+                'styles.d6',
+                'styles.d5',
+                'styles.d4',
+                null,
+                null,
+            ],
             alignItems: 'center',
             bg: 'primary',
             borderRadius: '50%',
-            boxShadow: 'subtleFirmLR',
+            DisplayShadow: 'subtleFirmLR',
             color: 'revText',
             display: 'inline-flex',
             fontFamily: 'heading',
-            fontSize: [1, 5, 5, 2, 3, 3],
-            height: ['30px', '50px', '60px', null, null, null],
-            width: ['30px', '50px', '60px', null, null, null],
+            // fontSize: [1, 5, 5, 2, 3, 3, 3, 3],
+            height: ['30px', '40px', '60px', '30px', '40px', null, null, null],
+            width: ['30px', '40px', '60px', '30px', '40px', null, null, null],
             justifyContent: 'center',
-            mr: [2, 3, 3, 3, 3, 3],
+            mr: [2, 3, 3, 3, 3, 3, 3, 3],
             position: 'relative',
         }}
     >
         {number}
-    </Box>
+    </Display>
 )
 
 const BadgeHead = ({ text, ...props }) => (
-    <Subline
+    <Subhead
         {...props}
         as="h3"
         sx={{
             variant: [
-                'styles.h6',
+                'styles.d5',
+                'styles.d5',
                 'styles.h5',
-                'styles.h4',
-                'text.d2',
-                'text.d2',
+                'styles.d6',
+                'styles.d5',
+                'styles.d4',
+                null,
                 null,
             ],
             display: 'inline-grid',
             color: 'revText',
             mb: '0px',
-            fontWeight: 'regular',
-            letterSpacing: 'loose',
+            fontWeight: 'normal',
+            letterSpacing: 'lazy',
         }}
     >
         {text}
-    </Subline>
+    </Subhead>
 )
 
 const NumberBadgeHead = ({ number, text, ...props }) => (
@@ -64,7 +78,7 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
         {...props}
         sx={{
             display: 'inline-block',
-            mb: [2, 4, 4, 2, 4, 3],
+            mb: [2, 2, 2, 2, 2, 3, 3, 3],
         }}
     >
         <NumberBadge number={number} />
@@ -73,7 +87,7 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
 )
 
 const DisplayText = (props) => (
-    <Text
+    <Display
         {...props}
         // as='h3'
         sx={{
@@ -85,15 +99,26 @@ const DisplayText = (props) => (
             //     'text.d3',
             //     null,
             // ],
-            fontSize: [1, 4, 5, 3, 3, 3],
+            // fontSize: [2, 4, 5, 3, 3, 3, 3, 3],
             // fontWeight: [null, null, null, 'light', 'light', 'light'],
+            variant: [
+                'styles.d6',
+                'styles.d6',
+                'styles.d4',
+                'styles.d6',
+                'styles.d6',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
+            ],
             fontWeight: 'light',
-            fontFamily: 'heading',
-            maxWidth: ['21em', null, null, null, null, '22em'],
+            lineHeight: '1.8em',
+            // fontFamily: 'heading',
+            maxWidth: ['21em', null, null, null, null, '22em', '22em', '22em'],
             color: 'revText',
-            pl: ['38px', 4, 4, 3, 0, 3],
-            pr: [null, null, 2, null, null, null],
-            mb: [1, 4, null, null, null, null],
+            pl: ['38px', 4, 4, 4, 4, 3, 3, 3],
+            pr: [null, null, 2, null, null, null, null, null],
+            mb: [1, 4, null, null, null, null, null, null],
         }}
     />
 )
@@ -106,12 +131,30 @@ const ParentBox = (props) => (
             px: [0, 2, 0, 0, 4, 4],
 
             '&.parentBox1': {
-                gridColumn: ['1/3', '1/3', '1/3', '1/2', '1/2', '1/2'],
+                gridColumn: [
+                    '1/3',
+                    '1/3',
+                    '1/3',
+                    '1/2',
+                    '1/2',
+                    '1/2',
+                    '1/2',
+                    '1/2',
+                ],
                 order: 1,
             },
             '&.parentBox2': {
-                gridColumn: ['1/3', '1/3', '1/3', '2/3', '2/3', '2/3'],
-                order: [3, 3, 3, 2, 2, 2],
+                gridColumn: [
+                    '1/3',
+                    '1/3',
+                    '1/3',
+                    '2/3',
+                    '2/3',
+                    '2/3',
+                    '2/3',
+                    '2/3',
+                ],
+                order: [3, 3, 3, 2, 2, 2, 2, 2],
             },
         }}
     />
@@ -124,10 +167,15 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
             sectionBg={sectionBg}
             justifyContent="center"
             alignItems="center"
-            className="value__section"
+            className="valueSection"
             containerVariant="containerValue"
         >
-            <Article>
+            <Article
+                {...props}
+                sx={{
+                    variant: 'layout.articleValue',
+                }}
+            >
                 <Grid
                     className="articleWrapper"
                     {...props}
@@ -141,7 +189,10 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             '868px',
                             '1024px',
                             '1200px',
+                            '1200px',
+                            '1200px',
                         ],
+
                         margin: '0 auto',
                         gridTemplateColumns: '1fr 1fr',
                         gridTemplateRows: 'auto',
@@ -153,29 +204,53 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         {...props}
                         sx={{
                             gridColumn: '1 / 4',
-                            mb: [4, 5, null, 4, 4, 4],
+                            mb: [4, 4, null, 4, 4, 5, 5, 5],
                         }}
                     >
                         <Headline
                             {...props}
                             as="h4"
-                            // {...animation.slideUp2}
+                            {...animation.slideUp2}
                             sx={{
                                 variant: [
-                                    'styles.h3',
+                                    'styles.h4',
+                                    'styles.h4',
                                     'styles.h2',
-                                    'styles.h1',
                                     null,
                                     null,
+                                    'styles.h2',
+                                    'styles.bu3',
+                                    null,
+                                ],
+                                maxWidth: [
+                                    null,
+                                    '100%',
+                                    '83%',
+                                    '90%',
+                                    '90%',
+                                    '83%',
+                                    '83%',
                                     null,
                                 ],
                                 color: 'revText',
-                                maxWidth: [
+                                // color: [
+                                //     'red',
+                                //     'green',
+                                //     'blue',
+                                //     'cyan',
+                                //     'magenta',
+                                //     'yellow',
+                                //     'black',
+                                //     'purple',
+                                // ],
+                                letterSpacing: [
+                                    '-0.06em',
+                                    '-0.06em',
+                                    'unset',
                                     null,
                                     null,
-                                    '83%',
                                     null,
-                                    '64%',
+                                    null,
                                     null,
                                 ],
                             }}
@@ -191,17 +266,35 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         sx={{
                             gridColumn: '1/4',
                             gridRow: '2/3',
-                            rowGap: ['32px', '48px', '0px', null, null, null],
-                            columnGap: ['0', '16px', '32px', null, null, null],
+                            rowGap: [
+                                '32px',
+                                '48px',
+                                '0px',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                            ],
+                            columnGap: [
+                                '0',
+                                '16px',
+                                '32px',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                            ],
                         }}
                     >
                         <ParentBox
                             className="parentBox1"
-                            // {...animation.slideUp3NoTrans}
+                            {...animation.slideUp3NoTrans}
                         >
                             <Box
                                 className="vertDivider"
-                                // {...animation.fadeSlow}
+                                {...animation.fadeSlow}
                                 {...props}
                                 sx={{
                                     display: [
@@ -211,7 +304,10 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                         'block',
                                         'block',
                                         'block',
+                                        'block',
+                                        'block',
                                     ],
+
                                     position: 'absolute',
                                     borderRight: (t) =>
                                         `1px solid ${t.colors.line}`,
@@ -238,18 +334,18 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                     'translateY(64px)',
                                     null,
                                     null,
+                                    null,
+                                    null,
                                 ],
                             }}
                         >
                             <NumberBadgeHead
                                 number="2"
                                 text="Great Service"
-                                // {...animation.slideUp3NoTrans}
+                                {...animation.slideUp3NoTrans}
                             />
 
-                            <DisplayText
-                            // {...animation.slideUp4NoTrans}
-                            >
+                            <DisplayText {...animation.slideUp4NoTrans}>
                                 Accessible and accountable expertise committed
                                 to superior service.
                             </DisplayText>
@@ -257,7 +353,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
 
                         <EndorsementCard
                             {...props}
-                            // {...animation.slideUp3NoTrans}
+                            {...animation.slideUp3NoTrans}
                             linkTo="https://www.linkedin.com/in/jamiejohnsonkc/#ember595"
                             className="card1"
                             profilePic={<FluidStrunk />}
@@ -267,7 +363,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         />
                         <EndorsementCard
                             {...props}
-                            // {...animation.slideUp4NoTrans}
+                            {...animation.slideUp4NoTrans}
                             linkTo="https://www.linkedin.com/in/jamiejohnsonkc/#ember595"
                             className="card2"
                             profilePic={<FluidPeizer />}
@@ -275,7 +371,17 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             endorserName="Dan Peizer"
                             endorserTitle="VP Global Marketing & Strategy, Catalent Pharma Solutions"
                             sx={{
-                                mt: [null, null, null, null, 6, null, null],
+                                mt: [
+                                    null,
+                                    null,
+                                    null,
+                                    5,
+                                    5,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                ],
                             }}
                         />
                     </Grid>

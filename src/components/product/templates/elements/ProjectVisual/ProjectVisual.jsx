@@ -20,6 +20,7 @@ const ProjectVisual = ({
     <Box
         as="aside"
         {...props}
+        className="projectVisual"
         sx={{
             flex: [null, '1.2 1 0%', '1.2 1 0%', '1.2 1 0%', '1.2 1 0%'],
             minHeight: 'auto',
@@ -57,7 +58,7 @@ const ProjectVisual = ({
                 projectIcon1={projectIcon1}
                 projectIcon2={projectIcon2}
                 projectIcon3={projectIcon3}
-            ></ProjectIconsBar>
+            />
         </Box>
     </Box>
 )

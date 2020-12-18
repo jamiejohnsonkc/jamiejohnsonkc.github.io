@@ -41,7 +41,7 @@ export default {
 	muted: neutrals.black[300],
 	highlight: neutrals.black[200],
 
-	background: neutrals.black[100],
+	background: neutrals.black[50],
 	backgroundMidTone: neutrals.black[300],
 
 	line: neutrals.black[200],

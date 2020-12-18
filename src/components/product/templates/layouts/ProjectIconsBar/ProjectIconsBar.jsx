@@ -58,7 +58,7 @@ const ProjectIconsBar = ({
                 className="projectIconLabel"
                 sx={{
                     fontFamily: 'heading',
-                    fontWeight: 'semibold',
+                    fontWeight: 'normal',
                     letterSpacing: 'lazy',
                     fontSize: 0,
 

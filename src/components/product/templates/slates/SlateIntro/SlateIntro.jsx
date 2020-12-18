@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import ScrollDownLineAnimated from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ScrollDownLineAnimated'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Busker from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Busker'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 
 // const StyledHeadline = ({ as, ...props }) => (
@@ -12,11 +13,43 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 // 		{...props}
 // 		as={as}
 // 		sx={{
-// 			variant: ['styles.hxxl', null, null, 'styles.hxxxl', null, null],
+// 			variant: ['styles.h3', null, null, 'styles.hxxxl', null, null],
 // 			mb: '0px',
 // 		}}
 // 	/>
 // )
+
+const SplitHead = ({ children, mb, ...props }) => (
+    <Busker
+        as="h1"
+        {...props}
+        sx={{
+            variant: [
+                'styles.h3',
+                'styles.h3',
+                'styles.bu3',
+                'styles.bu3',
+                'styles.h1',
+                'styles.bu3',
+                'styles.bu3',
+                'styles.bu3',
+            ],
+            // color: [
+            //     'red',
+            //     'green',
+            //     'blue',
+            //     'cyan',
+            //     'magenta',
+            //     'yellow',
+            //     'black',
+            //     'purple',
+            // ],
+            mb,
+        }}
+    >
+        {children}
+    </Busker>
+)
 
 const SlateIntro = ({ sectionBg, ...props }) => (
     <>
@@ -27,45 +60,33 @@ const SlateIntro = ({ sectionBg, ...props }) => (
             className="introSection"
             {...props}
             sx={{
+                py: [0, 0, 0, 6, 0, 0, 0, 0],
                 '& .container': {
                     gridTemplateRows: '90% 10%',
+                    minHeight: '100%',
                 },
             }}
         >
             <Article
                 className="introArticle"
-                variant="layout.articleCenterCenter"
+                // variant="layout.articleCenterCenter"
             >
+                <SplitHead>I&apos;m Jamie Johnson,</SplitHead>
+                <SplitHead mb={4}>frontend web developer.</SplitHead>
                 <Headline
-                    variant="styles.hxxxl"
+                    // variant="styles.h1"
                     {...props}
                     sx={{
-                        mb: 0,
-                    }}
-                >
-                    I'm Jamie Johnson,
-                </Headline>
-                <Headline
-                    variant="styles.hxxxl"
-                    as="h1"
-                    {...props}
-                    sx={{
-                        mb: 4,
-                    }}
-                >
-                    frontend web developer.
-                </Headline>
-                <Headline
-                    variant="styles.h2"
-                    {...props}
-                    sx={{
+                        variant: 'styles.h4',
                         color: 'primary',
                     }}
                 >
                     (and more)
                 </Headline>
             </Article>
-            <ScrollDownLineAnimated mt={[5, null, null, null, '0px', '0px']} />
+            <ScrollDownLineAnimated
+                mt={[null, null, null, '0px', '0px', '0px', '0px', '0px']}
+            />
         </SectionGrid>
     </>
 )

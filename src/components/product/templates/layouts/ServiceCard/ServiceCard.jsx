@@ -54,17 +54,17 @@ const ServiceCard = ({
                         // blockWidth="100%"
 
                         compImage={compImage}
-                        visualHeight="2.25em"
-                        visualMb={5}
+                        // visualHeight="2.25em"
+                        // visualMb={5}
                         visualWidth={visualWidth}
                         headingText={headingText}
-                        headingVariant="styles.h4"
-                        headingSpacing="tight"
-                        headingWeight="heavy"
-                        headingMb={3}
-                        textMb={0}
+                        // headingVariant="styles.h6"
+                        // headingSpacing="tight"
+                        // headingWeight="heavy"
+                        // headingMb={3}
+                        // textMb={0}
                         textText={textText}
-                        textVariant="text.text_lg"
+                        // textVariant="styles.p1"
                     />
 
                     {/* {linkText && (

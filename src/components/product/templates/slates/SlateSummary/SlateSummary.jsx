@@ -6,7 +6,8 @@ import PropTypes from 'prop-types'
 import ContactIconsBar from '../../elements/ContactIconsBar'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
-import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
+import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
+import SectionGrid from '../../../../../gatsby-theme-jim-components/components/containers/SectionGrid'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
 import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ExtLink'
@@ -15,17 +16,17 @@ import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/compon
 
 const IntroParagraph = (props) => (
     // <Box as="p">
-    <Text
-        as="p"
-        variant="text_lg"
+    <Paragraph
+        variant="styles.p2"
         {...props}
         sx={{
-            maxWidth: ['33em', null, null, null, '39em', '33em'],
-            mb: [4, 4, 4, null, null, null],
+            maxWidth: ['33em', null, null, null, '39em', '40em', null, null],
+            // mb: [3, 2, 2, null, null, 4],
+            // lineHeight: 2,
         }}
     >
         {props.children}
-    </Text>
+    </Paragraph>
     // </Box>
 )
 
@@ -48,7 +49,17 @@ const SlateSummary = ({ sectionBg, ...props }) => (
             sectionVariant="layout.section"
             {...props}
             sx={{
-                minHeight: [null, null, '2200px', '100vh', '100vh', '100vh'],
+                minHeight: [
+                    null,
+                    null,
+                    '100vh',
+                    '100vh',
+                    '100vh',
+                    '100vh',
+                    '100vh',
+                    '100vh',
+                ],
+                py: 6,
             }}
             // sx={{
             //     '& > .container': {
@@ -63,23 +74,35 @@ const SlateSummary = ({ sectionBg, ...props }) => (
             //     },
             // }}
         >
-            <Article className="introArticle">
+            <Article
+                className="introArticle"
+                articleVariant="layout.articleGrid"
+            >
                 <Headline
-                    {...props}
                     as="h1"
-                    variant="styles.hxxl"
-                    {...animation.slideUp1}
+                    variant="styles.h3"
                     {...props}
                     sx={{
-                        mb: 5,
+                        mb: 4,
+                        // color: [
+                        //     'red',
+                        //     'green',
+                        //     'blue',
+                        //     'cyan',
+                        //     'magenta',
+                        //     'yellow',
+                        //     'black',
+                        //     'purple',
+                        // ],
                     }}
+                    {...animation.slideUp1}
                 >
                     Hiyas.
                 </Headline>
                 {/* <Text
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
+                        variant: 'text.p1',
                         maxWidth: '34em',
                     }}
                     {...animation.slideUp2}
@@ -94,7 +117,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                             },
                         }}
                     >
-                        I've spent the better part of my career at agencies
+                        I&apos;ve spent the better part of my career at agencies
                         leading development of strategic, creative and
                         technological solutions for my customers. Then I
                         tempered my creative inclinations with real-world
@@ -102,22 +125,20 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     </Box>
                 </Text> */}
                 <IntroParagraph {...animation.slideUp2}>
-                    I've spent the better part of my career at agencies leading
-                    development of{' '}
-                    <IntroEmph>
-                        strategic, creative and technological{' '}
-                    </IntroEmph>
-                    solutions for my customers. I've also tempered my creative
-                    inclinations with{' '}
+                    I&apos;ve spent the better part of my career at agencies
+                    leading development of
+                    <IntroEmph>strategic, creative and technological</IntroEmph>
+                    solutions for my customers. I&apos;ve also tempered my
+                    creative inclinations with
                     <IntroEmph>real-world perspective </IntroEmph> at posts with
                     a few global corporations.
                 </IntroParagraph>
                 <IntroParagraph {...animation.slideUp3}>
-                    A while back I took time to be a{' '}
+                    A while back I took time to be a
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
-                    feedings and changes I began tinkering with{' '}
+                    feedings and changes I began tinkering with
                     <IntroEmph>Wordpress</IntroEmph>. Now I design & build
-                    high-performance sites with leading-edge platforms like{' '}
+                    high-performance sites with leading-edge platforms like
                     <IntroEmph>React, Gatsby and Storybook</IntroEmph>. And I
                     can back it up with senior-level marketing chops.
                 </IntroParagraph>
@@ -128,14 +149,14 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         mb: 5,
                     }}
                 >
-                    My little ones ain't so little anymore. So it's high time I
-                    get back to work.
+                    My little ones ain&apos;t so little anymore. So it&apos;s
+                    high time I get back to work.
                 </IntroParagraph>
 
                 {/* <Text
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
+                        variant: 'text.p1',
 
                         // mb: 4,
                         maxWidth: '34em',
@@ -151,21 +172,21 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 {/* <Text
                     {...props}
                     sx={{
-                        variant: 'text.text_lg',
+                        variant: 'text.p1',
 
                         // mb: 4,
                         maxWidth: '34em',
                     }}
                     {...animation.slideUp4}
                 >
-                    Today my little ones ain't so little anymore and I'm ready
+                    Today my little ones ain&apos;t so little anymore and I'm ready
                     to get back to work.
                 </Text> */}
                 <Text
                     {...props}
                     variant="d3"
                     sx={{
-                        mb: [2, 3, 6, 4, 4, 5],
+                        mb: [2, 3, 6, 4, 4, 5, 5, 5],
                         display: 'block',
                         fontFamily: 'heading',
                         fontWeight: 'heavy',
@@ -180,8 +201,8 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         {...animation.slideUp6}
                         sx={{
                             textDecoration: 'none',
-                            ml: [1, 3, 1, 1, 1, 1],
-                            mb: [2, 2, 3, 2, 0, 0],
+                            ml: [1, 3, 1, 1, 1, 1, 1, 1],
+                            mb: [2, 2, 3, 2, 0, 0, 0, 0],
                             fontSize: 'inherit',
                         }}
                     >
@@ -201,12 +222,20 @@ const SlateSummary = ({ sectionBg, ...props }) => (
 
                 <ContactIconsBar
                     linkBoxTransform="translateY(100px)"
-                    mt={[4, 6, 4, 0, null, null]}
+                    mt={[4, 6, 4, 0, null, null, null, null]}
                     display="flex"
                     // justifyContent: 'center',
                     alignItems="center"
                     flex="1 0 auto"
-                    width={['100%', '100%', '100%', '18em', '18em']}
+                    width={[
+                        '100%',
+                        '100%',
+                        '100%',
+                        '18em',
+                        '18em',
+                        '18em',
+                        '18em',
+                    ]}
                     minHeight="4em"
                     //width: ,
                     // motion1='...animation.slideUp1'
