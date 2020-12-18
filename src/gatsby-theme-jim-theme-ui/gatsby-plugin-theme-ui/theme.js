@@ -60,7 +60,7 @@ export default merge(typography, {
     fontWeights: {
         thin: 200,
         light: 300,
-        regular: 400, // default normal
+        normal: 400, // default normal
         semibold: 600, // default bold
         bold: 700, // default bold
         heavy: 900,
@@ -89,7 +89,7 @@ headline: {
 
     subline: {
         fontFamily: 'heading',
-        fontWeight: 'regular',
+         fontWeight: 'normal',
         letterSpacing: 'loose',
         textTransform: 'uppercase',
         lineHeight: 1.4,
@@ -222,7 +222,7 @@ headline: {
         root: {
             fontFamily: 'body',
             lineHeight: 'body',
-            fontWeight: 'regular',
+             fontWeight: 'normal',
         },
 
         // hxxxl: {

@@ -65,7 +65,7 @@ const WorkSample = ({
             >
                 <Box
                     className="projectNumberContainer"
-                    // {...animation.fadeSlow}
+                    {...animation.fadeSlow}
                     {...props}
                     sx={{
                         // display: 'flex',
@@ -76,13 +76,42 @@ const WorkSample = ({
                             'relative',
                             'absolute',
                             'absolute',
+                            'absolute',
+                            'absolute',
                         ],
-                        top: [null, null, null, null, '-6em', '-10em'],
-                        left: [null, null, null, null, '-2.5em', '-5em'],
+                        top: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            '-6em',
+                            '-6em',
+                            '-11em',
+                            '-11em',
+                        ],
+                        left: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            '-2.5em',
+                            '-5em',
+                            null,
+                            null,
+                        ],
                         flex: 'none',
                         display: 'block',
                         minHeight: '4em',
-                        height: [null, null, null, null, '6em', '6em'],
+                        height: [
+                            null,
+                            null,
+                            null,
+                            null,
+                            '6em',
+                            '6em',
+                            '6em',
+                            '6em',
+                        ],
                         lineHeight: 1,
                         minWidth: '100%',
                         zIndex: '2',
@@ -92,17 +121,17 @@ const WorkSample = ({
                         className="projectNumber"
                         {...props}
                         sx={{
-                            // color: `${projectNumberColor}`,
-                            color: [
-                                'red',
-                                'green',
-                                'blue',
-                                'cyan',
-                                'magenta',
-                                'yellow',
-                                'black',
-                                'purple',
-                            ],
+                            color: `${projectNumberColor}`,
+                            // color: [
+                            //     'red',
+                            //     'green',
+                            //     'blue',
+                            //     'cyan',
+                            //     'magenta',
+                            //     'yellow',
+                            //     'black',
+                            //     'purple',
+                            // ],
                             fontSize: [
                                 '4em',
                                 '6em',
@@ -146,22 +175,31 @@ const WorkSample = ({
                                 'styles.h4',
                                 'styles.h4',
                                 'styles.h4',
-                                'styles.h4',
+                                'styles.h3',
                                 'styles.h4',
                             ],
                             mb: 2,
                             letterSpacing: 'tight',
                             color: `${textColor}`,
                         }}
-                        // {...animation.slideUp2}
+                        {...animation.slideUp2}
                     >
                         {projectHeadline}
                     </Headline>
                     <Divider
                         {...props}
-                        // {...animation.slideUp2}
+                        {...animation.slideUp2}
                         sx={{
-                            width: '1.618em',
+                            width: [
+                                '1.618em',
+                                null,
+                                null,
+                                null,
+                                '3.236em',
+                                null,
+                                null,
+                                null,
+                            ],
                             mb: 2,
                             backgroundColor: 'revText',
                         }}
@@ -170,12 +208,21 @@ const WorkSample = ({
                         className="projectSubhead"
                         {...props}
                         sx={{
-                            variant: 'styles.d5',
+                            variant: [
+                                'styles.d5',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                                'styles.d4',
+                                null,
+                            ],
                             color: `${textColor}`,
-                            mb: [0, 4, 4, 4, 2, null, null, null],
+                            mb: [0, 4, 4, 4, 2, null, 4, null],
                             pr: [0, 0, 0, 1, 0, null, null, null],
                         }}
-                        // {...animation.slideUp3}
+                        {...animation.slideUp3}
                     >
                         {projectSubhead}
                     </Display>
@@ -193,9 +240,9 @@ const WorkSample = ({
                     <Body
                         {...props}
                         className="projectText"
-                        variant="styles.p2"
+                        // variant="styles.p2"
                         sx={{
-                            mb: 5,
+                            mb: [5, null, null, null, null, null, null, null],
                             color: `${textColor}`,
                             maxWidth: [
                                 '22em',
@@ -204,11 +251,21 @@ const WorkSample = ({
                                 null,
                                 null,
                                 null,
+                                '22em',
                                 null,
+                            ],
+                            variant: [
+                                'styles.p2',
+                                null,
+                                null,
+                                null,
+                                null,
+                                null,
+                                'styles.p2',
                                 null,
                             ],
                         }}
-                        // {...animation.slideUp4}
+                        {...animation.slideUp4}
                     >
                         {projectText}
                     </Body>
@@ -282,7 +339,7 @@ const WorkSample = ({
                                     mr: 0,
                                 },
                             }}
-                            // {...animation.slideUp6}
+                            {...animation.slideUp6}
                         >
                             <ExtLink
                                 linkTo={repoLinkTo}

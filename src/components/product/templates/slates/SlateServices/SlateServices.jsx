@@ -33,30 +33,30 @@ const SlateServices = ({
             }}
         >
             <Headline
-                // {...animation.slideUp1}
+                {...animation.slideUp1}
                 {...props}
                 as="h3"
                 sx={{
                     variant: 'styles.h3',
                     px: [2, null, 4, null, null, null, null, null],
                     mb: [2, null, 4, 5, null, null, null, null],
-                    color: [
-                        'red',
-                        'green',
-                        'blue',
-                        'cyan',
-                        'magenta',
-                        'yellow',
-                        'black',
-                        'purple',
-                    ],
+                    // color: [
+                    //     'red',
+                    //     'green',
+                    //     'blue',
+                    //     'cyan',
+                    //     'magenta',
+                    //     'yellow',
+                    //     'black',
+                    //     'purple',
+                    // ],
                 }}
             >
                 How I can help
             </Headline>
             <Box
                 className="servicesSliderContainer"
-                // {...animation.slideUp2}
+                {...animation.slideUp2}
                 {...props}
                 sx={{
                     mb: [3, 0, 3, 0, 4, 4, 4, 4],
@@ -78,7 +78,7 @@ const SlateServices = ({
             </Box>
 
             <Box
-                // {...animation.slideUp5}
+                {...animation.slideUp5}
                 {...props}
                 className="servicesCta"
                 sx={{
@@ -91,7 +91,7 @@ const SlateServices = ({
                     display: 'block',
                     position: 'relative',
                     fontFamily: 'heading',
-                    fontWeight: 'regular',
+                    fontWeight: 'normal',
                     color: 'primary',
                 }}
             >

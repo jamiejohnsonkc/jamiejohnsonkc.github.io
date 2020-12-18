@@ -6,6 +6,7 @@ import Article from '../../../../../../../gatsby-theme-jim-components/src/compon
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
+import Display from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
 import Subhead from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
@@ -14,26 +15,36 @@ import FluidStrunk from '../../../../../hooks/imageHooks/FluidStrunk'
 import EndorsementCard from '../../layouts/EndorsementCard/EndorsementCard'
 
 const NumberBadge = ({ number, ...props }) => (
-    <Box
+    <Display
         {...props}
         sx={{
+            variant: [
+                'styles.d5',
+                'styles.d5',
+                'styles.h5',
+                'styles.d6',
+                'styles.d5',
+                'styles.d4',
+                null,
+                null,
+            ],
             alignItems: 'center',
             bg: 'primary',
             borderRadius: '50%',
-            boxShadow: 'subtleFirmLR',
+            DisplayShadow: 'subtleFirmLR',
             color: 'revText',
             display: 'inline-flex',
             fontFamily: 'heading',
-            fontSize: [1, 5, 5, 2, 3, 3, 3, 3],
-            height: ['30px', '50px', '60px', null, null, null, null, null],
-            width: ['30px', '50px', '60px', null, null, null, null, null],
+            // fontSize: [1, 5, 5, 2, 3, 3, 3, 3],
+            height: ['30px', '40px', '60px', '30px', '40px', null, null, null],
+            width: ['30px', '40px', '60px', '30px', '40px', null, null, null],
             justifyContent: 'center',
             mr: [2, 3, 3, 3, 3, 3, 3, 3],
             position: 'relative',
         }}
     >
         {number}
-    </Box>
+    </Display>
 )
 
 const BadgeHead = ({ text, ...props }) => (
@@ -44,17 +55,17 @@ const BadgeHead = ({ text, ...props }) => (
             variant: [
                 'styles.d5',
                 'styles.d5',
-                'styles.h4',
-                'styles.d2',
+                'styles.h5',
+                'styles.d6',
+                'styles.d5',
                 'styles.d4',
-                null,
                 null,
                 null,
             ],
             display: 'inline-grid',
             color: 'revText',
             mb: '0px',
-            fontWeight: 'regular',
+            fontWeight: 'normal',
             letterSpacing: 'lazy',
         }}
     >
@@ -67,7 +78,7 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
         {...props}
         sx={{
             display: 'inline-block',
-            mb: [2, 4, 4, 2, 4, 3, 3, 3],
+            mb: [2, 2, 2, 2, 2, 3, 3, 3],
         }}
     >
         <NumberBadge number={number} />
@@ -76,7 +87,7 @@ const NumberBadgeHead = ({ number, text, ...props }) => (
 )
 
 const DisplayText = (props) => (
-    <Text
+    <Display
         {...props}
         // as='h3'
         sx={{
@@ -88,13 +99,24 @@ const DisplayText = (props) => (
             //     'text.d3',
             //     null,
             // ],
-            fontSize: [2, 4, 5, 3, 3, 3, 3, 3],
+            // fontSize: [2, 4, 5, 3, 3, 3, 3, 3],
             // fontWeight: [null, null, null, 'light', 'light', 'light'],
+            variant: [
+                'styles.d6',
+                'styles.d6',
+                'styles.d4',
+                'styles.d6',
+                'styles.d6',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
+            ],
             fontWeight: 'light',
-            fontFamily: 'heading',
+            lineHeight: '1.8em',
+            // fontFamily: 'heading',
             maxWidth: ['21em', null, null, null, null, '22em', '22em', '22em'],
             color: 'revText',
-            pl: ['38px', 4, 4, 3, 0, 3, 3, 3],
+            pl: ['38px', 4, 4, 4, 4, 3, 3, 3],
             pr: [null, null, 2, null, null, null, null, null],
             mb: [1, 4, null, null, null, null, null, null],
         }}
@@ -148,7 +170,12 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
             className="valueSection"
             containerVariant="containerValue"
         >
-            <Article>
+            <Article
+                {...props}
+                sx={{
+                    variant: 'layout.articleValue',
+                }}
+            >
                 <Grid
                     className="articleWrapper"
                     {...props}
@@ -177,21 +204,21 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         {...props}
                         sx={{
                             gridColumn: '1 / 4',
-                            mb: [4, 5, null, 4, 4, 5, 5, 5],
+                            mb: [4, 4, null, 4, 4, 5, 5, 5],
                         }}
                     >
                         <Headline
                             {...props}
                             as="h4"
-                            // {...animation.slideUp2}
+                            {...animation.slideUp2}
                             sx={{
                                 variant: [
                                     'styles.h4',
-                                    'styles.h3',
+                                    'styles.h4',
                                     'styles.h2',
                                     null,
                                     null,
-                                    null,
+                                    'styles.h2',
                                     'styles.bu3',
                                     null,
                                 ],
@@ -199,25 +226,25 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                     null,
                                     '100%',
                                     '83%',
-                                    null,
+                                    '90%',
+                                    '90%',
                                     '83%',
-                                    '61%',
                                     '83%',
                                     null,
                                 ],
-                                // color: 'revText',
-                                color: [
-                                    'red',
-                                    'green',
-                                    'blue',
-                                    'cyan',
-                                    'magenta',
-                                    'yellow',
-                                    'black',
-                                    'purple',
-                                ],
+                                color: 'revText',
+                                // color: [
+                                //     'red',
+                                //     'green',
+                                //     'blue',
+                                //     'cyan',
+                                //     'magenta',
+                                //     'yellow',
+                                //     'black',
+                                //     'purple',
+                                // ],
                                 letterSpacing: [
-                                    null,
+                                    '-0.06em',
                                     '-0.06em',
                                     'unset',
                                     null,
@@ -263,11 +290,11 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                     >
                         <ParentBox
                             className="parentBox1"
-                            // {...animation.slideUp3NoTrans}
+                            {...animation.slideUp3NoTrans}
                         >
                             <Box
                                 className="vertDivider"
-                                // {...animation.fadeSlow}
+                                {...animation.fadeSlow}
                                 {...props}
                                 sx={{
                                     display: [
@@ -315,12 +342,10 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                             <NumberBadgeHead
                                 number="2"
                                 text="Great Service"
-                                // {...animation.slideUp3NoTrans}
+                                {...animation.slideUp3NoTrans}
                             />
 
-                            <DisplayText
-                            // {...animation.slideUp4NoTrans}
-                            >
+                            <DisplayText {...animation.slideUp4NoTrans}>
                                 Accessible and accountable expertise committed
                                 to superior service.
                             </DisplayText>
@@ -328,7 +353,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
 
                         <EndorsementCard
                             {...props}
-                            // {...animation.slideUp3NoTrans}
+                            {...animation.slideUp3NoTrans}
                             linkTo="https://www.linkedin.com/in/jamiejohnsonkc/#ember595"
                             className="card1"
                             profilePic={<FluidStrunk />}
@@ -338,7 +363,7 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                         />
                         <EndorsementCard
                             {...props}
-                            // {...animation.slideUp4NoTrans}
+                            {...animation.slideUp4NoTrans}
                             linkTo="https://www.linkedin.com/in/jamiejohnsonkc/#ember595"
                             className="card2"
                             profilePic={<FluidPeizer />}
@@ -350,8 +375,8 @@ const SlateValue = ({ sectionBg, sectionVariant, revText, ...props }) => (
                                     null,
                                     null,
                                     null,
-                                    null,
-                                    6,
+                                    5,
+                                    5,
                                     null,
                                     null,
                                     null,

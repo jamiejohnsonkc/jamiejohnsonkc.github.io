@@ -82,7 +82,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                                 mb: 2,
                                 color: 'primary',
                             }}
-                            // {...animation.slideUp2}
+                            {...animation.slideUp2}
                         >
                             I'm fluent in code, design and strategy
                         </Subline>
@@ -91,7 +91,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             sx={{
                                 variant: 'text.p1',
                             }}
-                            // {...animation.slideUp3}
+                            {...animation.slideUp3}
                         >
                             Consectetur sit irure mollit dolore Lorem aliqua
                             proident. Est fugiat aute anim exercitation.

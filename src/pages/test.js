@@ -12,6 +12,8 @@ import SlateIntro from '../components/product/templates/slates/SlateIntro';
 import SlateSummary from '../components/product/templates/slates/SlateSummary';
 import VisHdngText from '../../../gatsby-theme-jim-components/src/components/contentBlocks/VisHdngText';
 import Headline from '../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline';
+import SlateClose from '../components/product/templates/slates/SlateClose';
+import SlateProjects from '../components/product/templates/slates/SlateProjects';
 
 const Test = (props) => {
     const size = useWindowSize();
@@ -25,7 +27,18 @@ const Test = (props) => {
        {/* <SlateServices/> */}
        {/* <SlateIntro/> */}
        {/* <SlateSummary/> */}
-        <SlateValue id="value" sectionBg="darkBackground" />
+        {/* <SlateValue id="value" sectionBg="darkBackground" /> */}
+        {/* <SlateClose/> */}
+        <SlateProjects
+                    id="projects"
+                    project1Bg="background"
+                    project1NumberColor="overlay4"
+                    project2Bg="blackSurface"
+                    project2TextColor="revText"
+                    project2NumberColor="revOverlay2"
+                    project3Bg="background"
+                    project3NumberColor="overlay4"
+                />
       </Layout>
       // <div>{size.width}
       // <Box {...props} sx={{

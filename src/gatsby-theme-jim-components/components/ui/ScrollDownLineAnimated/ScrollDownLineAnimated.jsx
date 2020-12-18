@@ -8,7 +8,7 @@ import animation from '../../../../../../gatsby-theme-scroll-reveal/animation'
 
 const ScrollDownLineAnimated = ({ mt, ml, ...props }) => (
     <Grid
-        // {...animation.slideUpScrollDown}
+        {...animation.slideUpScrollDown}
         columns=".5fr 2.5fr"
         {...props}
         sx={{
@@ -72,7 +72,7 @@ const ScrollDownLineAnimated = ({ mt, ml, ...props }) => (
             sx={{
                 color: 'primary',
                 fontFamily: 'heading',
-                fontWeight: 'regular',
+                fontWeight: 'normal',
                 fontSize: [0, 1, 2, 1, null, null, null, null],
                 letterSpacing: 'loose',
                 textTransform: 'lowercase',

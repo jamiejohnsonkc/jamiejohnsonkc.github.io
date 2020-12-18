@@ -8,10 +8,11 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
+import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import CtaLinkExt from '../../../../../../../gatsby-theme-jim-components/src/components/ui/CtaLinkExt'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 
-//TODO refactor split lines
+// TODO refactor split lines
 
 const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
     <>
@@ -38,23 +39,24 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                             null,
                             null,
                         ],
-                        color: [
-                            'red',
-                            'green',
-                            'blue',
-                            'cyan',
-                            'magenta',
-                            'yellow',
-                            'black',
-                            'purple',
-                        ],
-                        mb: '0px',
+                        // color: [
+                        //     'red',
+                        //     'green',
+                        //     'blue',
+                        //     'cyan',
+                        //     'magenta',
+                        //     'yellow',
+                        //     'black',
+                        //     'purple',
+                        // ],
+                        mb: 4,
+                        letterSpacing: '-.06em',
                     }}
-                    // {...animation.slideUp1}
+                    {...animation.slideUp1}
                 >
-                    How can I help you
+                    Ready to grow?
                 </Headline>
-                <Headline
+                {/* <Headline
                     as="h1"
                     variant="styles.h3"
                     {...props}
@@ -71,35 +73,35 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                         ],
                         mb: 4,
                     }}
-                    // {...animation.slideUp1}
+                     {...animation.slideUp1}
                 >
                     grow your business?
-                </Headline>
+                </Headline> */}
 
                 <Subline
                     {...props}
                     as="h2"
                     sx={{
-                        variant: 'styles.h5',
-                        mb: '0px',
+                        variant: 'styles.d5',
+                        mb: 4,
                         color: 'primary',
                         maxWidth: [
                             null,
                             null,
                             null,
-                            '42em',
-                            '42em',
-                            '22em',
-                            '22em',
-                            '22em',
+                            '20em',
+                            '20em',
+                            '20em',
+                            '20em',
+                            '20em',
                         ],
-                        fontWeight: 'regular',
+                        fontWeight: 'normal',
                     }}
-                    // {...animation.slideUp2}
+                    {...animation.slideUp2}
                 >
-                    Available for freelance,
+                    Available for freelance &amp; extended engagements
                 </Subline>
-                <Subline
+                {/* <Subline
                     {...props}
                     as="h2"
                     sx={{
@@ -116,29 +118,29 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                             '22em',
                             '22em',
                         ],
-                        fontWeight: 'regular',
+                         fontWeight: 'normal',
                     }}
-                    // {...animation.slideUp2}
+                     {...animation.slideUp2}
                 >
                     contract & extended engagements
-                </Subline>
-                <Text
-                    variant="text.p1"
+                </Subline> */}
+                <Paragraph
+                    variant="styles.p2"
                     {...props}
                     sx={{
                         maxWidth: [
+                            '33em',
                             null,
                             null,
+                            '25em',
+                            '25em',
+                            '25em',
                             null,
-                            '42em',
-                            '36em',
-                            '28em',
-                            '28em',
-                            '28em',
+                            null,
                         ],
-                        mb: 5,
+                        // mb: [3, 2, 2, null, null, 4],
+                        // lineHeight: 2,
                     }}
-                    // {...animation.slideUp2}
                 >
                     <p>
                         Throughout my career I&apos;ve led multi-functional
@@ -150,13 +152,13 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
                         get it done, or all of the above. I&apos;d be ecstatic
                         to help.
                     </p>
-                </Text>
+                </Paragraph>
                 <CtaLinkExt
                     {...props}
                     sx={{
                         variant: 'links.ctaLink',
                     }}
-                    // {...animation.slideUp3}
+                    {...animation.slideUp3}
                     linkTo="mailto:jamiejohnsonkc@gmail.com"
                     linkText="Let's Get Started"
                 />

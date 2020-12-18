@@ -34,16 +34,16 @@ const SplitHead = ({ children, mb, ...props }) => (
                 'styles.bu3',
                 'styles.bu3',
             ],
-            color: [
-                'red',
-                'green',
-                'blue',
-                'cyan',
-                'magenta',
-                'yellow',
-                'black',
-                'purple',
-            ],
+            // color: [
+            //     'red',
+            //     'green',
+            //     'blue',
+            //     'cyan',
+            //     'magenta',
+            //     'yellow',
+            //     'black',
+            //     'purple',
+            // ],
             mb,
         }}
     >

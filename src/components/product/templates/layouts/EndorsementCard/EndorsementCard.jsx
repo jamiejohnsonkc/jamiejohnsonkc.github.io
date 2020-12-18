@@ -81,7 +81,7 @@ const EndorsementCard = ({
         >
             <Card
                 className="endorsementCard"
-                // {...animation.slideUp4NoTrans}
+                {...animation.slideUp4NoTrans}
                 {...props}
                 sx={{
                     // px: [0, 4, 4, 0, 0, 2],
@@ -89,26 +89,18 @@ const EndorsementCard = ({
                     // flexDirection: ['row', null, null, null, null, null],
                     // display: ['grid', null, null, null, null, null],
                     display: 'grid',
+
+                    px: [4, 4, 4, 4, 4, 4, 4, 4],
+                    py: [4, 4, 4, null, 5, 5, 5, 5],
                     height: [
-                        '100%',
-                        null,
-                        null,
-                        '512px',
-                        '640px',
-                        '680px',
-                        '680px',
-                    ],
-                    px: [4, 5, 5, 5, 5, 5, 5, 5],
-                    py: [4, 5, 5, null, 5, 5, 5, 5],
-                    minHeight: [
                         '320px',
-                        '640px',
-                        '512px',
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
+                        '368px',
+                        '388px',
+                        '400px',
+                        '440px',
+                        '680px',
+                        '680px',
+                        '680px',
                     ],
 
                     alignItems: 'center',
@@ -136,16 +128,26 @@ const EndorsementCard = ({
                         'auto',
                     ],
                     maxWidth: [
-                        null,
-                        null,
-                        null,
-                        null,
-                        '83%',
+                        '278px',
+                        '304px',
+                        '452px',
+                        '300px',
+                        '320px',
                         '83%',
                         '83%',
                         '83%',
                     ],
-                    margin: [null, null, null, null, '0 auto', '0 auto'],
+                    margin: [
+                        '0 auto',
+                        null,
+                        //    `16px auto 24px auto`,
+                        '16px auto 32px auto',
+                        '0 auto',
+                        '0 auto',
+                        '0 auto',
+                        '0 auto',
+                        '0 auto',
+                    ],
                 }}
             >
                 <Box
@@ -155,10 +157,10 @@ const EndorsementCard = ({
                         height: 'auto',
                         width: [
                             '4em',
-                            '8em',
-                            '8em',
-                            '50%',
-                            '50%',
+                            '4em',
+                            '6em',
+                            '38%',
+                            '38%',
                             '33%',
                             '33%',
                             '33%',
@@ -197,7 +199,7 @@ const EndorsementCard = ({
                 </Box>
 
                 <Text
-                    className="quote"
+                    className="endorsement"
                     {...props}
                     sx={{
                         textAlign: [
@@ -211,12 +213,12 @@ const EndorsementCard = ({
                             'center',
                         ],
                         fontFamily: 'heading',
-                        fontSize: [1, 3, 3, 2, 3, '20.454878px', 4, 4],
+                        fontSize: [1, 2, 3, 1, 1, '20.454878px', 3, 3],
                         px: [null, null, null, null, null, 2, 2, 2],
                         fontWeight: [400, 500, 500, 600, 600, 600, 600, 600],
                         lineHeight: [1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
                         color: 'revText',
-                        marginBottom: [4, 4, 4, 0, 0, 0, 0, 0],
+                        marginBottom: [4, 4, 4, 0, 4, 0, 0, 0],
                         order: [3, 3, 3, 2, 2, 2, 2, 2],
                         gridColumnStart: '1',
                         gridColumnEnd: '5',
@@ -282,11 +284,11 @@ const EndorsementCard = ({
                             'center',
                         ],
                         py: [0, 0, 0, 0, 0, 0, 0, 0],
-                        pl: [2, 4, 4, 0, 0, 0, 0, 0],
-                        pr: [0, 3, 3, 0, 0, 0, 0, 0],
+                        pl: [2, 3, 4, 0, 0, 0, 0, 0],
+                        pr: [0, 1, 1, 0, 0, 0, 0, 0],
                         // pb: [0, 4, 4, 0, 0, 0],
                         // mt: [0, -4, 0, 0, 0],
-                        fontSize: [2, 3, 3, 1, 2, 2, 2, 2],
+                        fontSize: [2, 2, 3, '12px', 1, 2, 2, 2],
                         lineHeight: [1.4, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
                         // letterSpacing: 'snug',
                         fontFamily: 'heading',
@@ -310,7 +312,7 @@ const EndorsementCard = ({
                             letterSpacing: 'loose',
                             lineHeight: '1.6',
                             color: 'revText',
-                            fontSize: ['9px', 2, 3, 1, 1, 1, 1, 1],
+                            fontSize: ['9px', '10px', 2, '10px', 1, 1, 2, 2],
                             px: [
                                 null,
                                 null,
@@ -321,7 +323,7 @@ const EndorsementCard = ({
                                 null,
                                 null,
                             ],
-                            mb: [0, 0, 0, 0, 0, 4, 4, 4],
+                            mb: [0, 0, 0, 0, 4, 4, 4, 4],
                         }}
                     >
                         {endorserTitle}

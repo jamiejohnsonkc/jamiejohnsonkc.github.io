@@ -1,3 +1,6 @@
+
+//! organize by style type, not by the object so changing the same elements is quicker (or find ways to control more components by less objects)
+
 //* shared properties/values
 const serviceSliderCard = {
     height: [
@@ -127,8 +130,8 @@ export default {
             'null',
         ],
         // minHeight: ['800px', '2000px', '906px', '1075px', '1536px', '1536px'],
-        px: [null, 1, 1, 4, null, null, null, null],
-        py: [6, 7, 6, 6, 7, 4, 4, 4],
+        px: [null, 1, 1, 4, 2, null, null, null],
+        py: [6, 7, 6, 6, 6, 4, 2, 2 ],
         scrollSnapType: 'y mandatory',
         scrollSnapAlign: [null, 'start', null, null, null, null, null, null],
         zIndex: 1,
@@ -148,7 +151,7 @@ export default {
         position: 'relative',
     },
     articleValue: {
-        px: [0, 0, 0, 2, 6, 6, 6, 6],
+        px: [0, 2, 0, 2, 4, 4, 4, 4],
     },
 
     //* HistorySection Styles

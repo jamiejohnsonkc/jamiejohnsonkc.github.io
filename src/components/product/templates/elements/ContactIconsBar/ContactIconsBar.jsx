@@ -54,7 +54,7 @@ const ContactIconsBar = ({
             }}
         >
             <LinkBox
-                // {...animation.navIconSlideUp2}
+                {...animation.navIconSlideUp2}
                 {...props}
                 sx={{
                     // transform: 'translateY(100px)',
@@ -72,7 +72,7 @@ const ContactIconsBar = ({
             </LinkBox>
 
             <LinkBox
-                // {...animation.navIconSlideUp3}
+                {...animation.navIconSlideUp3}
                 {...props}
                 sx={{
                     // transform: 'translateY(100px)',
@@ -89,7 +89,7 @@ const ContactIconsBar = ({
                 </IconLink>
             </LinkBox>
             <LinkBox
-                // {...animation.navIconSlideUp4}
+                {...animation.navIconSlideUp4}
                 {...props}
                 sx={{
                     // transform: 'translateY(100px)',
@@ -107,7 +107,7 @@ const ContactIconsBar = ({
             </LinkBox>
 
             <LinkBox
-                // {...animation.navIconSlideUp5}
+                {...animation.navIconSlideUp5}
                 {...props}
                 sx={{
                     // transform: 'translateY(100px)',

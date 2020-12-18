@@ -10,7 +10,7 @@ import Subhead from '../../../../../../../../gatsby-theme-jim-components/src/com
 const GroupHead = ({ isOpen, groupHead, ...props }) => (
     <Subhead
         className="groupHead"
-        // {...animation.slideUp1}
+        {...animation.slideUp1}
         {...props}
         sx={{
             variant: [

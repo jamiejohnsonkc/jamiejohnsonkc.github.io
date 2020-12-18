@@ -84,18 +84,18 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     {...props}
                     sx={{
                         mb: 4,
-                        color: [
-                            'red',
-                            'green',
-                            'blue',
-                            'cyan',
-                            'magenta',
-                            'yellow',
-                            'black',
-                            'purple',
-                        ],
+                        // color: [
+                        //     'red',
+                        //     'green',
+                        //     'blue',
+                        //     'cyan',
+                        //     'magenta',
+                        //     'yellow',
+                        //     'black',
+                        //     'purple',
+                        // ],
                     }}
-                    // {...animation.slideUp1}
+                    {...animation.slideUp1}
                 >
                     Hiyas.
                 </Headline>
@@ -124,9 +124,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         perspective at posts with a few global corporations.
                     </Box>
                 </Text> */}
-                <IntroParagraph
-                // {...animation.slideUp2}
-                >
+                <IntroParagraph {...animation.slideUp2}>
                     I&apos;ve spent the better part of my career at agencies
                     leading development of
                     <IntroEmph>strategic, creative and technological</IntroEmph>
@@ -135,9 +133,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     <IntroEmph>real-world perspective </IntroEmph> at posts with
                     a few global corporations.
                 </IntroParagraph>
-                <IntroParagraph
-                // {...animation.slideUp3}
-                >
+                <IntroParagraph {...animation.slideUp3}>
                     A while back I took time to be a
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
                     feedings and changes I began tinkering with
@@ -147,7 +143,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     can back it up with senior-level marketing chops.
                 </IntroParagraph>
                 <IntroParagraph
-                    // {...animation.slideUp4}
+                    {...animation.slideUp4}
                     {...props}
                     sx={{
                         mb: 5,
@@ -196,13 +192,13 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         fontWeight: 'heavy',
                         color: 'primary',
                     }}
-                    // {...animation.slideUp5}
+                    {...animation.slideUp5}
                 >
                     Need a coder? A website? More?
                     <Link
                         href="mailto:jamiejohnsonkc@gmail.com"
                         {...props}
-                        // {...animation.slideUp6}
+                        {...animation.slideUp6}
                         sx={{
                             textDecoration: 'none',
                             ml: [1, 3, 1, 1, 1, 1, 1, 1],
