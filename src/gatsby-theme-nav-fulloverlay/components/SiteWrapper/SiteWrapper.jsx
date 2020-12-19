@@ -13,16 +13,16 @@ const SiteWrapper = ({ siteWrapperBgColor, siteWrapperFlexDir, ...props }) => {
             {...props}
             sx={{
                 display: 'flex',
-                backgroundColor: [
-                    null,
-                    `${siteWrapperBgColor}`,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                ],
+                // backgroundColor: [
+                //     null,
+                //     `${siteWrapperBgColor}`,
+                //     null,
+                //     null,
+                //     null,
+                //     null,
+                //     null,
+                //     null,
+                // ],
                 flexDirection: `${siteWrapperFlexDir}`,
                 position: 'relative',
                 zIndex: '1',

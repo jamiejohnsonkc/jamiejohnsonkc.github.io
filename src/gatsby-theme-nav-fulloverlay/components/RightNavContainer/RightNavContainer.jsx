@@ -2,7 +2,7 @@
 import { jsx, Box } from 'theme-ui'
 import React, { useState, useRef } from 'react'
 import RightNavMenu from '../RightNavMenu/RightNavMenu'
-import ContactIconsBar from '../../../../../jamiejohnsonkc2021/src/components/product/templates/elements/ContactIconsBar'
+import ContactIconsBar from '../../../components/product/templates/elements/ContactIconsBar'
 // import useOutsideClick from '../useOutsideClick'
 
 const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
@@ -32,17 +32,25 @@ const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
                     transform: (props) =>
                         navOpen ? 'translateX(0)' : 'translateX(100%)',
                     transition: 'transform 0.35s ease-in-out',
-                    py: ['unset', 4, 4, 4, 4, 4],
-                    px: ['unset', 4, 4, 4, 4, 4],
+                    py: ['unset', 4, 4, 4, 4, 4, 4, 4],
+                    pl: [3, 4, 4, 5, 5, 6, 6, 6],
                     '@media screen and (min-width: 56em)': {
-                        py: 5,
-                        px: 6,
                         width: '50%',
                     },
                 }}
             >
                 {/* <RightNavMenu navOpen={navOpen} /> */}
                 <RightNavMenu navOpen={navOpen} setNavOpen={setNavOpen} />
+                <ContactIconsBar
+                    linkBoxTransform="translateY(20px)"
+                    display="flex"
+                    flex="1 0 auto"
+                    width={['100%', '100%', '18em', '18em', '18em']}
+                    alignItems="center"
+                    minHeight="4em"
+                    alignSelf="stretch"
+                    paddingLeft="16px"
+                />
             </div>
         </div>
     )

@@ -2,37 +2,38 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { GoChevronRight } from 'react-icons/go'
-import ScrollContainer from 'react-indiana-drag-scroll'
+// import ScrollContainer from 'react-indiana-drag-scroll'
 import { Box, Grid, jsx, Text } from 'theme-ui'
+import LogoTicker from '../../elements/LogoTicker'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
-import Aeroquip from '../../../../../svg/assets/xpLogos/Aeroquip.svg'
-import Agripro from '../../../../../svg/assets/xpLogos/Agripro.svg'
-import Agrotain from '../../../../../svg/assets/xpLogos/Agrotain.svg'
-import Applebees from '../../../../../svg/assets/xpLogos/Applebees.svg'
-import Aviva from '../../../../../svg/assets/xpLogos/Aviva.svg'
-import Baldor from '../../../../../svg/assets/xpLogos/Baldor.svg'
-import Bayer from '../../../../../svg/assets/xpLogos/Bayer.svg'
-import Bcbs from '../../../../../svg/assets/xpLogos/Bcbs.svg'
-import Bi from '../../../../../svg/assets/xpLogos/Bi.svg'
-import Bv from '../../../../../svg/assets/xpLogos/Bv.svg'
-import Creative from '../../../../../svg/assets/xpLogos/Creative.svg'
-import Eaton from '../../../../../svg/assets/xpLogos/Eaton.svg'
-import Emd from '../../../../../svg/assets/xpLogos/Emd.svg'
-import Emerson from '../../../../../svg/assets/xpLogos/Emerson.svg'
-import Fmc from '../../../../../svg/assets/xpLogos/Fmc.svg'
-import FortDodge from '../../../../../svg/assets/xpLogos/FortDodge.svg'
-import Goodyear from '../../../../../svg/assets/xpLogos/Goodyear.svg'
-import Hilti from '../../../../../svg/assets/xpLogos/Hilti.svg'
-import Mac from '../../../../../svg/assets/xpLogos/Mac.svg'
-import Olympus from '../../../../../svg/assets/xpLogos/Olympus.svg'
-import Pfizer from '../../../../../svg/assets/xpLogos/Pfizer.svg'
-import Premier from '../../../../../svg/assets/xpLogos/Premier.svg'
-import Rheem from '../../../../../svg/assets/xpLogos/Rheem.svg'
-import Schering from '../../../../../svg/assets/xpLogos/Schering.svg'
-import Seaboard from '../../../../../svg/assets/xpLogos/Seaboard.svg'
-import Sprint from '../../../../../svg/assets/xpLogos/Sprint.svg'
-import Target from '../../../../../svg/assets/xpLogos/Target.svg'
-import Yrc from '../../../../../svg/assets/xpLogos/Yrc.svg'
+// import Aeroquip from '../../../../../svg/assets/xpLogos/Aeroquip.svg'
+// import Agripro from '../../../../../svg/assets/xpLogos/Agripro.svg'
+// import Agrotain from '../../../../../svg/assets/xpLogos/Agrotain.svg'
+// import Applebees from '../../../../../svg/assets/xpLogos/Applebees.svg'
+// import Aviva from '../../../../../svg/assets/xpLogos/Aviva.svg'
+// import Baldor from '../../../../../svg/assets/xpLogos/Baldor.svg'
+// import Bayer from '../../../../../svg/assets/xpLogos/Bayer.svg'
+// import Bcbs from '../../../../../svg/assets/xpLogos/Bcbs.svg'
+// import Bi from '../../../../../svg/assets/xpLogos/Bi.svg'
+// import Bv from '../../../../../svg/assets/xpLogos/Bv.svg'
+// import Creative from '../../../../../svg/assets/xpLogos/Creative.svg'
+// import Eaton from '../../../../../svg/assets/xpLogos/Eaton.svg'
+// import Emd from '../../../../../svg/assets/xpLogos/Emd.svg'
+// import Emerson from '../../../../../svg/assets/xpLogos/Emerson.svg'
+// import Fmc from '../../../../../svg/assets/xpLogos/Fmc.svg'
+// import FortDodge from '../../../../../svg/assets/xpLogos/FortDodge.svg'
+// import Goodyear from '../../../../../svg/assets/xpLogos/Goodyear.svg'
+// import Hilti from '../../../../../svg/assets/xpLogos/Hilti.svg'
+// import Mac from '../../../../../svg/assets/xpLogos/Mac.svg'
+// import Olympus from '../../../../../svg/assets/xpLogos/Olympus.svg'
+// import Pfizer from '../../../../../svg/assets/xpLogos/Pfizer.svg'
+// import Premier from '../../../../../svg/assets/xpLogos/Premier.svg'
+// import Rheem from '../../../../../svg/assets/xpLogos/Rheem.svg'
+// import Schering from '../../../../../svg/assets/xpLogos/Schering.svg'
+// import Seaboard from '../../../../../svg/assets/xpLogos/Seaboard.svg'
+// import Sprint from '../../../../../svg/assets/xpLogos/Sprint.svg'
+// import Target from '../../../../../svg/assets/xpLogos/Target.svg'
+// import Yrc from '../../../../../svg/assets/xpLogos/Yrc.svg'
 
 // TODO refactor to map logos
 
@@ -127,15 +128,15 @@ const SlateHistory = ({ sectionBg, ...props }) => (
 						<GoChevronRight />
 					</Box>
 				</Box> */}
-                <ScrollContainer
-                    className="scroll-container"
+                <Box
+                    className="tickerBox"
                     {...props}
                     sx={{
                         width: '100%',
                         height: '10em',
-                        display: 'flex',
+                        display: 'grid',
                         backgroundColor: 'inherit',
-                        flex: '0 0 auto',
+                        // flex: '0 0 auto',
                     }}
                 >
                     {/* <Flex
@@ -150,14 +151,17 @@ const SlateHistory = ({ sectionBg, ...props }) => (
 				> */}
                     <Box
                         {...props}
-                        id="hideScroll"
+                        // id="hideScroll"
                         sx={{
-                            flexWrap: 'nowrap',
-                            height: '10em',
-                            pl: 4,
-                            minWidth: '1000px',
+                            display: 'grid',
                             alignItems: 'center',
-                            display: 'flex',
+                            width: '100%',
+                            // flexWrap: 'nowrap',
+                            // height: '10em',
+                            // pl: 4,
+                            // minWidth: '1000px',
+                            // alignItems: 'center',
+                            // display: 'flex',
                             // overflowX: 'auto',
                             // touchAction: 'pan-y',
                             // cursor: 'grab',
@@ -169,7 +173,8 @@ const SlateHistory = ({ sectionBg, ...props }) => (
                             // },
                         }}
                     >
-                        <Box
+                        <LogoTicker />
+                        {/* <Box
                             {...props}
                             sx={{
                                 display: 'inline-flex',
@@ -193,8 +198,8 @@ const SlateHistory = ({ sectionBg, ...props }) => (
                                 className="chev2"
                                 {...animation.slideInOutFromRight}
                             />
-                        </Box>
-                        <LogoWrapper>
+                        </Box> */}
+                        {/* <LogoWrapper>
                             <Applebees />
                         </LogoWrapper>
                         <LogoWrapper>
@@ -277,9 +282,9 @@ const SlateHistory = ({ sectionBg, ...props }) => (
                         </LogoWrapper>
                         <LogoWrapper>
                             <Creative />
-                        </LogoWrapper>
+                        </LogoWrapper> */}
                     </Box>
-                </ScrollContainer>
+                </Box>
                 {/* </Flex> */}
             </Grid>
         </Box>

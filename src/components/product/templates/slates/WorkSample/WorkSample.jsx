@@ -85,7 +85,7 @@ const WorkSample = ({
                             null,
                             null,
                             '-6em',
-                            '-6em',
+                            '-11em',
                             '-11em',
                             '-11em',
                         ],

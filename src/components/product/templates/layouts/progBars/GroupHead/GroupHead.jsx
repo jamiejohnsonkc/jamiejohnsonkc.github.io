@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import React from 'react'
-// import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import PropTypes from 'prop-types'
 import Subhead from '../../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
+import animation from '../../../../../../../../gatsby-theme-scroll-reveal/animation'
 // import Headline from '../../../system/atoms/Text/Headline'
 // import Subline from '../../../system/atoms/Text/Subline'
 
