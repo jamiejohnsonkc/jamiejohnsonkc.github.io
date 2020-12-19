@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, Grid, jsx, Text } from 'theme-ui'
+import { Box, Grid, jsx, Link, Text } from 'theme-ui'
 import React from 'react'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
@@ -7,9 +7,11 @@ import Headline from '../../../../../../../gatsby-theme-jim-components/src/compo
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
 import ProgBarGrpAccdn from '../../layouts/progBars/ProgBarGrpAccdn'
 import ProgBarGrpMap from '../../layouts/progBars/ProgBarGrpMap'
-import CtaLinkInt from '../../../../../../../gatsby-theme-jim-components/src/components/ui/CtaLinkInt'
+// import CtaLinkInt from '../../../../../../../gatsby-theme-jim-components/src/components/ui/CtaLinkInt'
 import ScrollDownLineAnimatedVert from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ScrollDownLineAnimatedVert'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
+import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
 
 // Document.getelementById()
 
@@ -40,6 +42,8 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                         '1.3fr 1fr',
                         '1fr 1fr',
                         '1.25fr 1fr',
+                        '1.25fr 1fr',
+                        '1.25fr 1fr',
                     ]}
                     {...props}
                     sx={{
@@ -51,10 +55,15 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             'container.6',
                             'container.6',
                             'container.6',
+                            'container.6',
+                            'container.6',
                         ],
+
                         height: [
                             null,
                             null,
+                            '100vh',
+                            '100vh',
                             '100vh',
                             '100vh',
                             '100vh',
@@ -66,79 +75,141 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                         className="articleGridCell1"
                         {...props}
                         sx={{
-                            pr: [0, 0, 5, 5, '111px', '111px'],
+                            pr: [
+                                0,
+                                0,
+                                5,
+                                5,
+                                '111px',
+                                '111px',
+                                '111px',
+                                '111px',
+                            ],
                             alignSelf: 'center',
                         }}
                         {...animation.slideUp1}
                     >
-                        <Headline {...props} as="h1" variant="styles.h3">
-                            My Skills & Capabilities
+                        <Headline
+                            as="h1"
+                            variant="styles.h3"
+                            {...props}
+                            sx={{
+                                maxWidth: [
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                ],
+                                // color: [
+                                //     'red',
+                                //     'green',
+                                //     'blue',
+                                //     'cyan',
+                                //     'magenta',
+                                //     'yellow',
+                                //     'black',
+                                //     'purple',
+                                // ],
+                                mb: 4,
+                                letterSpacing: '-.06em',
+                            }}
+                            {...animation.slideUp1}
+                        >
+                            Skills &amp; Capabilities
                         </Headline>
 
                         <Subline
                             {...props}
-                            variant="styles.h4"
+                            as="h2"
                             sx={{
-                                mb: 2,
+                                variant: 'styles.d5',
+                                mb: 4,
                                 color: 'primary',
+                                maxWidth: [
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                ],
+                                fontWeight: 'normal',
                             }}
                             {...animation.slideUp2}
                         >
                             I'm fluent in code, design and strategy
                         </Subline>
-                        <Text
+                        <Paragraph
+                            variant="styles.p2"
                             {...props}
                             sx={{
-                                variant: 'text.p1',
+                                maxWidth: [
+                                    '33em',
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                    null,
+                                ],
+                                // mb: [3, 2, 2, null, null, 4],
+                                // lineHeight: 2,
                             }}
                             {...animation.slideUp3}
                         >
-                            Consectetur sit irure mollit dolore Lorem aliqua
-                            proident. Est fugiat aute anim exercitation.
-                        </Text>
+                            Anim ad magna commodo ullamco. Commodo qui nisi
+                            eiusmod reprehenderit labore irure culpa nulla
+                            eiusmod. Consectetur sit est aliqua duis ut esse
+                            quis. Dolore ut veniam velit esse ad quis laboris
+                            Lorem mollit elit irure nostrud elit.
+                        </Paragraph>
 
                         <ProgBarGrpAccdn />
 
-                        <CtaLinkInt
+                        <Text
                             {...props}
+                            variant="d3"
                             sx={{
-                                mb: [0, 0, 0, 0, 4, 4],
+                                mb: [2, 3, 6, 4, 4, 5, 5, 5],
                                 display: 'block',
-                                textAlign: 'left',
-                                gridColumnStart: '1',
-                                gridColumnEnd: '5',
-                                '& .linkText': {
-                                    fontSize: [1, 3, 3, 3, 2, 2],
-                                    mr: 2,
-                                    fontFamily: 'heading',
-                                    color: 'primary',
-                                    fontWeight: 'bold',
-                                },
-                                '& .linkVisual': {
-                                    '& > svg': {
-                                        height: [
-                                            '.5em',
-                                            '.75em',
-                                            '.5em',
-                                            '.5em',
-                                            '.5em',
-                                            '.5em',
-                                        ],
-                                        width: [
-                                            '.5em',
-                                            '.75em',
-                                            '.5em',
-                                            '.5em',
-                                            '.5em',
-                                            '.5em',
-                                        ],
-                                        fill: 'primary',
-                                    },
-                                },
+                                fontFamily: 'heading',
+                                fontWeight: 'heavy',
+                                color: 'primary',
                             }}
-                            linkTo="/"
-                            linkText="Ready to Grow Your Business?"
-                        />
+                            {...animation.slideUp5}
+                        >
+                            Need a coder? A website? More?
+                            <Link
+                                href="mailto:jamiejohnsonkc@gmail.com"
+                                {...props}
+                                {...animation.slideUp6}
+                                sx={{
+                                    textDecoration: 'none',
+                                    ml: [1, 3, 1, 1, 1, 1, 1, 1],
+                                    mb: [2, 2, 3, 2, 0, 0, 0, 0],
+                                    fontSize: 'inherit',
+                                }}
+                            >
+                                <HoverBgHiUndln
+                                    differenceColor="rgb(252,86,11)"
+                                    children="Let's go"
+                                    outlineColor="primary"
+                                    textColor="text"
+                                    underlineColor="text"
+                                    underlineHeight="2px"
+                                />
+                            </Link>
+                            {/* <AniLink swipe direction='up' to='web_development'>
+						PaintDrip
+					</AniLink> */}
+                        </Text>
                     </Box>
 
                     <Box
@@ -152,10 +223,14 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                                 'grid',
                                 'grid',
                                 'grid',
+                                'grid',
+                                'grid',
                             ],
                             height: [
                                 null,
                                 null,
+                                '100vh',
+                                '100vh',
                                 '100vh',
                                 '100vh',
                                 '100vh',
@@ -172,6 +247,8 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                                 display: [
                                     null,
                                     null,
+                                    'none',
+                                    'none',
                                     'none',
                                     'none',
                                     'none',

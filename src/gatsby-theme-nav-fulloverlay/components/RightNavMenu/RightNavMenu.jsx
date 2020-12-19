@@ -22,69 +22,96 @@ const RightNavMenu = ({
     }
 
     return (
-        <div
-            className="rightNavMenuContainer"
+        // <div
+        //     className="rightNavMenuContainer"
+        //     navOpen={navOpen}
+        //     setNavOpen={setNavOpen}
+        // >
+        <NavUl
+            {...props}
+            className="rightNavMenu"
             navOpen={navOpen}
             setNavOpen={setNavOpen}
-        >
-            <NavUl
-                {...props}
-                className="rightNavMenu"
-                navOpen={navOpen}
-                setNavOpen={setNavOpen}
-                sx={{
-                    minHeight: ['16em', '16em', '30em', '30em', '30em'],
-                    flex: [
-                        '2.5 0 auto',
-                        '1.5 0 auto',
-                        '1.5 0 auto',
-                        '1.5 0 auto',
-                        '1.5 0 auto',
-                    ],
-                    justifyContent: [
-                        'space-around',
-                        'space-around',
-                        'center',
-                        'center',
-                        'center',
-                    ],
-                    minWidth: '100%',
-                    pl: [3, 3, 0, 0, 0],
-                }}
-            >
-                {Data.navLinks.map((link) => (
-                    <NavLi key={link.id} navOpen={navOpen} onClick={closeMenu}>
-                        <Link
-                            to={link.to}
-                            className="activeClassName"
+            sx={{
+                mt: [4, null, null, 3, null, null, null, null],
+                minHeight: [
+                    '16em',
+                    '16em',
+                    '30em',
+                    '16em',
+                    '30em',
+                    '30em',
+                    '30em',
+                    '30em',
+                ],
+                flex: [
+                    '2.5 0 auto',
+                    '1.5 0 auto',
+                    '1.5 0 auto',
+                    '1.5 0 auto',
+                    '1.5 0 auto',
+                    '1.5 0 auto',
+                    '1.5 0 auto',
+                    '1.5 0 auto',
+                ],
 
-                            // onClick={() => setNavOpen(!navOpen)}
-                        >
-                            <HoverTextFill
-                                {...props}
-                                sx={{
-                                    color: 'navMenuItem',
-                                    lineHeight: 2,
-                                    fontWeight: 900,
-                                    fontFamily: 'heading',
-                                    letterSpacing: '-.025em',
-                                    // textTransform: 'capitalize',
-                                    textDecoration: 'none',
-                                    fontSize: [5, 6, 6, 8, 8],
+                justifyContent: [
+                    'space-evenly',
+                    'space-evenly',
+                    'center',
+                    'center',
+                    'center',
+                    'center',
+                    'center',
+                    'center',
+                ],
+                minWidth: '100%',
+                pl: [3, 3, 3, 0, 0, 0, 0, 0],
+            }}
+        >
+            {Data.navLinks.map((link) => (
+                <NavLi key={link.id} navOpen={navOpen} onClick={closeMenu}>
+                    <Link
+                        to={link.to}
+                        className="activeClassName"
+
+                        // onClick={() => setNavOpen(!navOpen)}
+                    >
+                        <HoverTextFill
+                            {...props}
+                            sx={{
+                                color: 'navMenuItem',
+                                // color: [
+                                //     'red',
+                                //     'green',
+                                //     'blue',
+                                //     'cyan',
+                                //     'magenta',
+                                //     'yellow',
+                                //     'black',
+                                //     'purple',
+                                // ],
+                                lineHeight: 2,
+                                fontWeight: 900,
+                                fontFamily: 'heading',
+                                letterSpacing: '-.025em',
+                                // textTransform: 'capitalize',
+                                textDecoration: 'none',
+                                fontSize: [7, 8, 9, 7, 9, 9, 10, 9],
+                                transition: 'transform 275ms ease',
+                                '&:before': {
                                     transition: 'transform 275ms ease',
-                                    '&:before': {
-                                        transition: 'transform 275ms ease',
-                                        color: 'navMenuItemHover',
-                                    },
-                                }}
-                            >
-                                {link.name}
-                            </HoverTextFill>
-                        </Link>
-                    </NavLi>
-                ))}
-            </NavUl>
-        </div>
+                                    color: 'navMenuItemHover',
+                                },
+                            }}
+                        >
+                            {link.name}
+                        </HoverTextFill>
+                    </Link>
+                </NavLi>
+            ))}
+        </NavUl>
+        // </div>
     )
 }
 
