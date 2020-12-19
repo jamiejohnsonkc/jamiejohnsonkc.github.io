@@ -143,7 +143,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             }}
                             {...animation.slideUp2}
                         >
-                            I'm fluent in code, design and strategy
+                            I&pos;m fluent in code, design and strategy
                         </Subline>
                         <Paragraph
                             variant="styles.p2"
@@ -199,12 +199,14 @@ const SlateDevSkills = ({ sectionBg, ...props }) => (
                             >
                                 <HoverBgHiUndln
                                     differenceColor="rgb(252,86,11)"
-                                    children="Let's go"
+                                    // children="Let's go"
                                     outlineColor="primary"
                                     textColor="text"
                                     underlineColor="text"
                                     underlineHeight="2px"
-                                />
+                                >
+                                    Let&apos;s go
+                                </HoverBgHiUndln>
                             </Link>
                             {/* <AniLink swipe direction='up' to='web_development'>
 						PaintDrip

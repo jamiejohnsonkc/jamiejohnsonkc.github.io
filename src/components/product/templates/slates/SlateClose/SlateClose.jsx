@@ -168,7 +168,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => (
 )
 
 SlateClose.propTypes = {
-    sectionBg: PropTypes.any,
+    sectionBg: PropTypes.string,
 }
 
 SlateClose.defaultProps = {
