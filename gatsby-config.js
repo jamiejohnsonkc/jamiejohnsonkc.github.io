@@ -4,14 +4,14 @@ module.exports = {
     description: `portfolio page`,
     author: `@jamiejohnsonkc`,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { FAST_REFRESH: true, PRESERVE_FILE_DOWNLOAD_CACHE: true, PRESERVE_WEBPACK_CACHE: true, LAZY_IMAGES: true, QUERY_ON_DEMAND: true, },
   plugins: [
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.15, // Percentage of an element's area that needs to be visible to launch animation
         once: true, // Defines if animation needs to be launched once
-        disable: false, // Flag for disabling animations
+        disable: true, // Flag for disabling animations
 
         // Advanced Options
         selector: '[data-sal]', // Selector of the elements to be animated

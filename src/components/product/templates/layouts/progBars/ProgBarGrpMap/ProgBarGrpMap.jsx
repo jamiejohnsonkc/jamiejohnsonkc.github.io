@@ -8,6 +8,8 @@ import ProgressBarGroup from '../ProgressBarGroup/ProgressBarGroup'
 import Groups from '../../../../../../../../gatsby-theme-jim-components/src/data/progressBarData'
 import LabeledProgressBar from '../../../../../../../../gatsby-theme-jim-components/src/components/system/organisms/LabeledProgressBar/index'
 
+//TODO resusafy
+
 const ProgBarGrpMap = ({
     groupGridColumns,
     groupSubGridColumns,
@@ -25,29 +27,38 @@ const ProgBarGrpMap = ({
                 // bg: 'white',
                 width: '100%',
                 borderRadius: 6,
-                py: [6, 6, 6, 5, 6, 6],
-                // px: [1, 1, 4, 6, 6],
-                pr: [0, 0, 0, 0, 4, 0],
-                mt: [4, 4, 0, 0, 0, 0],
-                display: ['none', 'none', 'block', 'block', 'block', 'block'],
+                py: [6, 6, 6, 5, 6, 6, 6, 6],
+                // px: [1, 1, 4, 6, 6,6, 6],
+                pr: [0, 0, 0, 0, 4, 0, 4, 0],
+                mt: [4, 4, 0, 0, 0, 0, 0, 0],
+                display: [
+                    'none',
+                    'none',
+                    'block',
+                    'block',
+                    'block',
+                    'block',
+                    'block',
+                    'block',
+                ],
             }}
         >
             <Box className="grid">
                 {Groups.map((group, id) => (
-                    <>
-                        <GroupHead key={id} groupHead={group.groupHead} />
+                    <Box>
+                        <GroupHead key={group.id} groupHead={group.groupHead} />
                         <GroupGrid groupGridColumns={group.groupGridColumns}>
-                            {group.skillSets.map((skillSet, id) => (
+                            {group.skillSets.map((skillSet, id2) => (
                                 <ProgressBarGroup
-                                    key={id}
+                                    key={skillSet.id2}
                                     groupSubhead={skillSet.groupSubhead}
                                     groupSubGridColumns={
                                         skillSet.groupSubGridColumns
                                     }
                                 >
-                                    {skillSet.bars.map((bar, id) => (
+                                    {skillSet.bars.map((bar, id3) => (
                                         <LabeledProgressBar
-                                            key={id}
+                                            key={bar.id3}
                                             progressLabel={bar.label}
                                             done={bar.done}
                                         />
@@ -55,7 +66,7 @@ const ProgBarGrpMap = ({
                                 </ProgressBarGroup>
                             ))}
                         </GroupGrid>
-                    </>
+                    </Box>
                 ))}
             </Box>
         </Box>

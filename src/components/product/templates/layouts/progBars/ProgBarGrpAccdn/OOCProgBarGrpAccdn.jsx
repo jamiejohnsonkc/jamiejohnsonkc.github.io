@@ -10,12 +10,9 @@ import LabeledProgressBar from '../../../../../../../../gatsby-theme-jim-compone
 import GroupGrid from '../GroupGrid/GroupGrid'
 import GroupHead from '../GroupHead'
 import ProgressBarGroup from '../ProgressBarGroup'
-import styled from '@emotion/styled'
+
 // import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 // animation
-
-const StyledUl = styled.ul``
-
 const ProgBarGrpAccdn = (props) => {
     return (
         <Box
@@ -38,7 +35,7 @@ const ProgBarGrpAccdn = (props) => {
                     px: [0, 0, 0, 0, 0],
                 }}
             >
-                <StyledUl
+                <ul
                     className="accordionList"
                     {...props}
                     sx={{
@@ -57,7 +54,7 @@ const ProgBarGrpAccdn = (props) => {
                         return (
                             <Box
                                 className="accordionListItem"
-                                key={id}
+                                key={group.id}
                                 {...props}
                                 sx={{
                                     borderTop: '1px solid rgba(0, 0, 0, 0.1)',
@@ -71,7 +68,7 @@ const ProgBarGrpAccdn = (props) => {
                             </Box>
                         )
                     })}
-                </StyledUl>
+                </ul>
             </Box>
         </Box>
     )
@@ -127,7 +124,7 @@ const AccordionItem = ({
                 }}
             >
                 <GroupHead
-                    key={groupId}
+                    key={group.Id}
                     groupHead={group.groupHead}
                     sx={{
                         color: `${isOpen ? 'revText' : 'text'}`,
@@ -221,18 +218,18 @@ const AccordionItem = ({
                     }}
                 >
                     <GroupGrid groupGridColumns={group.groupGridColumns}>
-                        {group.skillSets.map((skillSet, id) => (
+                        {group.skillSets.map((skillSet, id2) => (
                             <ProgressBarGroup
-                                key={id}
+                                key={skillSet.id2}
                                 groupSubhead={skillSet.groupSubhead}
                                 groupSubGridColumns={
                                     skillSet.groupSubGridColumns
                                 }
                                 subGridPaddingRight={[2, 2, 0, 0, 0]}
                             >
-                                {skillSet.bars.map((bar, id) => (
+                                {skillSet.bars.map((bar, id3) => (
                                     <LabeledProgressBar
-                                        key={id}
+                                        key={bar.id3}
                                         progressLabel={bar.label}
                                         done={bar.done}
                                     />

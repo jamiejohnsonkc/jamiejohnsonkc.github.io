@@ -7,8 +7,8 @@ import ContactIconsBar from '../../../components/product/templates/elements/Cont
 
 const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
     return (
-        <div navOpen={navOpen} setNavOpen={setNavOpen}>
-            <div
+        <Box navOpen={navOpen} setNavOpen={setNavOpen}>
+            <Box
                 {...props}
                 className="navContainer"
                 navOpen={navOpen}
@@ -51,8 +51,8 @@ const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
                     alignSelf="stretch"
                     paddingLeft="16px"
                 />
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
 

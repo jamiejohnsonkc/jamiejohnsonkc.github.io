@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui'
 import React, { useState } from 'react'
-import sal from 'sal.js'
 import PropTypes from 'prop-types'
 // import useStyle from '../../../../../hooks/useStyle'
 
@@ -13,7 +12,6 @@ export const ProgressBar = ({
     progressBarShadow,
     ...props
 }) => {
-    sal()
     // const [style, setStyle] = useState({})
 
     // setTimeout(() => {
@@ -25,7 +23,6 @@ export const ProgressBar = ({
     //     setStyle(newStyle)
     // }, 200)
 
-    // const customSlideIn = {
     //     slideRight: {
     //         'data-sal': 'slide-right',
     //         'data-sal-delay': '3s',
@@ -54,9 +51,10 @@ export const ProgressBar = ({
                 {...props}
                 // {...customSlideIn.slideRight}
                 data-sal="slide-right"
-                data-sal-delay="3000ms"
-                data-sal-easing="ease-in-back"
-                data-sal-duration="1000ms"
+                // data-sal-delay="3000ms"
+                // data-sal-easing="ease-in-back"
+                // data-sal-duration="1000ms"
+
                 sx={{
                     backgroundColor: `${progressBar}`,
                     boxShadow: `${progressBarShadow}`,
