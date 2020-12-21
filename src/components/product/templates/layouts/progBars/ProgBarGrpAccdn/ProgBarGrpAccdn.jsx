@@ -1,16 +1,18 @@
 /** @jsx jsx */
-import { useState } from 'react'
+import react, { useState } from 'react'
 // import './styles.css'
 import { GoChevronDown } from 'react-icons/go'
 import { Box, jsx } from 'theme-ui'
+import styled from '@emotion/styled'
 import Groups from '../../../../../../../../gatsby-theme-jim-components/src/data/progressBarData'
 import Span from '../../../../../../../../gatsby-theme-jim-components/src/components/system/atoms/Span'
 import LabeledProgressBar from '../../../../../../../../gatsby-theme-jim-components/src/components/system/organisms/LabeledProgressBar'
 // import { FaRegIdBadge } from 'react-icons/fa'
 import GroupGrid from '../GroupGrid/GroupGrid'
 import GroupHead from '../GroupHead'
+import GroupSubhead from '../GroupSubhead'
 import ProgressBarGroup from '../ProgressBarGroup'
-import styled from '@emotion/styled'
+
 // import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 // animation
 
@@ -57,7 +59,7 @@ const ProgBarGrpAccdn = (props) => {
                         return (
                             <Box
                                 className="accordionListItem"
-                                key={id}
+                                key={group.id}
                                 {...props}
                                 sx={{
                                     borderTop: '1px solid rgba(0, 0, 0, 0.1)',
@@ -67,7 +69,45 @@ const ProgBarGrpAccdn = (props) => {
                                     },
                                 }}
                             >
-                                <AccordionItem group={group} groupId={id} />
+                                <GroupHead
+                                    key={group.Id}
+                                    groupHead={group.groupHead}
+                                    // sx={{
+                                    //     color: `${isOpen ? 'revText' : 'text'}`,
+                                    //     transition:
+                                    //         'color .75s ease-in-out .1s',
+                                    // }}
+                                />
+
+                                <ul>
+                                    {group.skillSets.map((skillSet, id) => {
+                                        return (
+                                            <Box>
+                                                <GroupSubhead
+                                                    key={skillSet.id}
+                                                    groupSubhead={
+                                                        skillSet.groupSubhead
+                                                    }
+                                                />
+
+                                                {skillSet.bars.map(
+                                                    (bar, id) => {
+                                                        return (
+                                                            <LabeledProgressBar
+                                                                key={bar.id}
+                                                                progressLabel={
+                                                                    bar.label
+                                                                }
+                                                                done={bar.done}
+                                                            />
+                                                        )
+                                                    }
+                                                )}
+                                            </Box>
+                                        )
+                                    })}
+                                </ul>
+                                {/* <AccordionItem group={group} groupId={id} /> */}
                             </Box>
                         )
                     })}
@@ -83,7 +123,7 @@ const AccordionItem = ({
     groupGridColumns,
     groupSubGridColumns,
     groupHead,
-    groupsSubhead,
+    groupSubhead,
     progressLabel,
     ...props
 }) => {
@@ -126,14 +166,14 @@ const AccordionItem = ({
                         'color, boxShadow, p, marginBottom, backgroundColor',
                 }}
             >
-                <GroupHead
+                {/* <GroupHead
                     key={groupId}
                     groupHead={group.groupHead}
                     sx={{
                         color: `${isOpen ? 'revText' : 'text'}`,
                         transition: 'color .75s ease-in-out .1s',
                     }}
-                />
+                /> */}
 
                 <Span
                     className="accordionItemIcon"
