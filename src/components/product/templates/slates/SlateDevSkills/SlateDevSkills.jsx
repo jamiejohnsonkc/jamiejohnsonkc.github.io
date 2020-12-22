@@ -13,10 +13,10 @@ import ScrollDownLineAnimatedVert from '../../../../../../../gatsby-theme-jim-co
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
+import App from '../../../../Presentation/Accordion'
 // Document.getelementById()
 
 const SlateDevSkills = ({ sectionBg, ...props }) => {
-    sal()
     return (
         <>
             <SectionGrid
@@ -107,16 +107,6 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                         null,
                                         null,
                                     ],
-                                    // color: [
-                                    //     'red',
-                                    //     'green',
-                                    //     'blue',
-                                    //     'cyan',
-                                    //     'magenta',
-                                    //     'yellow',
-                                    //     'black',
-                                    //     'purple',
-                                    // ],
                                     mb: 4,
                                     letterSpacing: '-.06em',
                                 }}
@@ -174,7 +164,10 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                 laboris Lorem mollit elit irure nostrud elit.
                             </Paragraph>
                             {/* accordion small screen only */}
-                            <ProgBarGrpAccdn />
+                            {/* <ProgBarGrpAccdn /> */}
+
+                            {/* <App {...animation.slideUp4} /> */}
+                            <App />
 
                             <Text
                                 {...props}

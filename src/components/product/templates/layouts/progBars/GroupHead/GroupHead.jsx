@@ -4,29 +4,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import animation from '../../../../../../../../gatsby-theme-scroll-reveal/animation'
 import Subhead from '../../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
+import Display from '../../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
 
 //TODO resusafy
 
 const GroupHead = ({ isOpen, groupHead, ...props }) => (
-    <Subhead
+    <Display
         className="groupHead"
         // {...animation.slideUp1}
         {...props}
         sx={{
             variant: [
-                'styles.d6',
-                'styles.h5',
-                'styles.h5',
-                'styles.h5',
-                'styles.h5',
-                'styles.h5',
-                'styles.h5',
-                'styles.h5',
+                'styles.d5',
+                'styles.d5',
+                'styles.d4',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
             ],
-            mb: [0, 0, 4, 4, 4, 4, 4, 4],
+            mb: [2, 2, 2, 4, 4, 4, 4, 4],
         }}
-        children={groupHead}
-    />
+    >
+        {props.children}
+    </Display>
 )
 
 GroupHead.propTypes = {
