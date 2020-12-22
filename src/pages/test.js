@@ -1,14 +1,17 @@
 /** @jsx jsx */
+import { jsx, Box } from 'theme-ui'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { jsx, Box, Button } from 'theme-ui'
-import React, { useState } from 'react'
-import Groups from '../../../gatsby-theme-jim-components/src/data/progressBarData'
-import App from '../components/Presentation/Accordion/App'
+import ProgressBarGroup from "../components/product/templates/layouts/progBars/ProgressBarGroup"
+import LabeledProgressBar from '../gatsby-theme-jim-components/components/system/organisms/LabeledProgressBar'
+import Groups from '../data/progressBarData'
+import App from '../components/Presentation/Accordion'
 
-const Test = (props) => {
-  return (
+
+
+const test = () => (
 <App/>
-  )
-}
+)
 
-export default Test
+
+export default test
