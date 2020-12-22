@@ -90,7 +90,7 @@ const ProgBarGrpAccdn = (props) => {
                                                     }
                                                 />
 
-                                                {/* {skillSet.bars.map(
+                                                {skillSet.bars.map(
                                                     (bar, id) => {
                                                         return (
                                                             <LabeledProgressBar
@@ -102,7 +102,7 @@ const ProgBarGrpAccdn = (props) => {
                                                             />
                                                         )
                                                     }
-                                                )} */}
+                                                )}
                                             </Box>
                                         )
                                     })}

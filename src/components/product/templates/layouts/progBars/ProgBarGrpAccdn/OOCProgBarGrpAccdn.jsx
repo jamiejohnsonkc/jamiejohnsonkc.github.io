@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { useState } from 'react'
+import React, { useState } from 'react'
 // import './styles.css'
 import { GoChevronDown } from 'react-icons/go'
 import { Box, jsx } from 'theme-ui'
@@ -13,6 +13,7 @@ import ProgressBarGroup from '../ProgressBarGroup'
 
 // import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 // animation
+
 const ProgBarGrpAccdn = (props) => {
     return (
         <Box
