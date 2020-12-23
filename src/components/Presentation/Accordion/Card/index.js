@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx, Box } from 'theme-ui'
 import React from 'react';
 import classNames from 'classnames/bind';
 
@@ -8,7 +10,7 @@ import CardBody from './CardBody';
 const cx = classNames.bind(styles);
 
 const Card = ({ children, className }) => {
-  return <div className={cx('Card', className)}>{children}</div>;
+  return <Box className={cx('Card', className)}>{children}</Box>;
 };
 
 Card.Header = CardHeader;

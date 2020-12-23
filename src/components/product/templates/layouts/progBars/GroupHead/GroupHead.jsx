@@ -15,7 +15,7 @@ const GroupHead = ({ isOpen, groupHead, ...props }) => (
         {...props}
         sx={{
             variant: [
-                'styles.d5',
+                'styles.d6',
                 'styles.d5',
                 'styles.d4',
                 'styles.d5',
@@ -24,6 +24,7 @@ const GroupHead = ({ isOpen, groupHead, ...props }) => (
                 'styles.d5',
                 'styles.d5',
             ],
+            fontWeight: 'semibold',
             mb: [2, 2, 2, 4, 4, 4, 4, 4],
         }}
     >

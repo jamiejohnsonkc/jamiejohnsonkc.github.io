@@ -10,9 +10,12 @@ import LabeledProgressBar from '../../../../../../../../gatsby-theme-jim-compone
 import GroupGrid from '../GroupGrid/GroupGrid'
 import GroupHead from '../GroupHead'
 import ProgressBarGroup from '../ProgressBarGroup'
-
+import styled from '@emotion/styled'
 // import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 // animation
+
+const StyledUl = styled.ul``
+
 const ProgBarGrpAccdn = (props) => {
     return (
         <Box
@@ -35,7 +38,7 @@ const ProgBarGrpAccdn = (props) => {
                     px: [0, 0, 0, 0, 0],
                 }}
             >
-                <ul
+                <StyledUl
                     className="accordionList"
                     {...props}
                     sx={{
@@ -68,7 +71,7 @@ const ProgBarGrpAccdn = (props) => {
                             </Box>
                         )
                     })}
-                </ul>
+                </StyledUl>
             </Box>
         </Box>
     )

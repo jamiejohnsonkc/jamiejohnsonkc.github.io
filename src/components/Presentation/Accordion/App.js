@@ -14,7 +14,8 @@ import GroupSubhead from '../../product/templates/layouts/progBars/GroupSubhead'
 import Subhead from '../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
 
 import Accordion from './Accordion'
-import animation from '../../../../../gatsby-theme-scroll-reveal/animation'
+// import animation from '../../../../../gatsby-theme-scroll-reveal/animation'
+
 
 // const content = [
 //   {
@@ -127,31 +128,33 @@ import animation from '../../../../../gatsby-theme-scroll-reveal/animation'
 //   }
 // ];
 
-const StyledChevronDwn = ({activeEventKey, skillId, ...props}) => (
+const StyledChevronDwn = ({ activeEventKey, skillId, ...props }) => (
     <>
-    <Span
-        className="accordionItemIcon"
-        {...props}
-        sx={{
-            display: 'grid',
-            justifyContent: 'center',
-            alignItems: 'center',
-            transition: 'transform 0.75s ease-in-out .1s',
-            width: ['1.25em', '1.5em', '1.25em', '1.25em', '1.25em'],
-            height: ['1.25em', '1.5em', '1.25em', '1.25em', '1.25em'],
-            // transform: `${isOpen ? 'rotate(180deg)' : ''}`,
-            transform: `${activeEventKey !== skillId ? 'rotate(180deg)' : ''}`,
+        <Span
+            className="accordionItemIcon"
+            {...props}
+            sx={{
+                display: 'grid',
+                justifyContent: 'center',
+                alignItems: 'center',
+                transition: 'transform 250ms ease-in-out',
+                width: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                height: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                // transform: `${isOpen ? 'rotate(180deg)' : ''}`,
+                transform: `${
+                    activeEventKey !== skillId ? 'rotate(180deg)' : ''
+                }`,
 
-            '& > svg': {
-                // stroke: `${isOpen ? 'muted' : 'revText'}`,
-                opacity: '0.6',
-                width: ['1.25em', '1.5em', '1.25em', '1.25em', '1.25em'],
-                height: ['1.25em', '1.5em', '1.25em', '1.25em', '1.25em'],
-            },
-        }}
-    >
-        <GoChevronDown />
-    </Span>
+                '& > svg': {
+                    // stroke: `${isOpen ? 'muted' : 'revText'}`,
+                    opacity: '0.4',
+                    width: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                    height: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                },
+            }}
+        >
+            <GoChevronDown />
+        </Span>
     </>
 )
 
@@ -160,7 +163,24 @@ export default function App(props) {
 
     return (
         // <div className="App" {...animation.slideUp4}>
-        <div>
+       <Box className='tempWrapper' {...props} sx={{
+       maxWidth: '90vw',
+       margin: '4em auto',
+       }}>
+
+
+
+        <Box className="accordionContainer"  {...props}
+        sx={{
+            width: '100%',
+            // display: ['grid', 'grid', 'grid', 'none', 'none', 'none','none', 'none'],
+            display: 'grid',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gridTemplateColumns: '1fr',
+            marginBottom: 6,
+
+        }}>
             {/* <Subhead
                 {...props}
                 sx={{
@@ -172,14 +192,35 @@ export default function App(props) {
             <Accordion
                 activeEventKey={activeEventKey}
                 onToggle={setActiveEventKey}
+            className='parentAccordion'
+                {...props} sx={{
+                    width: '100%',
+                    // listStyle: 'none',
+                    margin: '0',
+                    padding: 4,
+                    backgroundColor: '#fff',
+                    /* max-width: 30rem; */
+                    borderRadius: '0.4rem',
+                    overflow: 'hidden',
+                    // boxShadow: `0 0 0.8rem 0.1rem rgba(15, 72, 179, 0.06), 0 20px 30px -10px rgba(15, 72, 179, 0.2)`,
+            }}
             >
                 {groups.map((group, id) => {
                     return (
                         <Box
                             className="skillGroup"
-                            key={id}
+                            key={group.id}
                             {...props}
                             sx={{
+                                // borderTop: '1px solid rgba(0, 0, 0, 0.1)',
+                                // '& + accordionListItem': {
+                                //     borderTop:
+                                //         '1px solid rgba(0, 0, 0, 0.1)',
+                                // },
+                                overflow: 'hidden',
+                                transition: 'max-height 0.75s ease-in-out .1s',
+                                height: 'auto',
+                                maxHeight: '9999px',
                                 mb: 4,
                             }}
                         >
@@ -189,6 +230,10 @@ export default function App(props) {
                                 className="skills"
                                 activeEventKey={activeEventKey}
                                 onToggle={setActiveEventKey}
+                                className='childAccordion'
+                                {...props} sx={{
+
+                                }}
                             >
                                 {group.skillSets.map((skill, id) => (
                                     <Card
@@ -197,6 +242,11 @@ export default function App(props) {
                                         sx={{
                                             width: '100%',
                                             py: 2,
+                                            overflow: 'hidden',
+                                            transition:
+                                                'max-height 0.75s ease-in-out .1s',
+                                            height: 'auto',
+                                            maxHeight: '9999px',
                                         }}
                                     >
                                         <Accordion.Toggle
@@ -217,13 +267,14 @@ export default function App(props) {
                                                 //  py: 4,
                                                 //  px: [4, 4, 4, 4, 4, 4],
                                                 // py: `${isOpen ? 4 : ''}`,
-                                                //  mb: `${isOpen ? 4 : 0}`,
-                                                //  backgroundColor: `${isOpen ? 'primaryDark' : '#fff'}`,
-                                                //  boxShadow: `${isOpen ? 'uiDivide' : ''}`,
-                                                //  color: `${isOpen ? 'revText' : 'text'}`,
-                                                //  transition: 'all .75s ease-in-out .3s',
-                                                //  willChange:
-                                                //      'color, boxShadow, p, marginBottom, backgroundColor',
+                                                //  mb: `${activeEventKey === skill.id ? 4 : 0}`,
+                                                //  backgroundColor: `${activeEventKey === skill.id ? 'primaryDark' : '#fff'}`,
+                                                //  boxShadow: `${activeEventKey === skill.id ? 'uiDivide' : ''}`,
+                                                //  color: `${activeEventKey === skill.id ? 'revText' : 'text'}`,
+                                                // transition:
+                                                //     'all .75s ease-in-out .3s',
+                                                // willChange:
+                                                //     'color, boxShadow, p, marginBottom, backgroundColor',
                                             }}
                                         >
                                             <GroupSubhead>
@@ -235,33 +286,80 @@ export default function App(props) {
                                             {activeEventKey === skill.id && (
                                                 <Span>👆🏻</Span>
                                             )} */}
-                                            <StyledChevronDwn activeEventKey={activeEventKey} skillId={skill.id}/>
+                                            <StyledChevronDwn
+                                                activeEventKey={activeEventKey}
+                                                skillId={skill.id}
+                                            />
                                         </Accordion.Toggle>
                                         <Accordion.Collapse
                                             eventKey={skill.id}
                                             element={Card.Body}
+                                           className='accordionCollapse'
+                                            {...props}
+
+                                            // sx={{
+                                            //     px: [4, 4, 4, 4, 4, 4, 4, 4],
+                                            //     // maxHeight: `${
+                                            //     //     activeEventKey === skill.id
+                                            //     //         ? '200em'
+                                            //     //         : '0'
+                                            //     // }`,
+                                            //     transition:
+                                            //     'max-height .75s, ease-in-out .3s',
+                                            //     overflow: 'hidden',
+                                            //     position: 'relative',
+                                            //     willChange: 'max-height',
+                                            // }}
                                         >
-                                            <Accordion
-                                                className="Bars"
-                                                activeEventKey={activeEventKey}
-                                                onToggle={setActiveEventKey}
+
+                                            <Box
+                                                className='accordionContentInner'
                                                 {...props}
                                                 sx={{
-                                                    px: 2,
-                                                    py: 3,
+                                                    opacity: `${
+                                                        activeEventKey ===
+                                                        skill.id
+                                                            ? '1'
+                                                            : '0'
+                                                    }`,
+                                                    transition:
+                                                        'opacity .3s ease-in-out .1s',
+                                                    // transform: `${
+                                                    //     activeEventKey ===
+                                                    //     skill.id
+                                                    //         ? 'translateY(0)'
+                                                    //         : 'translateY(-2em)'
+                                                    // }`,
                                                 }}
                                             >
-                                                {skill.bars.map((bar, id) => (
-                                                    <LabeledProgressBar
-                                                        key={id}
-                                                        progressLabel={
-                                                            bar.label
-                                                        }
-                                                        done={bar.done}
-                                                    />
-                                                    //  <div key={id3}>{bar.bar}</div>
-                                                ))}
-                                            </Accordion>
+                                                <Accordion
+                                                    className="Bars"
+                                                    activeEventKey={
+                                                        activeEventKey
+                                                    }
+                                                    onToggle={setActiveEventKey}
+
+                                                    {...props}
+                                                    sx={{
+                                                        px: 2,
+                                                        py: 3,
+                                                    }}
+                                                >
+                                                    {skill.bars.map(
+                                                        (bar, id) => (
+                                                            <LabeledProgressBar
+                                                                key={bar.id}
+                                                                progressLabel={
+                                                                    bar.label
+                                                                }
+                                                                done={bar.done}
+
+                                                            />
+                                                            //  <div key={id3}>{bar.bar}</div>
+                                                        )
+                                                    )}
+                                                </Accordion>
+                                            </Box>
                                         </Accordion.Collapse>
                                     </Card>
                                 ))}
@@ -272,6 +370,7 @@ export default function App(props) {
                     )
                 })}
             </Accordion>
-        </div>
+        </Box>
+        </Box>
     )
 }

@@ -256,7 +256,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                 },
                             }}
                         >
-                            <ProgBarGrpMap />
+                            {/* <ProgBarGrpMap /> */}
                         </Box>
                     </Grid>
                 </Article>

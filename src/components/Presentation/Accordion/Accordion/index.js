@@ -5,6 +5,9 @@ import AccordionContext from './AccordionContext';
 import Collapse from './Collapse';
 import Toggle from './Toggle';
 
+
+
+
 const useEventKey = (eventKey, onToggle) => {
   const [activeEventKey, setActiveEventKey] = useState(eventKey);
 
@@ -44,7 +47,7 @@ const Accordion = ({
 
   return (
     <AccordionContext.Provider value={context}>
-      <Component {...otherProps}>{children}</Component>
+      <Component {...otherProps} >{children}</Component>
     </AccordionContext.Provider>
   );
 };
