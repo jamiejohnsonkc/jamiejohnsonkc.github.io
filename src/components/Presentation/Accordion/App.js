@@ -14,6 +14,7 @@ import GroupSubhead from '../../product/templates/layouts/progBars/GroupSubhead'
 import Subhead from '../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
 
 import Accordion from './Accordion'
+
 // import animation from '../../../../../gatsby-theme-scroll-reveal/animation'
 
 
@@ -138,8 +139,8 @@ const StyledChevronDwn = ({ activeEventKey, skillId, ...props }) => (
                 justifyContent: 'center',
                 alignItems: 'center',
                 transition: 'transform 250ms ease-in-out',
-                width: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
-                height: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                width: ['1em', '1em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                height: ['1em', '1em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
                 // transform: `${isOpen ? 'rotate(180deg)' : ''}`,
                 transform: `${
                     activeEventKey !== skillId ? 'rotate(180deg)' : ''
@@ -148,8 +149,8 @@ const StyledChevronDwn = ({ activeEventKey, skillId, ...props }) => (
                 '& > svg': {
                     // stroke: `${isOpen ? 'muted' : 'revText'}`,
                     opacity: '0.4',
-                    width: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
-                    height: ['1em', '1.5em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                    width: ['1em', '1em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
+                    height: ['1em', '1em', '1.25em', '1.25em', '1.25em','1.25em', '1.25em', '1.25em'],
                 },
             }}
         >
@@ -163,10 +164,10 @@ export default function App(props) {
 
     return (
         // <div className="App" {...animation.slideUp4}>
-       <Box className='tempWrapper' {...props} sx={{
-       maxWidth: '90vw',
-       margin: '4em auto',
-       }}>
+    //    <Box className='tempWrapper' {...props} sx={{
+    //    maxWidth: '90vw',
+    //    margin: '4em auto',
+    //    }}>
 
 
 
@@ -178,7 +179,27 @@ export default function App(props) {
             justifyContent: 'center',
             alignItems: 'center',
             gridTemplateColumns: '1fr',
-            marginBottom: 6,
+            marginBottom: [6, null, null, 0, null,null, null, null],
+            minHeight: [null,null,null,'100%',null,null,null,null],
+            overflowX: 'auto',
+            touchAction: 'pan-x',
+            // cursor: 'grab',
+            overflowScrolling: 'touch',
+            scrollbarWidth: 'none',
+            height: [null,null,null,null,null,null,null,null],
+
+            '&::-webkit-scrollbar': {
+                display: [
+                    null,
+                    null,
+                    'none',
+                    'none',
+                    'none',
+                    'none',
+                    'none',
+                    'none',
+                ],
+            },
 
         }}>
             {/* <Subhead
@@ -198,10 +219,11 @@ export default function App(props) {
                     // listStyle: 'none',
                     margin: '0',
                     padding: 4,
-                    backgroundColor: '#fff',
+                    backgroundColor: ['#fff', null,null,'transparent',null,null,null,null],
                     /* max-width: 30rem; */
                     borderRadius: '0.4rem',
                     overflow: 'hidden',
+                    height: [null,null,null,null,null,null,null,null],
                     // boxShadow: `0 0 0.8rem 0.1rem rgba(15, 72, 179, 0.06), 0 20px 30px -10px rgba(15, 72, 179, 0.2)`,
             }}
             >
@@ -371,6 +393,6 @@ export default function App(props) {
                 })}
             </Accordion>
         </Box>
-        </Box>
+
     )
 }

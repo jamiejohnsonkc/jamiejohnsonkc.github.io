@@ -14,7 +14,40 @@ import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation
 import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
 import App from '../../../../Presentation/Accordion'
+import useMediaQuery from '../../../../../../../gatsby-theme-jim-components/src/hooks/useMediaQuery'
 // Document.getelementById()
+
+// const isLargeScreen = useMediaQuery('(min-width: 928px)')
+
+const SmallScreenShow = ({ children, props }) => {
+    const isSmallScreen = useMediaQuery('(max-width: 927px)')
+    return (
+        <Box
+            className="smallScreenShow"
+            {...props}
+            sx={{
+                display: `${isSmallScreen ? 'block' : 'none'}`,
+            }}
+        >
+            {children}
+        </Box>
+    )
+}
+
+const LargeScreenShow = ({ children, props }) => {
+    const isLargeScreen = useMediaQuery('(min-width: 928px)')
+    return (
+        <Box
+            className="largeScreenShow"
+            {...props}
+            sx={{
+                display: `${isLargeScreen ? 'block' : 'none'}`,
+            }}
+        >
+            {children}
+        </Box>
+    )
+}
 
 const SlateDevSkills = ({ sectionBg, ...props }) => {
     return (
@@ -41,7 +74,8 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                         columns={[
                             '1fr',
                             '1fr',
-                            '1.75fr 1fr',
+                            '1fr',
+                            // '1.75fr 1fr',
                             '1.3fr 1fr',
                             '1fr 1fr',
                             '1.25fr 1fr',
@@ -54,7 +88,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                             maxWidth: [
                                 '100%',
                                 '100%',
-                                '86em',
+                                'container.6',
                                 'container.6',
                                 'container.6',
                                 'container.6',
@@ -109,8 +143,18 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                     ],
                                     mb: 4,
                                     letterSpacing: '-.06em',
+                                    color: [
+                                        'red',
+                                        'green',
+                                        'blue',
+                                        'cyan',
+                                        'magenta',
+                                        'yellow',
+                                        'black',
+                                        'purple',
+                                    ],
                                 }}
-                                {...animation.slideUp1}
+                                // {...animation.slideUp1}
                             >
                                 Skills &amp; Capabilities
                             </Headline>
@@ -167,7 +211,9 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                             {/* <ProgBarGrpAccdn /> */}
 
                             {/* <App {...animation.slideUp4} /> */}
-                            <App />
+                            <SmallScreenShow>
+                                <App />
+                            </SmallScreenShow>
 
                             <Text
                                 {...props}
@@ -228,17 +274,17 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                 height: [
                                     null,
                                     null,
-                                    '100vh',
-                                    '100vh',
-                                    '100vh',
-                                    '100vh',
-                                    '100vh',
-                                    '100vh',
+                                    null,
+                                    '80vh',
+                                    null,
+                                    null,
+                                    null,
+                                    null,
                                 ],
 
                                 overflowX: 'auto',
                                 touchAction: 'pan-x',
-                                cursor: 'grab',
+                                // cursor: 'grab',
                                 overflowScrolling: 'touch',
                                 scrollbarWidth: 'none',
 
@@ -254,9 +300,12 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                         'none',
                                     ],
                                 },
+                                margin: '10vh 0 10vh 0',
                             }}
                         >
-                            {/* <ProgBarGrpMap /> */}
+                            <LargeScreenShow>
+                                <App />
+                            </LargeScreenShow>
                         </Box>
                     </Grid>
                 </Article>

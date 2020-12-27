@@ -265,14 +265,14 @@ export default {
         minHeight: [
             'auto',
             'auto',
-            '100vh',
+            'auto',
             '100vh',
             '100vh',
             '100vh',
             '100vh',
             '100vh',
         ],
-        minHeight: '100vh',
+        // minHeight: '100vh',
         position: [
             'relative',
             'relative',
