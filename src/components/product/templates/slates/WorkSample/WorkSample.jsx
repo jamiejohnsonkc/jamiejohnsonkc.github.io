@@ -250,7 +250,7 @@ const WorkSample = ({
                                 '100%',
                                 null,
                                 null,
-                                null,
+                                '22em',
                                 '22em',
                                 null,
                             ],

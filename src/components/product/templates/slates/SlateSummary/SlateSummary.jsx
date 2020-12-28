@@ -61,18 +61,6 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 ],
                 py: 6,
             }}
-            // sx={{
-            //     '& > .container': {
-            //         minHeight: [null, null, '1000px', 'unset', null, null],
-            //     },
-            // }}
-
-            // {...props}
-            // sx={{
-            //     '@media(min-height:700px and max-height:2000px)': {
-            //         minHeight: '1000px',
-            //     },
-            // }}
         >
             <Article
                 className="introArticle"
@@ -84,61 +72,27 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     {...props}
                     sx={{
                         mb: 4,
-                        // color: [
-                        //     'red',
-                        //     'green',
-                        //     'blue',
-                        //     'cyan',
-                        //     'magenta',
-                        //     'yellow',
-                        //     'black',
-                        //     'purple',
-                        // ],
                     }}
                     {...animation.slideUp1}
                 >
                     Hiyas.
                 </Headline>
-                {/* <Text
-                    {...props}
-                    sx={{
-                        variant: 'text.p1',
-                        maxWidth: '34em',
-                    }}
-                    {...animation.slideUp2}
-                >
-                    <Box
-                        as="p"
-                        className="introParagraph"
-                        {...props}
-                        sx={{
-                            '& ::firstLine': {
-                                fontWeight: 'bold',
-                            },
-                        }}
-                    >
-                        I&apos;ve spent the better part of my career at agencies
-                        leading development of strategic, creative and
-                        technological solutions for my customers. Then I
-                        tempered my creative inclinations with real-world
-                        perspective at posts with a few global corporations.
-                    </Box>
-                </Text> */}
+
                 <IntroParagraph {...animation.slideUp2}>
                     I&apos;ve spent the better part of my career at agencies
-                    leading development of
-                    <IntroEmph>strategic, creative and technological</IntroEmph>
+                    leading development of{' '}
+                    <IntroEmph>strategic, creative and technological</IntroEmph>{' '}
                     solutions for my customers. I&apos;ve also tempered my
                     creative inclinations with
-                    <IntroEmph>real-world perspective </IntroEmph> at posts with
-                    a few global corporations.
+                    <IntroEmph> real-world perspective</IntroEmph> at global
+                    corporations.
                 </IntroParagraph>
                 <IntroParagraph {...animation.slideUp3}>
-                    A while back I took time to be a
+                    A while back I took time to be a{' '}
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
                     feedings and changes I began tinkering with
                     <IntroEmph>Wordpress</IntroEmph>. Now I design & build
-                    high-performance sites with leading-edge platforms like
+                    high-performance sites with leading-edge platforms like{' '}
                     <IntroEmph>React, Gatsby and Storybook</IntroEmph>. And I
                     can back it up with senior-level marketing chops.
                 </IntroParagraph>
@@ -149,8 +103,8 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                         mb: 5,
                     }}
                 >
-                    My little ones ain&apos;t so little anymore. So it&apos;s
-                    high time I get back to work.
+                    Today my little ones ain&apos;t so little anymore. So
+                    it&apos;s high time I get back to work.
                 </IntroParagraph>
 
                 {/* <Text

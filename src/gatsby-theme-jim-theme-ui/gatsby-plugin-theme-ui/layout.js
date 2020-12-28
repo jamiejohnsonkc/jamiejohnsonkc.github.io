@@ -72,7 +72,7 @@ export default {
             'container.4',
             null,
             'container.4',
-            'container.3',
+            'container.4',
             'container.4',
         ],
         minHeight: '100%',

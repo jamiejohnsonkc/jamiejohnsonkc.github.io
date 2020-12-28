@@ -114,9 +114,9 @@ const DisplayText = (props) => (
             fontWeight: 'light',
             lineHeight: '1.8em',
             // fontFamily: 'heading',
-            maxWidth: ['21em', null, null, null, null, '22em', '22em', '22em'],
+            maxWidth: ['21em', null, null, null, null, '22em', '20em', '22em'],
             color: 'revText',
-            pl: ['38px', 4, 4, 4, 4, 3, 3, 3],
+            pl: ['38px', 4, 4, 4, 4, 3, '60px', 3],
             pr: [null, null, 2, null, null, null, null, null],
             mb: [1, 4, null, null, null, null, null, null],
         }}
