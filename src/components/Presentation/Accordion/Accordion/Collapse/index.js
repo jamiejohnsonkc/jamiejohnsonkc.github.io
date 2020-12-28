@@ -19,7 +19,6 @@ transition: `${activeEventKey === eventKey ? 'max-height 0.3s cubic-bezier(1, 0,
 overflow: 'hidden',
 position: 'relative',
                 willChange: 'max-height',
-
             }}
         >
             {children}

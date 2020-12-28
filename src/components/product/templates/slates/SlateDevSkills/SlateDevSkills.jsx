@@ -180,7 +180,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                 }}
                                 {...animation.slideUp2}
                             >
-                                I&apos;m fluent in code, marcom and marketing
+                                I&apos;m fluent in code and marketing
                             </Subline>
                             <Paragraph
                                 variant="styles.p2"
@@ -193,7 +193,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                         null,
                                         null,
                                         null,
-                                        null,
+                                        '26em',
                                         null,
                                     ],
                                     // mb: [3, 2, 2, null, null, 4],
@@ -201,11 +201,18 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                                 }}
                                 {...animation.slideUp3}
                             >
-                                Anim ad magna commodo ullamco. Commodo qui nisi
-                                eiusmod reprehenderit labore irure culpa nulla
-                                eiusmod. Consectetur sit est aliqua duis ut esse
-                                quis. Dolore ut veniam velit esse ad quis
-                                laboris Lorem mollit elit irure nostrud elit.
+                                <p>
+                                    Throughout my career I've led
+                                    multi-functional teams with six-figure
+                                    budgets. I've also been the team with
+                                    next-to-no resources. And I enjoyed it all.
+                                </p>
+
+                                <p>
+                                    I can help you decide what to do, how to do
+                                    it, help you get it done, or all of the
+                                    above. I'd be ecstatic to help.
+                                </p>
                             </Paragraph>
                             {/* accordion small screen only */}
                             {/* <ProgBarGrpAccdn /> */}
@@ -304,7 +311,7 @@ const SlateDevSkills = ({ sectionBg, ...props }) => {
                             }}
                         >
                             <LargeScreenShow>
-                                <App />
+                                <App {...animation.slideUp4} />
                             </LargeScreenShow>
                         </Box>
                     </Grid>
