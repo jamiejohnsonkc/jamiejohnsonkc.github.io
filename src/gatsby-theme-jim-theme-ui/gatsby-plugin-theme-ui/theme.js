@@ -33,9 +33,14 @@ export default merge(typography, {
     // breakpoints: ['40em', '51em', '58em', '80em', '100em'], // px-  0, 640, 816, 928, 1280, 1600
     // breakpoints: ['400px', '816px', '850px', '1024px', '1280px', '1600px'],
     breakpoints: ['400px', '640px', '800px', '928px', '1280px', '1600px', '2500px'],
+
+
+
+
+
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512, 640, 768],
 
-    //TODO change "container' to 'widths'
+    // TODO change "container' to 'widths'
     sizes: {
         container: {
             0: '23.6%',
@@ -476,4 +481,7 @@ headline: {
         circle: '9999px',
         square: '2px',
     },
+
+breakPointColors: 'red',
+
 })

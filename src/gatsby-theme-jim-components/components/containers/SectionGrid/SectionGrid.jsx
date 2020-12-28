@@ -57,7 +57,7 @@ const SectionGrid = ({
 SectionGrid.propTypes = {
     alignItems: PropTypes.string,
     bg: PropTypes.string,
-    children: PropTypes.string,
+    children: PropTypes.any,
     className: PropTypes.string,
     containerVariant: PropTypes.string,
     gridTemplateColumns: PropTypes.string,

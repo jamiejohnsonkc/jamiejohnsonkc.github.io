@@ -4,7 +4,6 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import exact from 'prop-types-exact'
 // import DevIcon from '../../../designElements/icons/DevIcon'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import IconWrapper from '../../../../../../../gatsby-theme-jim-components/src/components/containers/IconWrapper'
@@ -133,14 +132,14 @@ const ProjectIconsBar = ({
     </Grid>
 )
 
-ProjectIconsBar.propTypes = exact({
+ProjectIconsBar.propTypes = {
     iconFill: PropTypes.any,
     iconHeight: PropTypes.any,
     iconWidth: PropTypes.any,
     projectIcon1: PropTypes.any,
     projectIcon2: PropTypes.any,
     projectIcon3: PropTypes.any,
-})
+}
 
 ProjectIconsBar.defaultProps = {
     // 		iconHeight: '1.5em',

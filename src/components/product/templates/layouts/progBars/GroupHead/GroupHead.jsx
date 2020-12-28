@@ -2,34 +2,34 @@
 import { jsx } from 'theme-ui'
 import React from 'react'
 import PropTypes from 'prop-types'
-import Subhead from '../../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
 import animation from '../../../../../../../../gatsby-theme-scroll-reveal/animation'
-// import Headline from '../../../system/atoms/Text/Headline'
-// import Subline from '../../../system/atoms/Text/Subline'
+import Subhead from '../../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subhead'
+import Display from '../../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Display'
+
+//TODO resusafy
 
 const GroupHead = ({ isOpen, groupHead, ...props }) => (
-    <Subhead
+    <Display
         className="groupHead"
-        {...animation.slideUp1}
+        // {...animation.slideUp1}
         {...props}
         sx={{
             variant: [
-                'styles.h5',
-                'styles.h5',
-                'styles.h4',
-                'styles.h4',
-                'styles.h4',
+                'styles.d6',
+                'styles.d5',
+                'styles.d4',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
+                'styles.d5',
             ],
-            // fontSize: [0, 3, 3, 3, 3],
-            // paddingLeft: 0,
-            // letterSpacing: 'normal',
-            // fontWeight: 'bold',
-            // textTransform: 'capitalize',
-            // fontFamily: 'heading',
-            mb: [0, 0, 4, 4, 4, 4],
+            fontWeight: 'semibold',
+            mb: [2, 2, 2, 4, 4, 4, 4, 4],
         }}
-        children={groupHead}
-    />
+    >
+        {props.children}
+    </Display>
 )
 
 GroupHead.propTypes = {
