@@ -7,7 +7,7 @@ import ReactSkillsPage from '../components/product/reactPages/ReactSkillsPage'
 export default function Skills() {
   return (
     <>
-      <ReactSkillsPage />
+      <ReactSkillsPage  />
     </>
   )
 }
