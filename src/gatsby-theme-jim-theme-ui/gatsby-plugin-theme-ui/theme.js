@@ -230,99 +230,6 @@ headline: {
              fontWeight: 'normal',
         },
 
-        // hxxxl: {
-        //     lineHeight: 1.2,
-        //     mb: 4,
-        //     letterSpacing: 'tight',
-        //     fontSize: 12,
-        // },
-        // hxxl: {
-        //     fontFamily: 'heading',
-        //     fontWeight: 'heavy',
-        //     lineHeight: 1.2,
-        //     mb: 2,
-        //     letterSpacing: 'tight',
-        //     fontSize: 11,
-        // },
-        // hxl: {
-        //     fontFamily: 'heading',
-        //     fontWeight: 'heavy',
-        //     lineHeight: 1.2,
-        //     letterSpacing: 'tight',
-        //     fontSize: 10,
-        // },
-
-        // bu1: {
-        // fontSize: 2,
-        // },
-        // h1: {
-        //     fontSize: 9,
-        // },
-        // h2: {
-        //     fontSize: 8,
-        // },
-        // h3: {
-        //     fontSize: 7,
-        // },
-        // h4: {
-        //     fontSize: 6,
-        // },
-        // h5: {
-        //     fontSize: 5,
-        // },
-        // h6: {
-        //     fontSize: 4,
-        // },
-        // d1: {
-        //     fontSize: 7,
-        // },
-        // d2: {
-        //     fontSize: 6,
-        // },
-        // d3: {
-        //     fontSize: 5,
-        // },
-        // d4: {
-        //     fontSize: 4,
-        // },
-        // b1: {
-        //     fontsize: 5,
-        // },
-        // b2: {
-        //     fontsize: 4,
-        // },
-        // b3: {
-        //     fontsize: 3,
-        // },
-        // p1: {
-        //     fontsize: 3,
-        // },
-        // p2: {
-        //     fontsize: 2,
-        // },
-        // p3: {
-        //     fontsize: 1,
-        // },
-
-        // sl1: {
-        //     fontSize: 6,
-        // },
-        // sl2: {
-        //     fontSize: 5,
-        // },
-        // sl3: {
-        //     fontSize: 4,
-        // },
-        // sl4: {
-        //     fontSize: 3,
-        // },
-        // sl5: {
-        //     fontSize: 2,
-        // },
-        // sl6: {
-        //     fontSize: 1,
-        // },
-
         a: {
             color: 'primary',
         },
@@ -454,10 +361,10 @@ headline: {
     },
     flex: {
         columnRow: {
-            flexDirection: ['column', 'column', 'column', 'row', 'row', 'row'],
+            flexDirection: ['column', 'column', 'column', 'row', 'row', 'row', 'row', 'row'],
         },
         rowColumn: {
-            flexDirection: ['row', 'row', 'row', 'column', 'column', 'column'],
+            flexDirection: ['row', 'row', 'row', 'column', 'column', 'column', 'column', 'column'],
         },
         row: {
             flexDirection: 'row',
@@ -481,7 +388,5 @@ headline: {
         circle: '9999px',
         square: '2px',
     },
-
-breakPointColors: 'red',
 
 })
