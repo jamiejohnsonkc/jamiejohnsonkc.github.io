@@ -44,8 +44,8 @@ const SlateProjects = ({
             projectHeadline="Netlify Rebuild"
             projectSubhead="Gatsby Challenge Project"
             projectText="I rebuilt the Netlify Edge page and functionality to confirm my Gatsby and React development capabilities. All content, art and design property of Netlify."
-            siteLinkTo="/repo"
-            repoLinkTo="https://github.com/jamiejohnsonkc/saas-spec"
+            siteLinkTo="https://jamiejohnsonkc.github.io/netlify_rebuild_challenge/"
+            repoLinkTo="https://github.com/jamiejohnsonkc/netlify_rebuild_challenge.git"
             projectImage={<FluidNetlifyPage />}
             projectIcon1={
                 <ReactGlyph
@@ -69,34 +69,11 @@ const SlateProjects = ({
             sectionBg={project2Bg}
             projectNumberColor={project2NumberColor}
             textColor={project2TextColor}
-            projectHeadline="Professional Branding"
-            projectSubhead="Custom WordPress Development"
-            projectText="My legacy self-promotion page. Also one of my first monolith WordPress builds from the ground up. The work encompasses custom theming, development and design. Today I'm refactoring it with Gatsby and Apollo to optimize performance."
-            siteLinkTo="/repo"
-            repoLinkTo="https://github.com/jamiejohnsonkc/jamie-johnson.com"
-            iconFill="revText"
-            projectImage={<FluidJJcom />}
-            projectIcon1={<ImWordpress />}
-            projectIcon2={<DiSass />}
-            projectIcon3={<Php />}
-            {...props}
-            // {...iconSize}
-            sx={{
-                '& .projectIconLabel': {
-                    color: 'revText',
-                },
-            }}
-        />
-        <WorkSample
-            projectNumber="03"
-            sectionBg={project3Bg}
-            projectNumberColor={project3NumberColor}
-            textColor={project3TextColor}
             projectHeadline="Storybook"
             projectSubhead="Design System &amp; Component Library "
             projectText="Component library, development tool and design system built with Storybook and Theme-Ui. it's an ever-evolving project with constant updates and expansions with each new project I develop."
-            siteLinkTo="/repo"
-            repoLinkTo="/link"
+            siteLinkTo="/https://jamiejohnsonkc.github.io/jimDevStorybook"
+            repoLinkTo="/https://github.com/jamiejohnsonkc/jimDevStorybook.git"
             projectImage={<FluidStorybook />}
             projectIcon1={<Storybook />}
             projectIcon2={
@@ -125,6 +102,34 @@ const SlateProjects = ({
                     }}
                 />
             }
+        />
+        <WorkSample
+            className="wordpress"
+            projectNumber="03"
+            sectionBg={project3Bg}
+            projectNumberColor={project3NumberColor}
+            textColor={project3TextColor}
+            projectHeadline="Professional Branding"
+            projectSubhead="Custom WordPress Development"
+            projectText="My legacy self-promotion page. Also one of my first monolith WordPress builds from the ground up. The work encompasses custom theming, development and design. Today I'm refactoring it with Gatsby and Apollo to optimize performance."
+            siteLinkTo="/site"
+            repoLinkTo="https://github.com/jamiejohnsonkc/jamie-johnson.com.git"
+            iconFill="revText"
+            projectImage={<FluidJJcom />}
+            projectIcon1={<ImWordpress />}
+            projectIcon2={<DiSass />}
+            projectIcon3={<Php />}
+            {...props}
+            // {...iconSize}
+            sx={{
+                '& .projectIconLabel': {
+                    color: 'revText',
+                },
+                '& > .siteLinkButton': {
+                    display: 'none',
+                },
+            }}
+
             // projectIcon3={<UiLogoIcon alt='Theme-Ui Glyph' title='Theme-Ui Glyph' />}
         />
     </>

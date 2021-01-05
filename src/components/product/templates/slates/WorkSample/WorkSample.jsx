@@ -295,31 +295,40 @@ const WorkSample = ({
                             ],
                         }}
                     >
-                        {/* <Pill
-								{...props}
-								{...animation.slideUp5}
-								className='siteLinkButton'
-								sx={{
-									mr: [0, 0, 2, 2, 2],
-									mb: [3, 4, 0, 0, 0],
-									// color: (t) => `${t.buttons.gray}`,
-									bg: 'primary',
-									flex: ['1 0 100%', '1 0 100%', '0', '0', '0'],
-									'& > a': {
-										mr: 0,
-									},
-								}}
-							>
-								<ExtLink
-									linkTo={siteLinkTo}
-									{...props}
-									sx={{
-										color: 'revText',
-									}}
-								>
-									Site
-								</ExtLink>
-								</Pill> */}
+                        <Pill
+                            {...props}
+                            {...animation.slideUp5}
+                            className="siteLinkButton"
+                            sx={{
+                                mr: [0, 0, 2, 2, 2, 2, 2, 2],
+                                mb: [3, 4, 0, 0, 0, 0, 0, 0],
+                                // color: (t) => `${t.buttons.gray}`,
+                                bg: 'primary',
+                                flex: [
+                                    '1 0 100%',
+                                    '1 0 100%',
+                                    '0',
+                                    '0',
+                                    '0',
+                                    '0',
+                                    '0',
+                                    '0',
+                                ],
+                                '& > a': {
+                                    mr: 0,
+                                },
+                            }}
+                        >
+                            <ExtLink
+                                linkTo={siteLinkTo}
+                                {...props}
+                                sx={{
+                                    color: 'revText',
+                                }}
+                            >
+                                Site
+                            </ExtLink>
+                        </Pill>
                         <Pill
                             {...props}
                             className="repoLinkButton"
