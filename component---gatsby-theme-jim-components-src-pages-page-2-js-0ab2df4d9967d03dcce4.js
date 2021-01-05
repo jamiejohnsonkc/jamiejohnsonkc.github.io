@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{XjSt:function(n,i,t){"use strict";t.r(i);var c=t("Cini");t("mXGw");i.default=function(){return Object(c.c)("h1",null,"Hi from Page 2")}}}]);
+//# sourceMappingURL=component---gatsby-theme-jim-components-src-pages-page-2-js-0ab2df4d9967d03dcce4.js.map
