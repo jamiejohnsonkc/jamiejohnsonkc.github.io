@@ -45,30 +45,8 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => {
                         }}
                         {...animation.slideUp1}
                     >
-                        PROFESSIONAL, EXPERIENCED &amp; EFFECTIVE.
+                        AVAILABLE FOR FREELANCE &amp; EXTENDED ENGAGEMENTS.
                     </Headline>
-
-                    {/* <Headline
-                    as="h1"
-                    variant="styles.h3"
-                    {...props}
-                    sx={{
-                        maxWidth: [
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                            null,
-                        ],
-                        mb: 4,
-                    }}
-                     {...animation.slideUp1}
-                >
-                    grow your business?
-                </Headline> */}
 
                     <Subline
                         {...props}
