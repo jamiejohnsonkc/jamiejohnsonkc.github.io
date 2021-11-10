@@ -45,7 +45,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => {
                         }}
                         {...animation.slideUp1}
                     >
-                        AVAILABLE FOR FREELANCE &amp; EXTENDED ENGAGEMENTS.
+                        Ready to grow?
                     </Headline>
 
                     <Subline
@@ -55,16 +55,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => {
                             variant: 'styles.d5',
                             mb: 4,
                             color: 'primary',
-                            maxWidth: [
-                                null,
-                                null,
-                                null,
-                                '30em',
-                                '30em',
-                                '30em',
-                                '30em',
-                                '30em',
-                            ],
+                            maxWidth: ['20em'],
                             fontWeight: 'normal',
                         }}
                         {...animation.slideUp4}
@@ -98,16 +89,7 @@ const SlateClose = ({ sectionBg, as, sectionVariant, ...props }) => {
                         variant="styles.p2"
                         {...props}
                         sx={{
-                            maxWidth: [
-                                '33em',
-                                null,
-                                null,
-                                '35em',
-                                '35em',
-                                '35em',
-                                null,
-                                null,
-                            ],
+                            maxWidth: ['26em'],
                             // mb: [3, 2, 2, null, null, 4],
                             // lineHeight: 2,
                         }}
