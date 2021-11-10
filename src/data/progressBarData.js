@@ -32,12 +32,12 @@ const groups = [
                     {
                         id: '5aa6e6b8-0e42-4b91-8274-1103f156d593',
                         label: 'React',
-                        done: '70',
+                        done: '50',
                     },
                     {
                         id: 'b11a93f2-62ae-47b4-b8ff-086aa907058e',
                         label: 'Gatsby',
-                        done: '80',
+                        done: '75',
                     },
                     {
                         id: '5b65858f-4ced-487a-8e2c-097fcc3aa648',
@@ -47,7 +47,7 @@ const groups = [
                     {
                         id: '42125a8b-3f48-4f26-be7e-85e28f39a42c',
                         label: 'Wordpress',
-                        done: '90',
+                        done: '80',
                     },
                 ],
             },
@@ -74,7 +74,7 @@ const groups = [
                         done: '85',
                     },
                     {
-                        label: 'Reusability',
+                        label: 'Reusable components',
                         done: '50',
                     },
                     {
@@ -103,7 +103,7 @@ const groups = [
                 bars: [
                     {
                         label: 'Javascript',
-                        done: '70',
+                        done: '65',
                     },
                     {
                         label: 'JSX',
@@ -135,11 +135,7 @@ const groups = [
                     },
                     {
                         label: 'Php',
-                        done: '40',
-                    },
-                    {
-                        label: 'Typescript',
-                        done: '15',
+                        done: '50',
                     },
                 ],
             },
@@ -219,11 +215,11 @@ const groups = [
                     },
                     {
                         label: 'ServerPress',
-                        done: '80',
+                        done: '85',
                     },
                     {
                         label: 'Node',
-                        done: '35',
+                        done: '45',
                     },
                     {
                         label: 'Apache',
@@ -299,17 +295,12 @@ const groups = [
                     '1fr 1fr',
                     '1fr 1fr',
                 ],
-                groupSubhead: 'Skills',
+                groupSubhead: 'Strengths',
                 bars: [
                     {
                         id: 'ccd88c45-3b1c-4e3b-94df-48f03264e9ac',
                         label: 'Svg Graphics',
-                        done: '85',
-                    },
-                    {
-                        id: 'c5d932de-1120-4afe-9177-b4f79bbb3325',
-                        label: 'Production Art',
-                        done: '85',
+                        done: '95',
                     },
                     {
                         id: '249c9c97-ffd8-422e-8eae-18e65cacfc11',
@@ -318,13 +309,13 @@ const groups = [
                     },
                     {
                         id: '934d7c66-50de-4d23-b85b-d2281111c60f',
-                        label: 'Layout',
-                        done: '65',
+                        label: 'UX/UI',
+                        done: '75',
                     },
                     {
                         id: '3ea18f34-aad3-4307-9a53-e9d41cc76244',
-                        label: 'Image Editing',
-                        done: '85',
+                        label: 'Image Manipulation',
+                        done: '90',
                     },
                 ],
             },
@@ -340,15 +331,15 @@ const groups = [
                     '1fr 1fr',
                     '1fr 1fr',
                 ],
-                groupSubhead: 'Design Apps',
+                groupSubhead: 'Apps',
                 bars: [
                     {
                         label: 'Xd',
-                        done: '80',
+                        done: '85',
                     },
                     {
                         label: 'Illustrator',
-                        done: '90',
+                        done: '95',
                     },
                     {
                         label: 'Lightroom',
@@ -356,7 +347,7 @@ const groups = [
                     },
                     {
                         label: 'Photoshop',
-                        done: '90',
+                        done: '95',
                     },
                     {
                         label: 'InDesign',

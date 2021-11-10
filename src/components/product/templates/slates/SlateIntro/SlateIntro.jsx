@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx, Box } from 'theme-ui'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
@@ -7,17 +7,7 @@ import ScrollDownLineAnimated from '../../../../../../../gatsby-theme-jim-compon
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import Busker from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Busker'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
-
-// const StyledHeadline = ({ as, ...props }) => (
-// 	<Headline
-// 		{...props}
-// 		as={as}
-// 		sx={{
-// 			variant: ['styles.h3', null, null, 'styles.hxxxl', null, null],
-// 			mb: '0px',
-// 		}}
-// 	/>
-// )
+import FluidProfile from '../../../../../hooks/imageHooks/FluidProfile'
 
 const SplitHead = ({ children, mb, ...props }) => (
     <Busker
@@ -34,16 +24,6 @@ const SplitHead = ({ children, mb, ...props }) => (
                 'styles.bu3',
                 'styles.bu3',
             ],
-            // color: [
-            //     'red',
-            //     'green',
-            //     'blue',
-            //     'cyan',
-            //     'magenta',
-            //     'yellow',
-            //     'black',
-            //     'purple',
-            // ],
             mb,
         }}
     >
@@ -67,14 +47,22 @@ const SlateIntro = ({ sectionBg, ...props }) => (
                 },
             }}
         >
-            <Article
-                className="introArticle"
-                // variant="layout.articleCenterCenter"
+            {/* <Box
+                {...props}
+                sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: '50%',
+                    width: '25vw',
+                    // height: '100vh',
+                }}
             >
+                <FluidProfile />
+            </Box> */}
+            <Article className="introArticle">
                 <SplitHead>I&apos;m Jamie Johnson,</SplitHead>
                 <SplitHead mb={4}>frontend web developer.</SplitHead>
                 <Headline
-                    // variant="styles.h1"
                     {...props}
                     sx={{
                         variant: 'styles.h4',

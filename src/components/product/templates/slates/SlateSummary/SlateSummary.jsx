@@ -15,19 +15,15 @@ import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/compon
 // import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const IntroParagraph = (props) => (
-    // <Box as="p">
     <Paragraph
         variant="styles.p2"
         {...props}
         sx={{
             maxWidth: ['33em', null, null, null, '39em', '40em', null, null],
-            // mb: [3, 2, 2, null, null, 4],
-            // lineHeight: 2,
         }}
     >
         {props.children}
     </Paragraph>
-    // </Box>
 )
 
 const IntroEmph = (props) => (
@@ -90,7 +86,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                 <IntroParagraph {...animation.slideUp3}>
                     A while back I took time to be a{' '}
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
-                    feedings and changes I began tinkering with
+                    feedings and changes I began tinkering with{' '}
                     <IntroEmph>Wordpress</IntroEmph>. Now I design & build
                     high-performance sites with leading-edge platforms like{' '}
                     <IntroEmph>React, Gatsby and Storybook</IntroEmph>. And I
@@ -107,35 +103,6 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     it&apos;s high time I get back to work.
                 </IntroParagraph>
 
-                {/* <Text
-                    {...props}
-                    sx={{
-                        variant: 'text.p1',
-
-                        // mb: 4,
-                        maxWidth: '34em',
-                    }}
-                    {...animation.slideUp3}
-                >
-                    A while back I took a step away to enjoy life a bit. In
-                    between the feedings and changes I began tinkering with
-                    Wordpress. Now I design & build high-performance sites with
-                    leading-edge platforms like React, Gatsby and Storybook. And
-                    I can back it up with senior-level marketing chops.
-                </Text> */}
-                {/* <Text
-                    {...props}
-                    sx={{
-                        variant: 'text.p1',
-
-                        // mb: 4,
-                        maxWidth: '34em',
-                    }}
-                    {...animation.slideUp4}
-                >
-                    Today my little ones ain&apos;t so little anymore and I'm ready
-                    to get back to work.
-                </Text> */}
                 <Text
                     {...props}
                     variant="d3"
@@ -162,12 +129,13 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     >
                         <HoverBgHiUndln
                             differenceColor="rgb(252,86,11)"
-                            children="Let's go"
                             outlineColor="primary"
                             textColor="text"
                             underlineColor="text"
                             underlineHeight="2px"
-                        />
+                        >
+                            Let&apos;s Go
+                        </HoverBgHiUndln>
                     </Link>
                     {/* <AniLink swipe direction='up' to='web_development'>
 						PaintDrip

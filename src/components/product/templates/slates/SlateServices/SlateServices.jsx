@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { Box, jsx } from 'theme-ui'
+import { Box, jsx, Text } from 'theme-ui'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
@@ -77,7 +77,7 @@ const SlateServices = ({
                 <ServicesSlider />
             </Box>
 
-            <Box
+            {/* <Box
                 {...animation.slideUp5}
                 {...props}
                 className="servicesCta"
@@ -116,7 +116,45 @@ const SlateServices = ({
                         Skills & Capabilities
                     </HoverBgHiUndln>
                 </Link>
-            </Box>
+            </Box> */}
+            <Text
+                {...props}
+                variant="d3"
+                sx={{
+                    mb: [2, 3, 6, 4, 4, 5, 5, 5],
+                    display: 'block',
+                    fontFamily: 'heading',
+                    fontWeight: 'heavy',
+                    color: 'primary',
+                }}
+                {...animation.slideUp5}
+            >
+                Into the nerdy stuff?
+                <Link
+                    to="/skills"
+                    {...props}
+                    {...animation.slideUp6}
+                    sx={{
+                        textDecoration: 'none',
+                        ml: [1, 3, 1, 1, 1, 1, 1, 1],
+                        mb: [2, 2, 3, 2, 0, 0, 0, 0],
+                        fontSize: 'inherit',
+                    }}
+                >
+                    <HoverBgHiUndln
+                        differenceColor="rgb(252,86,11)"
+                        outlineColor="primary"
+                        textColor="text"
+                        underlineColor="text"
+                        underlineHeight="2px"
+                    >
+                        See my skills
+                    </HoverBgHiUndln>
+                </Link>
+                {/* <AniLink swipe direction='up' to='web_development'>
+						PaintDrip
+					</AniLink> */}
+            </Text>
         </SectionGrid>
     </>
 )

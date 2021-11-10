@@ -12,7 +12,7 @@
 const groups = [
     {
         id: 'f7cc5583-26f1-4251-9fbd-52649e253202',
-        groupGridColumns: ['1fr', null, null, null, null, null],
+        groupGridColumns: ['1fr', null, null, null, null, null,null, null],
         groupHead: 'Web Development',
         skillSets: [
             {
@@ -32,17 +32,17 @@ const groups = [
                     {
                         id: '5aa6e6b8-0e42-4b91-8274-1103f156d593',
                         label: 'React',
-                        done: '70',
+                        done: '50',
                     },
                     {
                         id: 'b11a93f2-62ae-47b4-b8ff-086aa907058e',
                         label: 'Gatsby',
-                        done: '80',
+                        done: '75',
                     },
                     {
                         id: '5b65858f-4ced-487a-8e2c-097fcc3aa648',
                         label: 'Storybook',
-                        done: '65',
+                        done: '75',
                     },
                     {
                         id: '42125a8b-3f48-4f26-be7e-85e28f39a42c',
@@ -74,7 +74,7 @@ const groups = [
                         done: '85',
                     },
                     {
-                        label: 'Reusability',
+                        label: 'Reusable components',
                         done: '50',
                     },
                     {
@@ -103,7 +103,7 @@ const groups = [
                 bars: [
                     {
                         label: 'Javascript',
-                        done: '70',
+                        done: '65',
                     },
                     {
                         label: 'JSX',
@@ -135,11 +135,7 @@ const groups = [
                     },
                     {
                         label: 'Php',
-                        done: '40',
-                    },
-                    {
-                        label: 'Typescript',
-                        done: '15',
+                        done: '50',
                     },
                 ],
             },
