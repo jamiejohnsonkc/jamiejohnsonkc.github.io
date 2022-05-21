@@ -7,7 +7,7 @@ import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/co
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import ServicesSlider from '../../elements/ServicesSlider/ServicesSlider'
-import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/ui/HoverBgHiUndln'
 
 const SlateServices = ({
     sectionBg,

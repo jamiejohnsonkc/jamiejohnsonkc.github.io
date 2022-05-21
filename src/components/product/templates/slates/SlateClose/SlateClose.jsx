@@ -9,7 +9,7 @@ import Headline from '../../../../../../../gatsby-theme-jim-components/src/compo
 import Subline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Subline'
 import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
-import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/ui/HoverBgHiUndln'
 
 // TODO refactor split lines
 

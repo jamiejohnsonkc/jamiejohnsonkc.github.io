@@ -9,8 +9,7 @@ import Headline from '../../../../../../../gatsby-theme-jim-components/src/compo
 import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
 import SectionGrid from '../../../../../gatsby-theme-jim-components/components/containers/SectionGrid'
 import Article from '../../../../../../../gatsby-theme-jim-components/src/components/containers/Article'
-import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
-import ExtLink from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ExtLink'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/ui/HoverBgHiUndln'
 
 // import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
