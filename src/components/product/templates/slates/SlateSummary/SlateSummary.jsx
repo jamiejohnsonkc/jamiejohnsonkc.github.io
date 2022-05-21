@@ -86,7 +86,7 @@ const SlateSummary = ({ sectionBg, ...props }) => (
                     A while back I took time to be a{' '}
                     <IntroEmph>stay-at-home Dad</IntroEmph>. In between the
                     feedings and changes I began tinkering with{' '}
-                    <IntroEmph>Wordpress</IntroEmph>. Now I design & build
+                    <IntroEmph>WordPress</IntroEmph>. Now I design & build
                     high-performance sites with leading-edge platforms like{' '}
                     <IntroEmph>React, Gatsby and Storybook</IntroEmph>. And I
                     can back it up with senior-level marketing chops.

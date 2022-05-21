@@ -62,7 +62,8 @@ const SlateIntro = ({ sectionBg, ...props }) => (
             <Article className="introArticle">
                 <SplitHead>I&apos;m Jamie Johnson</SplitHead>
                 <SplitHead mb={4}>
-                    Sr. marketer <span>&amp;</span> Jr. web developer.
+                    {/* Front End Developer<span>&amp;</span> Jr. web developer. */}
+                    frontend web developer.
                 </SplitHead>
                 <Headline
                     {...props}
@@ -71,7 +72,7 @@ const SlateIntro = ({ sectionBg, ...props }) => (
                         color: 'primary',
                     }}
                 >
-                    (and most things in between)
+                    (and more)
                 </Headline>
             </Article>
             <ScrollDownLineAnimated
