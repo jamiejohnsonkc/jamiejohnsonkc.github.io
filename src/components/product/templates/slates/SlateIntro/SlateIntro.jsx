@@ -7,7 +7,7 @@ import ScrollDownLineAnimated from '../../../../../../../gatsby-theme-jim-compon
 import Headline from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Headline'
 import Busker from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Busker'
 import SectionGrid from '../../../../../../../gatsby-theme-jim-components/src/components/containers/SectionGrid'
-import FluidProfile from '../../../../../hooks/imageHooks/FluidProfile'
+// import FluidProfile from '../../../../../hooks/imageHooks/FluidProfile'
 
 const SplitHead = ({ children, mb, ...props }) => (
     <Busker
@@ -60,8 +60,10 @@ const SlateIntro = ({ sectionBg, ...props }) => (
                 <FluidProfile />
             </Box> */}
             <Article className="introArticle">
-                <SplitHead>I&apos;m Jamie Johnson,</SplitHead>
-                <SplitHead mb={4}>frontend web developer.</SplitHead>
+                <SplitHead>I&apos;m Jamie Johnson</SplitHead>
+                <SplitHead mb={4}>
+                    Sr. marketer <span>&amp;</span> Jr. web developer.
+                </SplitHead>
                 <Headline
                     {...props}
                     sx={{
@@ -69,7 +71,7 @@ const SlateIntro = ({ sectionBg, ...props }) => (
                         color: 'primary',
                     }}
                 >
-                    (and more)
+                    (and most things in between)
                 </Headline>
             </Article>
             <ScrollDownLineAnimated

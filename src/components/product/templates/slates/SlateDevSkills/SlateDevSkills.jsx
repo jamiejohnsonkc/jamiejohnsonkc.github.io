@@ -12,7 +12,7 @@ import ProgBarGrpMap from '../../layouts/progBars/ProgBarGrpMap'
 import ScrollDownLineAnimatedVert from '../../../../../../../gatsby-theme-jim-components/src/components/ui/ScrollDownLineAnimatedVert'
 import animation from '../../../../../../../gatsby-theme-scroll-reveal/animation'
 import Paragraph from '../../../../../../../gatsby-theme-jim-components/src/components/designElements/Text/Paragraph'
-import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/fx/HoverBgHiUndln'
+import HoverBgHiUndln from '../../../../../../../gatsby-theme-jim-components/src/components/hoverAnimation/HoverBgHiUndln'
 import App from '../../../../Presentation/Accordion'
 import useMediaQuery from '../../../../../../../gatsby-theme-jim-components/src/hooks/useMediaQuery'
 // Document.getelementById()

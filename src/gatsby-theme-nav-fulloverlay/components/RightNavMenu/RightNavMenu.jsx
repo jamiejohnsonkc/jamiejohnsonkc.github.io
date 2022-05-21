@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import Data from '../../../data/navLinks.json'
 import NavUl from '../../../../../gatsby-theme-nav-fulloverlay/src/components/NavUl'
 import NavLi from '../../../../../gatsby-theme-nav-fulloverlay/src/components/NavLi'
-import HoverTextFill from '../../../../../gatsby-theme-jim-components/src/components/fx/HoverTextFill'
+import HoverTextFill from '../../../../../gatsby-theme-jim-components/src/components/hoverAnimation/HoverTextFill'
 
 const RightNavMenu = ({
     // navMenuItemHover,
