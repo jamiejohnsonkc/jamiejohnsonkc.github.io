@@ -6,7 +6,7 @@ module.exports = {
   },
   // flags: { FAST_REFRESH: true, PRESERVE_FILE_DOWNLOAD_CACHE: true, PRESERVE_WEBPACK_CACHE: true, LAZY_IMAGES: true, QUERY_ON_DEMAND: true, },
 
-  flags: {FAST_REFRESH: true,},
+  flags: {FAST_REFRESH: true, PARALLEL_SOURCING: true},
   plugins: [
     {
       resolve: `gatsby-plugin-scroll-reveal`,
