@@ -57,13 +57,13 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-preload-fonts`,
     `gatsby-theme-nav-fulloverlay`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-theme-ui`,
     `gatsby-theme-jim-theme-ui`,
     `gatsby-theme-jim-components`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
