@@ -5,11 +5,11 @@ import styled from '@emotion/styled'
 
 const StyledSpan = styled.span``
 
-const SandwhichSpan = ({ navOpen, ...props }) => {
+const SandwhichSpan = ({ menuOpen, ...props }) => {
     return (
         <StyledSpan
             className="sandwhichSpan"
-            navOpen={navOpen}
+            menuOpen={menuOpen}
             {...props}
             sx={{
                 backgroundColor: 'headerElement',
@@ -27,11 +27,11 @@ const SandwhichSpan = ({ navOpen, ...props }) => {
     )
 }
 
-const SandwhichRotate = ({ navOpen, ...props }) => {
+const SandwhichRotate = ({ menuOpen, ...props }) => {
     return (
         <Box
             {...props}
-            navOpen={navOpen}
+            menuOpen={menuOpen}
             className="navToggle"
             sx={{
                 display: 'block',
@@ -55,11 +55,11 @@ const SandwhichRotate = ({ navOpen, ...props }) => {
                     top: ['-25%', '-25%', '-25%', '-25%', '-25%'],
                     left: ['-25%', '-25%', '-25%', '-25%', '-25%'],
                     position: 'absolute',
-                    opacity: (props) => (navOpen ? '1' : '0'),
+                    opacity: (props) => (menuOpen ? '1' : '0'),
                     backgroundColor: (props) =>
-                        navOpen ? 'headerElementBg' : 'transparent',
+                        menuOpen ? 'headerElementBg' : 'transparent',
                     transform: (props) =>
-                        navOpen
+                        menuOpen
                             ? 'scale(1) translate3d(0,0,0)'
                             : 'scale(0.6) translate3d(100%,0,0)',
                     transition:
@@ -74,7 +74,7 @@ const SandwhichRotate = ({ navOpen, ...props }) => {
                 },
                 '& > span': {
                     backgroundColor: (props) =>
-                        navOpen ? 'white' : 'headerElement',
+                        menuOpen ? 'white' : 'headerElement',
                     // left: ['20%', '24%'],
                 },
                 '&:hover > span': {
@@ -86,7 +86,7 @@ const SandwhichRotate = ({ navOpen, ...props }) => {
                 {...props}
                 sx={{
                     transform: (props) =>
-                        navOpen
+                        menuOpen
                             ? 'rotate(45deg) translate3d(0px, 0%, 0px)'
                             : 'rotate(0) translate3d(0px, -100%, 0px)',
                 }}
@@ -95,7 +95,7 @@ const SandwhichRotate = ({ navOpen, ...props }) => {
                 {...props}
                 sx={{
                     transform: (props) =>
-                        navOpen
+                        menuOpen
                             ? 'rotate(-45deg) translate3d(0px, 0%, 0px)'
                             : 'rotate(0) translate3d(0px, 100%, 0px)',
                 }}

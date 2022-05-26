@@ -13,25 +13,25 @@ const RightNavMenu = ({
     // navMenuItemHover,
     linkTo,
     // hoverTransition,
-    navOpen,
-    setNavOpen,
+    menuOpen,
+    setMenuOpen,
     ...props
 }) => {
     const closeMenu = (e) => {
-        setNavOpen(false)
+        setMenuOpen(false)
     }
 
     return (
         // <div
         //     className="rightNavMenuContainer"
-        //     navOpen={navOpen}
-        //     setNavOpen={setNavOpen}
+        //     menuOpen={menuOpen}
+        //     setMenuOpen={setMenuOpen}
         // >
         <NavUl
             {...props}
             className="rightNavMenu"
-            navOpen={navOpen}
-            setNavOpen={setNavOpen}
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
             sx={{
                 mt: [4, null, null, 3, null, null, null, null],
                 minHeight: [
@@ -70,12 +70,12 @@ const RightNavMenu = ({
             }}
         >
             {Data.navLinks.map((link) => (
-                <NavLi key={link.id} navOpen={navOpen} onClick={closeMenu}>
+                <NavLi key={link.id} menuOpen={menuOpen} onClick={closeMenu}>
                     <Link
                         to={link.to}
                         className="activeClassName"
 
-                        // onClick={() => setNavOpen(!navOpen)}
+                        // onClick={() => setMenuOpen(!menuOpen)}
                     >
                         <HoverTextFill
                             {...props}

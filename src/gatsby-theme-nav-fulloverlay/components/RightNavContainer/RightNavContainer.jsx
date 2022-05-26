@@ -5,14 +5,14 @@ import RightNavMenu from '../RightNavMenu/RightNavMenu'
 import ContactIconsBar from '../../../components/product/templates/elements/ContactIconsBar'
 // import useOutsideClick from '../useOutsideClick'
 
-const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
+const RightNavContainer = ({ menuOpen, setMenuOpen, ...props }) => {
     return (
-        <Box navOpen={navOpen} setNavOpen={setNavOpen}>
+        <Box menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
             <Box
                 {...props}
                 className="navContainer"
-                navOpen={navOpen}
-                setNavOpen={setNavOpen}
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
                 sx={{
                     margin: '0px',
                     minWidth: '0px',
@@ -30,7 +30,7 @@ const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
                     zIndex: '6',
                     alignItems: 'start',
                     transform: (props) =>
-                        navOpen ? 'translateX(0)' : 'translateX(100%)',
+                        menuOpen ? 'translateX(0)' : 'translateX(100%)',
                     transition: 'transform 0.35s ease-in-out',
                     py: ['unset', 4, 4, 4, 4, 4, 4, 4],
                     pl: [3, 4, 4, 5, 5, 6, 6, 6],
@@ -39,8 +39,8 @@ const RightNavContainer = ({ navOpen, setNavOpen, ...props }) => {
                     },
                 }}
             >
-                {/* <RightNavMenu navOpen={navOpen} /> */}
-                <RightNavMenu navOpen={navOpen} setNavOpen={setNavOpen} />
+                {/* <RightNavMenu menuOpen={menuOpen} /> */}
+                <RightNavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <ContactIconsBar
                     linkBoxTransform="translateY(20px)"
                     display="flex"

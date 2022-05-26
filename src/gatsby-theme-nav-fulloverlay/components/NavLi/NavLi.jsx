@@ -5,10 +5,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import animation from '../../../../../gatsby-theme-scroll-reveal/animation'
 
-// const NavLi = ({ navOpen, setNavOpen, ...props }) => {
+// const NavLi = ({ menuOpen, setMenuOpen, ...props }) => {
 const NavLi = (props) => {
     // const closeMenu = (e) => {
-    //     setNavOpen(false)
+    //     setMenuOpen(false)
     // }
 
     return (
@@ -16,18 +16,18 @@ const NavLi = (props) => {
             {...props}
             {...animation.slideLeft}
             // onClick={closeMenu}
-            // navOpen={navOpen}
+            // menuOpen={menuOpen}
             sx={{}}
         />
     )
 }
 
 NavLi.propTypes = {
-    // liVariant: PropTypes.any,
+    liVariant: PropTypes.any,
 }
 
 NavLi.defaultProps = {
-    // liVariant: 'nav.fullOverlayNavLi',
+    liVariant: 'nav.fullOverlayNavLi',
 }
 
 export default NavLi

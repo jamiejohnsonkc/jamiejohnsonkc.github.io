@@ -10,14 +10,14 @@ import Logo from '../../../components/product/bits/Logo'
 import useWindowSize from '../../../../../gatsby-theme-jim-components/src/hooks/useWindowSize'
 
 const Header = ({
-    navOpen,
-    setNavOpen,
+    menuOpen,
+    setMenuOpen,
     // handleMenuToggle,
     display,
     ...props
 }) => {
     const handleMenuToggle = (e) => {
-        setNavOpen(!navOpen)
+        setMenuOpen(!menuOpen)
     }
 
     const size = useWindowSize()
@@ -105,12 +105,12 @@ const Header = ({
                         className="navToggle"
                         type="button"
                         onClick={handleMenuToggle}
-                        navOpen={navOpen}
+                        menuOpen={menuOpen}
                     />
                 </Box>
             </Grid>
 
-            {/* <RightNav navOpen={navOpen} /> */}
+            {/* <RightNav menuOpen={menuOpen} /> */}
         </>
     )
 }
