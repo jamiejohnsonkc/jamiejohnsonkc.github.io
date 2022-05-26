@@ -70,7 +70,7 @@ const RightNavMenu = ({
             }}
         >
             {Data.navLinks.map((link) => (
-                <NavLi key={link.id} menuOpen={menuOpen} onClick={closeMenu}>
+                <NavLi key={link.id}>
                     <Link
                         to={link.to}
                         className="activeClassName"

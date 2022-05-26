@@ -27,7 +27,7 @@ NavLi.propTypes = {
 }
 
 NavLi.defaultProps = {
-    liVariant: 'nav.fullOverlayNavLi',
+    // liVariant: 'nav.fullOverlayNavLi',
 }
 
 export default NavLi
