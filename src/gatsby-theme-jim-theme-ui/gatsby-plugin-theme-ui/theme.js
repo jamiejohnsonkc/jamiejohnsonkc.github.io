@@ -94,7 +94,7 @@ headline: {
 
     subline: {
         fontFamily: 'heading',
-         fontWeight: 'normal',
+        fontWeight: 'normal',
         letterSpacing: 'loose',
         textTransform: 'uppercase',
         lineHeight: 1.4,
@@ -161,11 +161,6 @@ headline: {
             letterSpacing: 'tight',
             lineHeight: 1.2,
         },
-
-
-
-
-
         p1: {
             // color: 'text',
             // fontFamily: 'body',
@@ -227,9 +222,8 @@ headline: {
         root: {
             fontFamily: 'body',
             lineHeight: 'body',
-             fontWeight: 'normal',
+            fontWeight: 'normal',
         },
-
         a: {
             color: 'primary',
         },
@@ -240,7 +234,6 @@ headline: {
                 color: 'inherit',
             },
         },
-
         code: {
             fontFamily: 'monospace',
             fontSize: 'inherit',
@@ -266,13 +259,11 @@ headline: {
             paddingLeft: 0,
             bg: 'primary',
         },
-
         ulPlain: {
             listStyle: 'none',
             paddingLeft: 0,
             bg: 'secondary',
         },
-
         liPlain: {
             color: '#444',
             textTransform: 'uppercase',
@@ -288,13 +279,11 @@ headline: {
         depth: `0 5px 20px -10px #000`,
         callOut: `0 0 4.236em rgba(14,30,37,.09)`,
         uiDivide: `0 2px 20px rgba(14,30,37,.5)`,
-
         //* themed
         primary: `0 0 4px 3px ${colors.primary}`,
         primaryFaint: '0 0 4px 3px rgba(1.2%, 66.3%, 95.7%, .25)',
         primarySubtleFirmLR: '2px 2px 6px 0px rgba(1.2%, 66.3%, 95.7%, .25)',
     },
-
     flair: {
         revHilightHoverText: {
             backfaceVisibility: 'hidden',
@@ -313,7 +302,6 @@ headline: {
                 'color 200ms ease-in-out 100ms, transform 100ms ease-out 0s',
             willChange: 'color, transform',
             zIndex: '1',
-
             '&::before, &::after': {
                 content: '""',
                 display: 'block',
