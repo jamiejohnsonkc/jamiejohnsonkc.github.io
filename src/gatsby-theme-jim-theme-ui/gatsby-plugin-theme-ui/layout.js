@@ -36,7 +36,7 @@ export default {
         // flex: '0 0 auto',
         // minWidth: '0',
         // px: [0, 2, 0, 4, 5, 7],
-        px: [2, 4, 0, 'none', 'none', 'none', 'none'],
+        px: [2, 4, 0, 'none', 'none', 'none', 'none', 'none'],
         flex: '0 0 auto',
         // minHeight: '100%',
     },
