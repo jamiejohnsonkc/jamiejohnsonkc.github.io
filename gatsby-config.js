@@ -6,7 +6,7 @@ module.exports = {
   },
   // flags: { FAST_REFRESH: true, PRESERVE_FILE_DOWNLOAD_CACHE: true, PRESERVE_WEBPACK_CACHE: true, LAZY_IMAGES: true, QUERY_ON_DEMAND: true, },
 
-  flags: {FAST_REFRESH: true, DEV_SSR: true, LAZY_IMAGES: true, FAST_DEV: true, QUERY_ON_DEMAND: true, PRESERVE_WEBPACK_CACHE: true,
+  flags: {FAST_REFRESH: true, DEV_SSR: true, FAST_DEV: true, PRESERVE_WEBPACK_CACHE: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true, PARALLEL_SOURCING: true,},
   plugins: [
     {
@@ -32,11 +32,12 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: [
-            'Spectral: 300,400,600,700',
-            'Source Sans Pro: 200,300,400,600,700,900',
-            'Source Code Pro',
-          ],
+          // families: [
+          //   'Spectral: 300,400,600,700',
+          //   'Source Sans Pro: 200,300,400,600,700,900',
+          //   'Source Code Pro',
+          // ],
+          families: ['Spectral', 'Source Sans Pro', 'Source Code Pro'],
         },
       },
     },
@@ -47,7 +48,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -57,10 +57,7 @@ module.exports = {
         },
       },
     },
-    `gatsby-theme-nav-fulloverlay`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-theme-ui`,
-    `gatsby-theme-jim-theme-ui`,
     `gatsby-theme-jim-components`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-preload-fonts`,
@@ -70,5 +67,8 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    `gatsby-plugin-theme-ui`,
+    `gatsby-theme-jim-theme-ui`,
+    `gatsby-theme-nav-fulloverlay`,
   ],
 }
